@@ -1,0 +1,29 @@
+{
+  "name": "yukun.bio",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/bianyukun1213/yukun.bio#readme",
+  "bugs": {
+    "url": "https://github.com/bianyukun1213/yukun.bio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bianyukun1213/yukun.bio.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@iconify-json/fa6-brands": "^1.2.5",
+    "@iconify-json/simple-icons": "^1.2.26",
+    "@iconify-json/uil": "^1.2.3",
+    "@unocss/preset-icons": "^66.0.0",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.0",
+    "unocss": "^66.0.0"
+  }
+}

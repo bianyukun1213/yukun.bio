@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Your Name</title>
-</head>
-<body>
-    <div class="grid-2">
-        <div class="section-1">
-            <i class="fas fa-code fa-5x white"></i>
-            <h2>FirstName LastName</h2>
-            <p>City,Country.</p>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-        </div>
-        <div class="section-2">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas sint et nihil iusto eius nostrum sit error, repellat optio quisquam! Magnam dolore iusto cumque. Nostrum error iste neque maiores.</p>
-            <h2>Experience</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in maiores autem quidem.</p>
+<html>
 
-            <h2>Skills</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in maiores autem quidem obcaecati excepturi! Cupiditate eaque itaque magni voluptatibus neque nobis est dolor? Atque sunt minus ipsa asperiores. At.</p>
-            <h2>Projects</h2>
-            <a href="#">Project 1</a>
-            <a href="#">Project 2</a>
-            <a href="#">Project 3</a>
-            <a href="#">Project 4</a>
-            <a href="#">Project 5</a>
-            <h2>Contact</h2>
-            <p>myEmail@email.com</p>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="modern-normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.min.css" integrity="sha512-LFWtdAXHQuwUGH9cImO9blA3a3GfQNkpF2uRlhaOpSbDevNyK1rmAjs13mtpjvWyi+flP7zYWboqY+8Mkd42xA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="un-bg-bg-prim un-text-txt-scnd un-text-base un-font-sans">
+  <div id="loading" class="un-absolute un-size-full un-bg-bg-prim un-z-100">
+    <div class="un-absolute un-text-align-center un-start-1/2 un-top-1/2 ltr:-un-translate-x-1/2 rtl:un-translate-x-1/2 -un-translate-y-1/2">
+      <p>加载中，请稍候……</p>
+      <p>Loading, please wait…</p>
     </div>
+  </div>
+  <div class="un-w-full un-min-h-screen un-grid un-grid-cols-1 xl:un-grid-cols-5 xl:un-h-screen">
+    <div class="un-py-8 un-text-align-center xl:un-col-span-2 xl:un-px-16 xl:un-place-self-center">
+      <img id="profile" class="un-w-4/5 un-min-w-48 un-max-w-64 un-my-8" tabindex="0">
+      <h1 id="name" class="un-text-txt-prim"></h1>
+      <p id="desc" class="un-my-4"></p>
+      <div id="links" class="un-flex un-justify-center un-gap-4">
+      </div>
+    </div>
+    <div class="un-px-4 un-pt-0 un-pb-8 un-self-start xl:un-col-span-3 xl:un-max-h-full xl:un-overflow-auto xl:un-px-0 xl:un-pt-8 xl:un-self-center">
+      <div id="rendered-content" class="xl:un-ms-8 xl:un-me-32"></div>
+    </div>
+  </div>
+  <select id="select-lang" class="un-fixed un-end-4 un-top-4 un-sc-select-plain" name="lang"></select>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.6/lib/marked.umd.min.js" integrity="sha512-rh4p4HToku9wx3xLU9ImyBLgRx6ulFCoxvXmTzMSktlSkMdrWRtaytKfFS8RYhSfldst0uccA6Bgt/mXJjKsFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/umd/photoswipe.umd.min.js" integrity="sha512-BXwwGU7zCXVgpT2jpXnTbioT9q1Byf7NEXVxovTZPlNvelL2I/4LjOaoiB2a19L+g5za8RbkoJFH4fMPQcjFFw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer></script>
 </body>
+
 </html>
