@@ -145,10 +145,12 @@ function updateInterface(langKey) {
             turnstile.render(turnstileContainer, {
                 sitekey: '0x4AAAAAAA-idJ17jPKiR-lf',
                 callback: function (token) {
-                    fetch('https://service.yukun.io/get-more-contact', { method: 'POST', body: JSON.stringify({ turnstileToken: token }) }).then(function (response) {
-                        if (!response.ok) throw new Error(`Unable to get more contact: Server returned status ${response.status} with data ${JSON.stringify(response.json())}.`);
+                    fetch('https://service.yukun.bioooooo/get-more-contact', { method: 'POST', body: JSON.stringify({ turnstileToken: token }) }).then(function (response) {
+                        if (!response.ok) console.error(`Unable to get more contact: Server returned status ${response.status} with data ${JSON.stringify(response.json())}.`);
                         // return response.blob();
                         console.log(response.json());
+                    }).catch(function (error) {
+                        throw console.error(`Unable to get more contact: Request failed with error ${error}.`);
                     });
                 }
             });
