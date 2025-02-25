@@ -153,7 +153,8 @@ function updateInterface(langKey) {
                         const moreContact = document.getElementById('more-contact');
                         if (!moreContact) return;
                         const res = await response.json();
-                        moreContact.innerHTML = marked.parse(res[langKey]);
+                        if (res.code !== 0) console.error(`Unable to get more contact: Server returned data ${JSON.stringify(response.json())}.`);
+                        moreContact.innerHTML = marked.parse(res.data[langKey]);
                     }).catch(function (error) {
                         throw console.error(`Unable to get more contact: Request failed with error ${error}.`);
                     });
