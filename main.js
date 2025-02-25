@@ -54,11 +54,10 @@ const content = {
             `## 你好！
 ## 联系方式
 
-<div id="more-contact">
-</div>
 <details>
 <summary id="get-more-contact">获取更多</summary>
 <div id="turnstile-container"></div>
+<div id="more-contact-container"></div>
 </details>
             `,
         photoSwipe: {
@@ -150,11 +149,12 @@ function updateInterface(langKey) {
                     fetch('https://service.yukun.bio/get-more-contact', { method: 'POST', body: JSON.stringify({ turnstileToken: token }) }).then(async function (response) {
                         if (!response.ok) console.error(`Unable to get more contact: Server returned status ${response.status} with data ${JSON.stringify(response.json())}.`);
                         // console.log(response.json());
-                        const moreContact = document.getElementById('more-contact');
-                        if (!moreContact) return;
+                        const moreContactContainer = document.getElementById('more-contact-container');
+                        if (!moreContactContainer) return;
                         const res = await response.json();
                         if (res.code !== 0) console.error(`Unable to get more contact: Server returned data ${JSON.stringify(response.json())}.`);
-                        moreContact.innerHTML = marked.parse(res.data[langKey]);
+                        moreContactContainer.innerHTML = marked.parse(res.data[langKey]);
+                        turnstile.remove();
                     }).catch(function (error) {
                         throw console.error(`Unable to get more contact: Request failed with error ${error}.`);
                     });
