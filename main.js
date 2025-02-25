@@ -54,8 +54,10 @@ const content = {
             `## 你好！
 ## 联系方式
 
+<div id="more-contact">
+</div>
 <details>
-<summary id="more-contact">获取更多</summary>
+<summary id="get-more-contact">获取更多</summary>
 <div id="turnstile-container"></div>
 </details>
             `,
@@ -136,19 +138,22 @@ function updateInterface(langKey) {
         links.append(iconWrapper);
     }
     document.getElementById('rendered-content').innerHTML = marked.parse(langContent.markdown);
-    const moreContact = document.getElementById('more-contact');
+    const getMoreContact = document.getElementById('get-more-contact');
     const turnstileContainer = document.getElementById('turnstile-container');
-    if (moreContact && turnstileContainer) {
+    if (getMoreContact && turnstileContainer) {
         let turnstileLoaded = false;
-        moreContact.addEventListener('click', function () {
+        getMoreContact.addEventListener('click', function () {
             if (turnstileLoaded) return;
             turnstile.render(turnstileContainer, {
                 sitekey: '0x4AAAAAAA-idJ17jPKiR-lf',
                 callback: function (token) {
-                    fetch('https://service.yukun.bio/get-more-contact', { method: 'POST', body: JSON.stringify({ turnstileToken: token }) }).then(function (response) {
+                    fetch('https://service.yukun.bio/get-more-contact', { method: 'POST', body: JSON.stringify({ turnstileToken: token }) }).then(async function (response) {
                         if (!response.ok) console.error(`Unable to get more contact: Server returned status ${response.status} with data ${JSON.stringify(response.json())}.`);
-                        // return response.blob();
-                        console.log(response.json());
+                        // console.log(response.json());
+                        const moreContact = document.getElementById('more-contact');
+                        if (!moreContact) return;
+                        const res = await response.json();
+                        moreContact.innerHTML = marked.parse(res[currentLang]);
                     }).catch(function (error) {
                         throw console.error(`Unable to get more contact: Request failed with error ${error}.`);
                     });
