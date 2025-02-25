@@ -55,7 +55,7 @@ const content = {
 ## 联系方式
 
 <details>
-<summary id="more-contacts">获取更多</summary>
+<summary id="more-contact">获取更多</summary>
 <div id="turnstile-container"></div>
 </details>
             `,
@@ -136,21 +136,21 @@ function updateInterface(langKey) {
         links.append(iconWrapper);
     }
     document.getElementById('rendered-content').innerHTML = marked.parse(langContent.markdown);
-    // document.getElementById('btn').addEventListener('click', function (e) {
-    //     alert(666);
-    //     e.preventDefault();
-    // });
-    const moreContacts = document.getElementById('more-contacts');
+    const moreContact = document.getElementById('more-contact');
     const turnstileContainer = document.getElementById('turnstile-container');
-    if (moreContacts && turnstileContainer) {
+    if (moreContact && turnstileContainer) {
         let turnstileLoaded = false;
-        moreContacts.addEventListener('click', function () {
+        moreContact.addEventListener('click', function () {
             if (turnstileLoaded) return;
             turnstile.render(turnstileContainer, {
                 sitekey: '0x4AAAAAAA-idJ17jPKiR-lf',
                 callback: function (token) {
-                    console.log(`Challenge Success ${token}`);
-                },
+                    fetch('https://service.yukun.io/get-more-contact', { method: 'POST', body: JSON.stringify({ turnstileToken: token }) }).then(function (response) {
+                        if (!response.ok) throw new Error(`Unable to get more contact: Server returned status ${response.status} with data ${JSON.stringify(response.json())}.`);
+                        // return response.blob();
+                        console.log(response.json());
+                    });
+                }
             });
             turnstileLoaded = true;
         });
