@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="modern-normalize.min.css">
+  <title>yukun.bio</title>
+  <link rel="icon" href="./res/favicon.webp">
+  <link rel="stylesheet" href="./res/modern-normalize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.min.css" integrity="sha512-LFWtdAXHQuwUGH9cImO9blA3a3GfQNkpF2uRlhaOpSbDevNyK1rmAjs13mtpjvWyi+flP7zYWboqY+8Mkd42xA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./res/style.css">
 </head>
 
 <body class="un-bg-bg-prim un-text-txt-scnd un-text-base un-font-sans">
@@ -30,9 +30,19 @@
       <div id="rendered-content" class="xl:un-ms-8 xl:un-me-32"></div>
     </div>
   </div>
-  <select id="select-lang" class="un-fixed un-end-4 un-top-4 un-sc-select-plain" name="lang"></select>
+  <div id="utils" class="un-fixed un-end-0 un-top-0 un-bg-bg-scnd un-p-4 un-rounded-es-md">
+    <label for="select-color-scheme" class="un-me-2"></label>
+    <select id="select-color-scheme" class="un-sc-select-plain un-me-2" name="color-scheme">
+      <option value="system"></option>
+      <option value="light"></option>
+      <option value="dark"></option>
+    </select>
+    <label for="select-lang" class="un-me-2"></label>
+    <select id="select-lang" class="un-sc-select-plain" name="lang"></select>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.6/lib/marked.umd.min.js" integrity="sha512-rh4p4HToku9wx3xLU9ImyBLgRx6ulFCoxvXmTzMSktlSkMdrWRtaytKfFS8RYhSfldst0uccA6Bgt/mXJjKsFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="main.js"></script>
+  <script src="./res/content.js"></script>
+  <script src="./res/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/umd/photoswipe.umd.min.js" integrity="sha512-BXwwGU7zCXVgpT2jpXnTbioT9q1Byf7NEXVxovTZPlNvelL2I/4LjOaoiB2a19L+g5za8RbkoJFH4fMPQcjFFw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer></script>
 </body>

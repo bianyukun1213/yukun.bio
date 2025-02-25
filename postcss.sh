@@ -1,1 +1,1 @@
-npx postcss ./style.src.css -o ./style.css -w
+npx postcss ./style.src.css -o ./res/style.css -w
