@@ -5,16 +5,22 @@ const content = {
         dir: 'ltr',
         profiles: [
             {
-                src: 'https://bucket.hollisdevhub.com/blog/posts/a14d0940/imgs/1002/DSCF0266.JPG',
+                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_graduation.webp',
                 width: 1080,
-                height: 1920,
-                alt: '112233'
+                height: 1441,
+                alt: '一位穿着黑色学士服和戴着学士帽的年轻人，站在户外的楼梯旁，背景是建筑物和绿色植物。'
             },
             {
-                src: 'https://bucket.hollisdevhub.com/blog/posts/a14d0940/imgs/1002/DSCF0981.JPG',
-                width: 1920,
-                height: 1080,
-                alt: '112233'
+                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_riding_horse.webp',
+                width: 1080,
+                height: 1440,
+                alt: '一位穿着黄色T恤和黑色背心的年轻人，戴着黑色头盔，骑在一匹棕色的马上，背景是一片水域和远处的树木。'
+            },
+            {
+                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_vladivostok.webp',
+                width: 1080,
+                height: 1925,
+                alt: '一位穿着紫色T恤和黑色外套的年轻人，背着相机和腰包，站在一个有多方向指示牌的路标旁，背景是蓝天和山丘。'
             }
         ],
         links: [
@@ -74,7 +80,7 @@ const content = {
 
 ## 兴趣爱好
 
-最近这段时间（2025 年 2 月）我不好说我有什么爱好了，总觉得干什么都没劲。不过我刚刚集中精力把我的博客翻新了，专门编写了新的主题（网页模板），然后制作了这个网页。我不擅长和别人打交道，但有时候会自己写写<a href="https://his2nd.life/" target="_blank">博客</a>：有时候是想记下来一些美好经历——因为我记性并不好，就像上学时候学的东西我已经忘光了；有时候只是单纯地写些废话整理一下情绪。所以我想，我可以说编程和写博客是我兴趣爱好的一部分。有时我憧憬互联网时代以前人们交流的方式——那时候距离和技术可能是个问题，人们交流更加认真，不像现在这样随意，还会满怀期待地等待对方的消息。出于这种憧憬，<a href="https://www.postcrossing.com/user/HeyHollis" target="_blank">我注册了 Postcrossing</a>，有时会给陌生人发明信片，不过距离上次发送已经挺长时间了。我每天都听音乐，其实只是打发无聊，而且几乎只是在我喜欢的播放列表里随机播放。2024 年我听得最多的是 Pink Floyd 的歌，尤其喜欢 *The Division Bell* 专辑里的几首歌曲。
+最近这段时间（2025 年 2 月）我不好说我有什么爱好了，总觉得干什么都没劲。不过我刚刚集中精力把<a href="https://his2nd.life/" target="_blank">我的博客</a>翻新了，专门编写了新的主题（网页模板），然后制作了这个网页。我不擅长和别人打交道，但有时候会自己写写博客：有时候是想记下来一些美好经历——因为我记性并不好，就像上学时候学的东西我已经忘光了；有时候只是单纯地写些废话整理一下情绪。所以我想，我可以说编程和写博客是我兴趣爱好的一部分。有时我憧憬互联网时代以前人们交流的方式——那时候距离和技术可能是个问题，人们交流更加认真，不像现在这样随意，还会满怀期待地等待对方的消息。出于这种憧憬，<a href="https://www.postcrossing.com/user/HeyHollis" target="_blank">我注册了 Postcrossing</a>，有时会给陌生人发明信片，不过距离上次发送已经挺长时间了。我每天都听音乐，其实只是打发无聊，而且几乎只是在我喜欢的播放列表里随机播放。2024 年我听得最多的是 Pink Floyd 的歌，尤其喜欢 *The Division Bell* 专辑里的几首歌曲。
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26789016&auto=0&height=66"></iframe>
 
@@ -85,7 +91,7 @@ const content = {
 你可以给我发邮件。我的邮箱是 [bianyukun1213@outlook.com](mailto:bianyukun1213@outlook.com)。
 
 <details>
-<summary id="get-more-contact">获取更多</summary>
+<summary id="get-more-contact">完成验证码，获取更多</summary>
 <div id="turnstile-container"></div>
 <div id="more-contact-container"></div>
 </details>`,
@@ -110,21 +116,96 @@ const content = {
         dir: 'ltr',
         profiles: [
             {
-                src: 'https://bucket.hollisdevhub.com/blog/posts/a14d0940/imgs/1002/DSCF0266.JPG',
-                width: 1920,
-                height: 1080,
-                alt: '112233'
+                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_graduation.webp',
+                width: 1080,
+                height: 1441,
+                alt: 'A young man in a black graduation gown and hat stands by the stairs outdoors, with buildings and green plants in the background.'
+            },
+            {
+                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_riding_horse.webp',
+                width: 1080,
+                height: 1440,
+                alt: 'A young man in a yellow T-shirt and black vest, wearing a black helmet, riding a brown horse, with a body of water and trees in the distance in the background.'
+            },
+            {
+                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_vladivostok.webp',
+                width: 1080,
+                height: 1925,
+                alt: 'A young man in a purple T-shirt and black jacket, carrying a camera and a waist bag, stands next to a road sign with multiple directional signs, with a blue sky and hills in the background.'
             }
         ],
         links: [
             {
-
+                title: 'Blog',
+                icon: 'uil:globe',
+                href: 'https://his2nd.life/'
+            },
+            {
+                title: 'GitHub',
+                icon: 'simple-icons:github',
+                href: 'https://github.com/bianyukun1213'
+            },
+            {
+                title: 'Mastodon (m.cmx.im)',
+                icon: 'simple-icons:mastodon',
+                href: 'https://m.cmx.im/deck/@Hollis'
+            },
+            {
+                title: 'Instagram',
+                icon: 'simple-icons:instagram',
+                href: 'https://www.instagram.com/yukun_again/',
+            },
+            // {
+            //     title: 'Vkontakte',
+            //     icon: 'simple-icons:vk',
+            //     href: 'vk'
+            // },
+            {
+                title: 'Steam',
+                icon: 'simple-icons:steam',
+                href: 'https://steamcommunity.com/id/heyhollis/'
             }
         ],
         name: 'Bian Yukun',
-        desc: 'test',
+        desc: 'Male, 24 yo, programmer',
         markdown:
-            ``,
+            `## Hello!
+
+My name is Bian Yukun (边宇琨). I was born in 2000 in China, Heilongjiang, Harbin. I’m still living in Harbin.
+
+I work as a programmer in a small game studio, doing some random jobs which are not necessarily concerned to video games. I was graduated from Heilongjiang University of Science and Technology with a bachelor’s degree in environmental engineering. I joined this small game studio because of hobby and personal connections. So, I am not a professional programmer.
+
+Actually I don’t know out of what I made this web page. Maybe because I want to make more friends, friends from all over the world. 🤔 But honestly I’m not good at dealing with others. Back in the school my English grade was good compared with grades of people around me. But still I find myself not able to express in English fluently. Recently I started to learn Russian and I have no idea how long I’m gonna persevere. However, I wish I have opportunities to travel to Russia once or more per year in the upcoming years. At least, the Far East region is not far from me and the travel cost will be moderate. Vladivostok had left me a good impression. I think I even made some kind of friends there.
+
+## Education and occupation
+
+<div class="table-wrapper">
+
+| Period | Location | Role |
+|:---:|:---:|:---:|
+| October 2020 to June 2024 | Heilongjiang University of Science and Technology | Environmental engineering undergrad |
+| Since July 2024 | 黑龙江省无畏征途科技有限公司 | Junior programmer |
+
+</div>
+
+## Hobbies
+
+
+Lately (February 2025), it has become harder for me to list my hobbies because I find myself lack of energy to do anything. However, I just did the refinement of <a href="https://his2nd.life/" target="_blank">my personal blog</a>. I made a new theme (page template) specifically for my blog. And by the way I also made this page. I’m not good at dealing with others, instead occasionally I just write posts for myself. Sometimes to keep a memory of good experience — my memory’s not good, I had forgotten nearly every bit of knowledge I learned in school. Sometimes just to write something useless to organize my emotions. So I guess I could say programming and writing blog posts are part of my hobbies. At times I admire the way people communicate with each other before the Internet. Back then, distance and tech issue could be huge problems, so people were more serious, waiting for news from others with great anticipation, not as casual as we are these days. Out of this kind of admiration <a href="https://www.postcrossing.com/user/HeyHollis" target="_blank">I registered Postcrossing</a>, sending postcards to strangers from time to time. But it has been a long time since last time. I also listen to music everyday, shuffle play my favorite playlist, just to make some noise to make myself less bored. I listened to Pink Floyd’s songs most in the year of 2024, especially certain songs from album *The Division Bell*.
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26789016&auto=0&height=66"></iframe>
+
+Also, I’m a gamer. But I stopped playing these days. Games from Remedy Entertainment always bring me special experience. As well, I’m looking forward to a new sequel to Valve’s *Half-Life* franchise. I’m interested in science fiction. I think my favorite science fiction movie would be either *Interstellar* or *Blade Runner* (and *Blade Runner 2049*). And the last science fiction novel I finished reading was the *Hyperion* tetralogy.
+
+## Contact
+
+You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyukun1213@outlook.com).
+
+<details>
+<summary id="get-more-contact">Complete verification and get more</summary>
+<div id="turnstile-container"></div>
+<div id="more-contact-container"></div>
+</details>`,
         photoSwipe: {
             closeTitle: 'Close',
             zoomTitle: 'Zoom',
@@ -138,6 +219,118 @@ const content = {
             light: 'Light',
             dark: 'Dark',
             system: 'Sys'
+        }
+    },
+    ru: {
+        langName: 'Рус.',
+        langLabel: 'язык',
+        dir: 'ltr',
+        profiles: [
+            {
+                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_graduation.webp',
+                width: 1080,
+                height: 1441,
+                alt: 'Молодой человек в черной мантии и шляпе бакалавра стоит рядом с наружной лестницей на фоне зданий и зелени.'
+            },
+            {
+                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_riding_horse.webp',
+                width: 1080,
+                height: 1440,
+                alt: 'Молодой человек в желтой футболке, черном жилете и черном шлеме верхом на коричневой лошади на фоне водоема и деревьев.'
+            },
+            {
+                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_vladivostok.webp',
+                width: 1080,
+                height: 1925,
+                alt: 'Молодой человек в фиолетовой футболке и черной куртке, с фотоаппаратом и поясной сумкой в ​​руках стоит рядом с дорожным знаком с несколькими указателями направлений на фоне голубого неба и холмов.'
+            }
+        ],
+        links: [
+            {
+                title: 'Блог',
+                icon: 'uil:globe',
+                href: 'https://his2nd.life/'
+            },
+            {
+                title: 'GitHub',
+                icon: 'simple-icons:github',
+                href: 'https://github.com/bianyukun1213'
+            },
+            {
+                title: 'Mastodon (m.cmx.im)',
+                icon: 'simple-icons:mastodon',
+                href: 'https://m.cmx.im/deck/@Hollis'
+            },
+            {
+                title: 'Instagram',
+                icon: 'simple-icons:instagram',
+                href: 'https://www.instagram.com/yukun_again/',
+            },
+            // {
+            //     title: 'Vkontakte',
+            //     icon: 'simple-icons:vk',
+            //     href: 'vk'
+            // },
+            {
+                title: 'Steam',
+                icon: 'simple-icons:steam',
+                href: 'https://steamcommunity.com/id/heyhollis/'
+            }
+        ],
+        name: 'Бянь Юйкунь',
+        desc: 'Мужчина, 24 года, программист',
+        markdown:
+            `> Я только начал изучать русский язык и в настоящее время не могу писать предложения. Эта страница переведена с английского с помощью Google Translate. Я извиняюсь, если есть какие-либо ошибки или заблуждения, вызванные переводом.
+
+## Привет!
+
+Меня зовут Бянь Юйкунь (边宇琨). Я родился в 2000 году в Китае, Хэйлунцзян, Харбин. Я все еще живу в Харбине.
+
+Я работаю программистом в небольшой игровой студии, выполняя случайные задания, которые не обязательно связаны с видеоиграми. Я окончил Хэйлунцзянский университет науки и технологий со степенью бакалавра в области инженерии окружающей среды. Я присоединился к этой небольшой игровой студии из-за хобби и личных связей. Так что я не профессиональный программист.
+
+На самом деле я не знаю, из чего я сделал эту веб-страницу. Может быть, потому что я хочу завести больше друзей, друзей со всего мира. 🤔 Но, честно говоря, я не очень хорош в общении с другими. В школе мой уровень английского был хорошим по сравнению с оценками людей вокруг меня. Но я все еще не могу свободно изъясняться на английском языке. Недавно я начал изучать русский язык и понятия не имею, как долго я буду упорствовать. Однако я хотел бы иметь возможность ездить в Россию один или несколько раз в год в ближайшие годы. По крайней мере, Дальний Восток находится недалеко от меня, и стоимость поездки будет умеренной. Владивосток оставил у меня хорошее впечатление. Думаю, я даже завел там несколько друзей.
+
+## Образование и профессия
+
+<div class="table-wrapper">
+
+| Период | Расположение | Роль |
+|:---:|:---:|:---:|
+| Октябрь 2020 г. — июнь 2024 г. | Хэйлунцзянский университет науки и технологий | Бакалавриат по специальности «Экологическая инженерия» |
+| С июля 2024 г. | 黑龙江省无畏征途科技有限公司 | Младший программист |
+
+</div>
+
+## Увлечения
+
+В последнее время (февраль 2025 г.) мне стало сложнее перечислять свои увлечения, потому что у меня нет сил что-либо делать. Однако я только что доработал <a href="https://his2nd.life/" target="_blank">мой личный блог</a>. Я создал новую тему (шаблон страницы) специально для своего блога. И, кстати, я также создал эту страницу. Я не очень хорошо общаюсь с другими, вместо этого иногда я просто пишу посты для себя. Иногда, чтобы сохранить память о хорошем опыте — у меня плохая память, я забыл почти все знания, которые получил в школе. Иногда просто чтобы написать что-то бесполезное, чтобы организовать свои эмоции. Так что, думаю, я могу сказать, что программирование и написание постов в блоге являются частью моих хобби. Иногда я восхищаюсь тем, как люди общаются друг с другом до появления Интернета. Тогда расстояния и технические проблемы могли быть огромными проблемами, поэтому люди были более серьезными, ждали новостей от других с большим нетерпением, а не такими небрежными, как мы в наши дни. Из-за такого рода восхищения <a href="https://www.postcrossing.com/user/HeyHollis" target="_blank">я зарегистрировался в Postcrossing</a>, время от времени отправляя открытки незнакомцам. Но с последнего раза прошло много времени. Я также слушаю музыку каждый день, включаю свой любимый плейлист в случайном порядке, просто чтобы пошуметь и не скучать. Больше всего в 2024 году я слушал песни Pink Floyd, особенно некоторые песни из альбома *The Division Bell*.
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26789016&auto=0&height=66"></iframe>
+
+Также я геймер. Но в последнее время я перестал играть. Игры от Remedy Entertainment всегда приносят мне особый опыт. Также я с нетерпением жду нового сиквела франшизы *Half-Life* от Valve. Мне интересна научная фантастика. Думаю, мой любимый научно-фантастический фильм — это *Интерстеллар* или *Бегущий по лезвию* (и *Бегущий по лезвию 2049*). А последний научно-фантастический роман, который я дочитал, — это тетралогия *Гиперион*.
+
+## Контакт
+
+Вы можете написать мне письмо на электронную почту. Мой адрес электронной почты [bianyukun1213@outlook.com](mailto:bianyukun1213@outlook.com).
+
+<details>
+<summary id="get-more-contact">Пройдите проверку и получите больше</summary>
+<div id="turnstile-container"></div>
+<div id="more-contact-container"></div>
+</details>`,
+        photoSwipe: {
+            closeTitle: 'Закрывать',
+            zoomTitle: 'Увеличить',
+            arrowPrevTitle: 'Предыдущий',
+            arrowNextTitle: 'Следующий',
+            errorMsg: 'Изображение не может быть загружено',
+            indexIndicatorSep: ' / ',
+        },
+        colorScheme: {
+            label: 'Цвет',
+            light: 'Свет',
+            dark: 'Темный',
+            system: 'Система'
         }
     }
 };
