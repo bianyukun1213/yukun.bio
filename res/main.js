@@ -107,7 +107,12 @@ function domContentLoadedHandler(eDomContentLoaded) {
     }
     if (!currentLang)
         currentLang = 'en';
-    window.history.replaceState(null, null, window.location.protocol + '//' + window.location.host + window.location.pathname);
+
+    let newUrl = url.origin + url.pathname;
+    url.searchParams.delete('lang');
+    let qs = url.searchParams.toString();
+    if (qs) newUrl += '?' + qs;
+    window.history.replaceState(null, null, newUrl);
     const langSelect = document.getElementById('select-lang');
     for (const key of Object.keys(content)) {
         let option = document.createElement('option');
