@@ -95,7 +95,7 @@ function updateInterface(langKey) {
                         index: imgIndex
                     };
                     Object.assign(psRenderedOptions, langContent.photoSwipe);
-                    const pswpRendered = new PhotoSwipe();
+                    const pswpRendered = new PhotoSwipe(psRenderedOptions);
                     pswpRendered.init();
                 }
             });
