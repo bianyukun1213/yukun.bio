@@ -110,7 +110,7 @@ input:focus,
 select:focus:focus,
 textarea:focus,
 summary:focus {
-    @apply un-outline-2 un-outline-offset-2 un-outline-fcs-ol ! un-outline-solid;
+    @apply un-outline-2 un-outline-offset-2 un-outline-fcs-ol! un-outline-solid;
 }
 
 h1 {
@@ -168,6 +168,7 @@ p img {
     @apply un-max-w-9/20;
 }
 
+#profile,
 #rendered-content img[data-width][data-height] {
     @apply un-cursor-zoom-in;
 }

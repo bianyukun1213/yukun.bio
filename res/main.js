@@ -50,7 +50,6 @@ function updateInterface(langKey) {
     const profile = document.getElementById('profile');
     profile.setAttribute('src', langContent.profiles[0].src);
     profile.setAttribute('alt', langContent.profiles[0].alt);
-    profile.style.cursor = 'zoom-in';
     if (initPswp) {
         profile.removeEventListener('click', initPswp);
         profile.removeEventListener('keydown', initPswp);
