@@ -90,22 +90,17 @@ function updateInterface(langKey) {
             img.addEventListener('click', function (e) {
                 const imgIndex = renderedImgs.indexOf(e.target);
                 if (imgIndex !== -1) {
-                    const pswpRendered = new PhotoSwipe({
+                    const psRenderedOptions = {
                         dataSource: renderedImgs.map(i => { return { src: i.src, width: i.getAttribute('data-width'), height: i.getAttribute('data-height'), alt: i.alt }; }),
                         index: imgIndex
-                    });
+                    };
+                    Object.assign(psRenderedOptions, langContent.photoSwipe);
+                    const pswpRendered = new PhotoSwipe();
                     pswpRendered.init();
                 }
             });
         });
     }
-    // document.querySelector('#btn-open-pswp-from-arr').onclick = () => {
-    //     options.index = 0; // defines start slide index
-    //     const pswp = new PhotoSwipe(options);
-    //     pswp.init(); // initializing PhotoSwipe core adds it to DOM
-    // };
-
-
     setGetMoreContact(langKey);
     variousFix();
 }
