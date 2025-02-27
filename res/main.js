@@ -62,6 +62,12 @@ function updateInterface(langKey) {
         pswp.init();
     };
     profile.addEventListener('click', initPswp);
+    profile.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            initPswp();
+        }
+    });
     document.getElementById('name').textContent = document.title = langContent.name;
     document.getElementById('desc').textContent = langContent.desc;
     const links = document.getElementById('links');
@@ -87,7 +93,7 @@ function updateInterface(langKey) {
     const renderedImgs = [...document.querySelectorAll('#rendered-content img[data-width][data-height]')];
     if (renderedImgs.length > 0) {
         renderedImgs.forEach(function (img) {
-            img.addEventListener('click', function (e) {
+            const initPswpRendered = function (e) {
                 const imgIndex = renderedImgs.indexOf(e.target);
                 if (imgIndex !== -1) {
                     const psRenderedOptions = {
@@ -97,6 +103,15 @@ function updateInterface(langKey) {
                     Object.assign(psRenderedOptions, langContent.photoSwipe);
                     const pswpRendered = new PhotoSwipe(psRenderedOptions);
                     pswpRendered.init();
+                }
+            };
+            img.addEventListener('click', (e) => {
+                initPswpRendered(e);
+            });
+            img.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    initPswpRendered(e);
                 }
             });
         });
