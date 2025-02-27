@@ -51,23 +51,23 @@ function updateInterface(langKey) {
     profile.setAttribute('src', langContent.profiles[0].src);
     profile.setAttribute('alt', langContent.profiles[0].alt);
     profile.style.cursor = 'zoom-in';
-    const psOptions = {
-        dataSource: langContent.profiles
-    };
-    Object.assign(psOptions, langContent.photoSwipe);
-    if (initPswp)
+    if (initPswp) {
         profile.removeEventListener('click', initPswp);
-    initPswp = function () {
-        const pswp = new PhotoSwipe(psOptions);
-        pswp.init();
+        profile.removeEventListener('keydown', initPswp);
+    }
+    initPswp = function (e) {
+        if (e.type === 'click' || e.type === 'keydown' && e.key === 'Enter') {
+            e.preventDefault();
+            const psOptions = {
+                dataSource: langContent.profiles
+            };
+            Object.assign(psOptions, langContent.photoSwipe);
+            const pswp = new PhotoSwipe(psOptions);
+            pswp.init();
+        }
     };
     profile.addEventListener('click', initPswp);
-    profile.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            initPswp();
-        }
-    });
+    profile.addEventListener('keydown', initPswp);
     document.getElementById('name').textContent = document.title = langContent.name;
     document.getElementById('desc').textContent = langContent.desc;
     const links = document.getElementById('links');
@@ -94,26 +94,22 @@ function updateInterface(langKey) {
     if (renderedImgs.length > 0) {
         renderedImgs.forEach(function (img) {
             const initPswpRendered = function (e) {
-                const imgIndex = renderedImgs.indexOf(e.target);
-                if (imgIndex !== -1) {
-                    const psRenderedOptions = {
-                        dataSource: renderedImgs.map(i => { return { src: i.src, width: i.getAttribute('data-width'), height: i.getAttribute('data-height'), alt: i.alt }; }),
-                        index: imgIndex
-                    };
-                    Object.assign(psRenderedOptions, langContent.photoSwipe);
-                    const pswpRendered = new PhotoSwipe(psRenderedOptions);
-                    pswpRendered.init();
+                if (e.type === 'click' || e.type === 'keydown' && e.key === 'Enter') {
+                    e.preventDefault();
+                    const imgIndex = renderedImgs.indexOf(e.target);
+                    if (imgIndex !== -1) {
+                        const psRenderedOptions = {
+                            dataSource: renderedImgs.map(i => { return { src: i.src, width: i.getAttribute('data-width'), height: i.getAttribute('data-height'), alt: i.alt }; }),
+                            index: imgIndex
+                        };
+                        Object.assign(psRenderedOptions, langContent.photoSwipe);
+                        const pswpRendered = new PhotoSwipe(psRenderedOptions);
+                        pswpRendered.init();
+                    }
                 }
             };
-            img.addEventListener('click', (e) => {
-                initPswpRendered(e);
-            });
-            img.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter') {
-                    e.preventDefault();
-                    initPswpRendered(e);
-                }
-            });
+            img.addEventListener('click', initPswpRendered);
+            img.addEventListener('keydown', initPswpRendered);
         });
     }
     setGetMoreContact(langKey);
