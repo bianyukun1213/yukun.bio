@@ -68,8 +68,8 @@ const content = {
 我也不太清楚我制作这个网页是出于何种原因。也许是想认识更多朋友，世界各地的朋友。🤔 不过老实说我并不擅长和别人打交道。上学的时候我的英语成绩较身边人来讲还不错，不过我仍然无法熟练用英语表达。最近我开始学习俄语，不知道能坚持多久，不过我想将来每年都能去俄罗斯旅游，至少远东地区离我并不是很远，花销适中。海参崴给我留下了很好的印象，我想我在那儿还交上了朋友。
 
 <p>
-<img src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF0981.JPG" alt="一片蓝色的海洋，波浪拍打着岩石，溅起白色的水花。天空晴朗，有几朵白云。" data-width="1919" data-height="1080">
-<img src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF1020.JPG" alt="一张海边的照片，前景有一个红色的标志牌，中景是平静的海面，背景是一座被夕阳照亮的悬崖。" data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF0981.JPG" alt="一片蓝色的海洋，波浪拍打着岩石，溅起白色的水花。天空晴朗，有几朵白云。" data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF1020.JPG" alt="一张海边的照片，前景有一个红色的标志牌，中景是平静的海面，背景是一座被夕阳照亮的悬崖。" data-width="1919" data-height="1080">
 </p>
 
 ## 教育经历与职业
@@ -183,8 +183,8 @@ I work as a programmer in a small game studio, doing some random jobs which are 
 Actually I don’t know out of what I made this web page. Maybe because I want to make more friends, friends from all over the world. 🤔 But honestly I’m not good at dealing with others. Back in the school my English grade was good compared with grades of people around me. But still I find myself not able to express in English fluently. Recently I started to learn Russian and I have no idea how long I’m gonna persevere. However, I wish I have opportunities to travel to Russia once or more per year in the upcoming years. At least, the Far East region is not far from me and the travel cost will be moderate. Vladivostok had left me a good impression. I think I even made some kind of friends there.
 
 <p>
-<img src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF0981.JPG" alt="A blue ocean with waves hitting the rocks and splashing white water. The sky is clear with a few white clouds." data-width="1919" data-height="1080">
-<img src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF1020.JPG" alt="A photo of a seaside with a red sign in the foreground, a calm sea in the middle ground, and a cliff illuminated by the setting sun in the background." data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF0981.JPG" alt="A blue ocean with waves hitting the rocks and splashing white water. The sky is clear with a few white clouds." data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF1020.JPG" alt="A photo of a seaside with a red sign in the foreground, a calm sea in the middle ground, and a cliff illuminated by the setting sun in the background." data-width="1919" data-height="1080">
 </p>
 
 ## Education and occupation
@@ -301,8 +301,8 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
 На самом деле я не знаю, из чего я сделал эту веб-страницу. Может быть, потому что я хочу завести больше друзей, друзей со всего мира. 🤔 Но, честно говоря, я не очень хорош в общении с другими. В школе мой уровень английского был хорошим по сравнению с оценками людей вокруг меня. Но я все еще не могу свободно изъясняться на английском языке. Недавно я начал изучать русский язык и понятия не имею, как долго я буду упорствовать. Однако я хотел бы иметь возможность ездить в Россию один или несколько раз в год в ближайшие годы. По крайней мере, Дальний Восток находится недалеко от меня, и стоимость поездки будет умеренной. Владивосток оставил у меня хорошее впечатление. Думаю, я даже завел там несколько друзей.
 
 <p>
-<img src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF0981.JPG" alt="Голубой океан с волнами, разбивающимися о скалы, и плещущейся белой водой. Небо ясное, с несколькими белыми облаками." data-width="1919" data-height="1080">
-<img src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF1020.JPG" alt="Фотография побережья с красным знаком на переднем плане, спокойным морем на среднем плане и скалой, освещенной заходящим солнцем, на заднем плане." data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF0981.JPG" alt="Голубой океан с волнами, разбивающимися о скалы, и плещущейся белой водой. Небо ясное, с несколькими белыми облаками." data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF1020.JPG" alt="Фотография побережья с красным знаком на переднем плане, спокойным морем на среднем плане и скалой, освещенной заходящим солнцем, на заднем плане." data-width="1919" data-height="1080">
 </p>
 
 ## Образование и профессия
