@@ -110,7 +110,7 @@ input:focus,
 select:focus:focus,
 textarea:focus,
 summary:focus {
-    @apply un-outline-2 un-outline-offset-2 un-outline-fcs-ol! un-outline-solid;
+    @apply un-outline-2 un-outline-offset-2 un-outline-fcs-ol ! un-outline-solid;
 }
 
 h1 {
@@ -155,10 +155,21 @@ hr {
     @apply un-border-(1 txt-dmsh solid);
 }
 
+p:has(img) {
+    @apply un-flex;
+    @apply un-flex-wrap;
+    @apply un-justify-around;
+    @apply un-gap-4;
+}
+
 p img {
     @apply un-block;
-    @apply un-max-w-1/2;
-    @apply un-my-0 un-mx-auto;
+    @apply un-min-w-64;
+    @apply un-max-w-9/20;
+}
+
+#rendered-content img[data-width][data-height] {
+    @apply un-cursor-zoom-in;
 }
 
 blockquote {
