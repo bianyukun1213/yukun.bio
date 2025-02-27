@@ -145,6 +145,7 @@ p:has(img) {display:flex;flex-wrap:wrap;justify-content:space-around;gap:1rem;
 p img {display:block;min-width:16rem;max-width:45%;
 }
 
+#profile,
 #rendered-content img[data-width][data-height] {cursor:zoom-in;
 }
 
@@ -184,6 +185,11 @@ iframe {display:block;max-width:100%;margin-top:1rem;margin-bottom:1rem;margin-l
 
 details {display:inline-block;
 }
+
+#get-more-contact {color:var(--tide-color-link);text-decoration-line:underline;
+}
+
+#get-more-contact:hover{color:var(--tide-color-link-hover);text-underline-offset:4px;}
 
 summary {cursor:pointer;
 }

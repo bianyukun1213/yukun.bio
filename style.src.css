@@ -110,7 +110,7 @@ input:focus,
 select:focus:focus,
 textarea:focus,
 summary:focus {
-    @apply un-outline-2 un-outline-offset-2 un-outline-fcs-ol! un-outline-solid;
+    @apply un-outline-2 un-outline-offset-2 un-outline-fcs-ol ! un-outline-solid;
 }
 
 h1 {
@@ -230,6 +230,12 @@ iframe {
 
 details {
     @apply un-inline-block;
+}
+
+#get-more-contact {
+    @apply un-text-lk;
+    @apply un-underline;
+    @apply hover:un-text-lk-hvr hover:un-underline-offset-4;
 }
 
 summary {
