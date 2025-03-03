@@ -287,7 +287,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
                 href: 'https://steamcommunity.com/id/heyhollis/'
             }
         ],
-        name: 'Бянь Юйкунь',
+        name: 'Бянь Юкунь',
         desc: 'Мужчина, 24 года, программист',
         markdown:
             `> Я только начал изучать русский язык и в настоящее время не могу писать предложения. Эта страница переведена с английского с помощью Google Translate. Я извиняюсь, если есть какие-либо ошибки или заблуждения, вызванные переводом.
