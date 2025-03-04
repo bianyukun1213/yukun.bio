@@ -237,6 +237,8 @@ summary {cursor:pointer;
 
 .un-z-100{z-index:100;}
 
+.un-z-200{z-index:200;}
+
 .un-grid{display:grid;}
 
 .un-grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr));}
