@@ -228,7 +228,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
             label: 'Color',
             light: 'Light',
             dark: 'Dark',
-            system: 'Sys'
+            system: 'System'
         }
     },
     ru: {
