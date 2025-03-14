@@ -10,7 +10,7 @@ function setGetMoreContact(langKey) {
                 sitekey: siteKey,
                 language: langKey,
                 callback: function (token) {
-                    fetch('https://service.yukun.bio/get-more-contact', { method: 'POST', body: JSON.stringify({ turnstileToken: token, src }) }).then(async function (response) {
+                    fetch('https://service.yukun.bio/get-more-contact', { method: 'POST', body: JSON.stringify({ turnstileToken: token, source }) }).then(async function (response) {
                         if (!response.ok) console.error(`Unable to get more contact: Server returned status ${response.status} with data ${JSON.stringify(response.json())}.`);
                         const moreContactContainer = document.getElementById('more-contact-container');
                         if (!moreContactContainer) return;
@@ -142,13 +142,13 @@ function updateInterface(langKey) {
     variousFix();
 }
 
-let src;
+let source;
 
 function domContentLoadedHandler(eDomContentLoaded) {
     let currentLang;
     const url = new URL(window.location.href);
     const langs = [url.searchParams.get('lang'), localStorage.getItem('lang'), ...navigator.languages];
-    src = url.searchParams.get('src') ?? '';
+    source = url.searchParams.get('s') ?? '';
     for (const lang of langs) {
         if (!lang) continue;
         if (lang in content) {
