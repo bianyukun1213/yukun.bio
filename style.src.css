@@ -117,21 +117,18 @@ h1 {
     @apply un-my-4;
     @apply un-text-4xl;
     @apply un-font-bold;
-    @apply un-text-prim;
 }
 
 h2 {
     @apply un-my-4;
     @apply un-text-3xl;
     @apply un-font-bold;
-    @apply un-text-prim;
 }
 
 h3 {
     @apply un-my-4;
     @apply un-text-2xl;
     @apply un-font-bold;
-    @apply un-text-prim;
 }
 
 p {
@@ -148,6 +145,7 @@ a:not(.icon) {
 #links .icon {
     @apply un-text-2xl;
     @apply hover:un-scale-110;
+    @apply un-text-txt-scnd;
 }
 
 hr {
