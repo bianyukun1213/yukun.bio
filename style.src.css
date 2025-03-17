@@ -102,6 +102,10 @@ html[data-tide-color-scheme="dark"] {
     --tide-color-table-background-even: #191919;
 }
 
+body {
+    font-family: 'Noto Sans', 'Noto Sans SC', 'Noto Sans CJK SC', 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei', system-ui, sans-serif;
+}
+
 [tabindex]:not([tabindex="-1"]):focus,
 a:focus,
 .icon-wrapper:has(a:focus),
@@ -110,25 +114,32 @@ input:focus,
 select:focus:focus,
 textarea:focus,
 summary:focus {
-    @apply un-outline-2 un-outline-offset-2 un-outline-fcs-ol ! un-outline-solid;
+    @apply un-outline-2 un-outline-offset-2 un-outline-fcs-ol! un-outline-solid;
 }
 
 h1 {
     @apply un-my-4;
     @apply un-text-4xl;
     @apply un-font-bold;
+    /* @apply un-text-prim; */
+}
+
+#name {
+    font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif CJK SC', Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
 }
 
 h2 {
     @apply un-my-4;
     @apply un-text-3xl;
     @apply un-font-bold;
+    /* @apply un-text-prim; */
 }
 
 h3 {
     @apply un-my-4;
     @apply un-text-2xl;
     @apply un-font-bold;
+    /* @apply un-text-prim; */
 }
 
 p {
