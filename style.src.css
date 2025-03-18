@@ -146,6 +146,10 @@ p {
     @apply un-my-4;
 }
 
+#rendered-content p {
+    font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif CJK SC', Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+}
+
 a:not(.icon) {
     @apply un-text-lk;
     @apply un-underline;
