@@ -233,7 +233,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
     },
     ru: {
         langName: 'Рус.',
-        langLabel: 'язык',
+        langLabel: 'Язык',
         dir: 'ltr',
         profiles: [
             {
