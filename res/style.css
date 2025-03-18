@@ -135,7 +135,7 @@ h3 {margin-top:1rem;margin-bottom:1rem;font-size:1.5rem;line-height:2rem;font-we
 p {margin-top:1rem;margin-bottom:1rem;
 }
 
-#rendered-content p {
+#rendered-content :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif CJK SC', Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
 }
 

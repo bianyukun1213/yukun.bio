@@ -146,7 +146,7 @@ p {
     @apply un-my-4;
 }
 
-#rendered-content p {
+#rendered-content :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif CJK SC', Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
 }
 
