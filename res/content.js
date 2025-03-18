@@ -44,11 +44,11 @@ const content = {
                 icon: 'simple-icons:instagram',
                 href: 'https://www.instagram.com/yukun_again/',
             },
-            // {
-            //     title: 'Vkontakte',
-            //     icon: 'simple-icons:vk',
-            //     href: 'vk'
-            // },
+            {
+                title: 'VKontakte',
+                icon: 'simple-icons:vk',
+                href: 'https://vk.com/heyhollis'
+            },
             {
                 title: 'Steam',
                 icon: 'simple-icons:steam',
@@ -160,11 +160,11 @@ const content = {
                 icon: 'simple-icons:instagram',
                 href: 'https://www.instagram.com/yukun_again/',
             },
-            // {
-            //     title: 'Vkontakte',
-            //     icon: 'simple-icons:vk',
-            //     href: 'vk'
-            // },
+            {
+                title: 'VKontakte',
+                icon: 'simple-icons:vk',
+                href: 'https://vk.com/heyhollis'
+            },
             {
                 title: 'Steam',
                 icon: 'simple-icons:steam',
@@ -276,11 +276,11 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
                 icon: 'simple-icons:instagram',
                 href: 'https://www.instagram.com/yukun_again/',
             },
-            // {
-            //     title: 'Vkontakte',
-            //     icon: 'simple-icons:vk',
-            //     href: 'vk'
-            // },
+            {
+                title: 'ВКонтакте',
+                icon: 'simple-icons:vk',
+                href: 'https://vk.com/heyhollis'
+            },
             {
                 title: 'Steam',
                 icon: 'simple-icons:steam',
