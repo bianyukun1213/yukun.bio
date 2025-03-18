@@ -343,9 +343,9 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
         },
         colorScheme: {
             label: 'Цвет',
-            light: 'Свет',
+            light: 'Яркий',
             dark: 'Темный',
-            system: 'Система'
+            system: 'Системный'
         }
     }
 };
