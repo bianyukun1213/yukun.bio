@@ -193,8 +193,8 @@ Actually I don’t know out of what I made this web page. Maybe because I want t
 
 | Period | Location | Role |
 |:---:|:---:|:---:|
-| October 2020 to June 2024 | Heilongjiang University of Science and Technology | Environmental engineering undergrad |
-| Since July 2024 | Heilongjiang Wuweizhengtu Technology Co., Ltd. | Junior programmer |
+| October 2020<br>to June 2024 | Heilongjiang University<br>of Science and Technology | Environmental engineering<br>undergrad |
+| Since July 2024 | Heilongjiang<br>Wuweizhengtu Technology Co., Ltd. | Junior programmer |
 
 </div>
 
@@ -311,8 +311,8 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
 
 | Период | Расположение | Роль |
 |:---:|:---:|:---:|
-| Октябрь 2020 г. — июнь 2024 г. | Хэйлунцзянский университет науки и технологий | Бакалавриат по специальности «Экологическая инженерия» |
-| С июля 2024 г. | Хэйлунцзянская компания Wuweizhengtu Technology Co., Ltd. | Младший программист |
+| Октябрь 2020 г.<br>— июнь 2024 г. | Хэйлунцзянский университет<br>науки и технологий | Бакалавриат по специальности<br>«Экологическая инженерия» |
+| С июля 2024 г. | Хэйлунцзянская компания<br>Wuweizhengtu Technology Co., Ltd. | Младший программист |
 
 </div>
 
