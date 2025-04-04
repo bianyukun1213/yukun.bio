@@ -11,16 +11,10 @@ const content = {
                 alt: '一位穿着黑色学士服和戴着学士帽的年轻人，站在户外的楼梯旁，背景是建筑物和绿色植物。'
             },
             {
-                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_riding_horse.webp',
+                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_selfie.webp',
                 width: 1080,
                 height: 1440,
-                alt: '一位穿着黄色T恤和黑色背心的年轻人，戴着黑色头盔，骑在一匹棕色的马上，背景是一片水域和远处的树木。'
-            },
-            {
-                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_vladivostok.webp',
-                width: 1080,
-                height: 1925,
-                alt: '一位穿着紫色T恤和黑色外套的年轻人，背着相机和腰包，站在一个有多方向指示牌的路标旁，背景是蓝天和山丘。'
+                alt: '一个穿着灰色睡衣、戴着眼镜的年轻男子，背景是浅色的墙壁。'
             }
         ],
         links: [
@@ -127,16 +121,10 @@ const content = {
                 alt: 'A young man in a black graduation gown and hat stands by the stairs outdoors, with buildings and green plants in the background.'
             },
             {
-                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_riding_horse.webp',
+                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_selfie.webp',
                 width: 1080,
                 height: 1440,
-                alt: 'A young man in a yellow T-shirt and black vest, wearing a black helmet, riding a brown horse, with a body of water and trees in the distance in the background.'
-            },
-            {
-                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_vladivostok.webp',
-                width: 1080,
-                height: 1925,
-                alt: 'A young man in a purple T-shirt and black jacket, carrying a camera and a waist bag, stands next to a road sign with multiple directional signs, with a blue sky and hills in the background.'
+                alt: 'A young man in grey pajamas and glasses, against a light-colored wall background.'
             }
         ],
         links: [
@@ -243,16 +231,10 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
                 alt: 'Молодой человек в черной мантии и шляпе бакалавра стоит рядом с наружной лестницей на фоне зданий и зелени.'
             },
             {
-                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_riding_horse.webp',
+                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_selfie.webp',
                 width: 1080,
                 height: 1440,
-                alt: 'Молодой человек в желтой футболке, черном жилете и черном шлеме верхом на коричневой лошади на фоне водоема и деревьев.'
-            },
-            {
-                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_vladivostok.webp',
-                width: 1080,
-                height: 1925,
-                alt: 'Молодой человек в фиолетовой футболке и черной куртке, с фотоаппаратом и поясной сумкой в ​​руках стоит рядом с дорожным знаком с несколькими указателями направлений на фоне голубого неба и холмов.'
+                alt: 'Молодой человек в серой пижаме и очках на фоне светлой стены.'
             }
         ],
         links: [
