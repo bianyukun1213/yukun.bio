@@ -114,7 +114,7 @@ input:focus,
 select:focus:focus,
 textarea:focus,
 summary:focus {
-    @apply un-outline-2 un-outline-offset-2 un-outline-fcs-ol! un-outline-solid;
+    @apply un-outline-2 un-outline-offset-2 un-outline-fcs-ol ! un-outline-solid;
 }
 
 h1 {
@@ -144,6 +144,10 @@ h3 {
 
 p {
     @apply un-my-4;
+}
+
+:root[lang="zh-CN"] #rendered-content p {
+    @apply un-indent-[2em];
 }
 
 #rendered-content {
