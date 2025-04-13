@@ -294,6 +294,8 @@ summary {cursor:pointer;
 
 [dir="rtl"] .rtl\:un-translate-x-1\/2{--un-translate-x:50%;transform:translateX(var(--un-translate-x)) translateY(var(--un-translate-y)) translateZ(var(--un-translate-z)) rotate(var(--un-rotate)) rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y)) rotateZ(var(--un-rotate-z)) skewX(var(--un-skew-x)) skewY(var(--un-skew-y)) scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y)) scaleZ(var(--un-scale-z));}
 
+.un-place-self-center{place-self:center;}
+
 .un-self-start{align-self:flex-start;}
 
 .un-justify-center{justify-content:center;}
@@ -340,7 +342,6 @@ summary {cursor:pointer;
 .xl\:un-ms-8{margin-inline-start:2rem;}
 .xl\:un-h-screen{height:100vh;}
 .xl\:un-max-h-full{max-height:100%;}
-.xl\:un-place-self-center{place-self:center;}
 .xl\:un-self-center{align-self:center;}
 .xl\:un-overflow-auto{overflow:auto;}
 .xl\:un-px-0{padding-left:0;padding-right:0;}
