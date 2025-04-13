@@ -117,6 +117,8 @@ function updateInterface(langKey) {
     profileImgCounter.innerHTML = '<span class="icon un-i-uil:images un-me-1"></span>' + langContent.profiles.length;
     if (langContent.profiles.length > 1)
         profileImgCounter.style.display = 'block';
+    else
+        profileImgCounter.style.display = 'none';
     const renderedImgs = [...document.querySelectorAll('#rendered-content img[data-width][data-height]')];
     if (renderedImgs.length > 0) {
         renderedImgs.forEach(function (img) {
