@@ -139,9 +139,7 @@ p {margin-top:1rem;margin-bottom:1rem;
     font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif CJK SC', Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
 }
 
-:root[lang="zh-CN"] #rendered-content p,
-:root[lang="zh-CN"] #rendered-content summary,
-:root[lang="zh-CN"] #rendered-content #turnstile-container {text-indent:2em;
+:root[lang="zh-CN"] #rendered-content p {text-indent:2em;
 }
 
 a:not(.icon) {color:var(--tide-color-link);text-decoration-line:underline;

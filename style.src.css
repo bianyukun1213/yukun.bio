@@ -150,9 +150,7 @@ p {
     font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif CJK SC', Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
 }
 
-:root[lang="zh-CN"] #rendered-content p,
-:root[lang="zh-CN"] #rendered-content summary,
-:root[lang="zh-CN"] #rendered-content #turnstile-container {
+:root[lang="zh-CN"] #rendered-content p {
     @apply un-indent-[2em];
 }
 
