@@ -151,7 +151,8 @@ p {
 }
 
 :root[lang="zh-CN"] #rendered-content p,
-:root[lang="zh-CN"] #rendered-content summary {
+:root[lang="zh-CN"] #rendered-content summary,
+:root[lang="zh-CN"] #rendered-content #turnstile-container {
     @apply un-indent-[2em];
 }
 
