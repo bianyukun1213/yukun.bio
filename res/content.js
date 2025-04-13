@@ -50,7 +50,7 @@ const content = {
             }
         ],
         name: '边宇琨',
-        desc: '男，24 岁，程序员',
+        desc: '2000 年 12 月 13 日，程序员',
         markdown:
             `
 ## 你好！
@@ -160,7 +160,7 @@ const content = {
             }
         ],
         name: 'Bian Yukun',
-        desc: 'Male, 24 yo, programmer',
+        desc: 'December 13, 2000, programmer',
         markdown:
             `## Hello!
 
@@ -270,7 +270,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
             }
         ],
         name: 'Биан Юкун',
-        desc: 'Мужчина, 24 года, программист',
+        desc: '13 декабря 2000 г., программист',
         markdown:
             `> Я только начал изучать русский язык и в настоящее время не могу писать предложения. Эта страница переведена с английского с помощью Google Translate. Я извиняюсь, если есть какие-либо ошибки или заблуждения, вызванные переводом.
 

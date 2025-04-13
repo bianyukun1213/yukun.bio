@@ -60,7 +60,8 @@ export default defineConfig({
         }
     },
     safelist: [
-        'un-mx-1',
+        'un-i-uil:images',
+        'un-me-1',
         'un-i-uil:globe',
         'un-i-simple-icons:github',
         'un-i-simple-icons:mastodon',
