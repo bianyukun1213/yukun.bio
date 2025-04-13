@@ -17,6 +17,7 @@ const content = {
                 alt: '一个穿着灰色睡衣、戴着眼镜的年轻男子，背景是浅色的墙壁。'
             }
         ],
+        profileImgCounterTitle: '相片数',
         links: [
             {
                 title: '博客',
@@ -127,6 +128,7 @@ const content = {
                 alt: 'A young man in grey pajamas and glasses, against a light-colored wall background.'
             }
         ],
+        profileImgCounterTitle: 'Photo count',
         links: [
             {
                 title: 'Blog',
@@ -237,6 +239,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
                 alt: 'Молодой человек в серой пижаме и очках на фоне светлой стены.'
             }
         ],
+        profileImgCounterTitle: 'Количество фотографий',
         links: [
             {
                 title: 'Блог',

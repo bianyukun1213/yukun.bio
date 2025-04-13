@@ -112,8 +112,11 @@ function updateInterface(langKey) {
     };
     profile.addEventListener('click', initPswp);
     profile.addEventListener('keydown', initPswp);
+    const profileImgCounter = document.getElementById('profile-img-counter');
+    profileImgCounter.title = langContent.profileImgCounterTitle;
+    profileImgCounter.innerHTML = '<span class="icon un-i-uil:images un-me-1"></span>' + langContent.profiles.length;
     if (langContent.profiles.length > 1)
-        document.getElementById('profile-img-counter').innerHTML = '<span class="icon un-i-uil:images un-me-1"></span>' + langContent.profiles.length;
+        profileImgCounter.style.display = 'block';
     const renderedImgs = [...document.querySelectorAll('#rendered-content img[data-width][data-height]')];
     if (renderedImgs.length > 0) {
         renderedImgs.forEach(function (img) {
