@@ -181,7 +181,7 @@ p:has(img) {
 
 p img {
     @apply un-block;
-    @apply un-min-w-64;
+    @apply un-min-w-48;
     @apply un-max-w-9/20;
 }
 

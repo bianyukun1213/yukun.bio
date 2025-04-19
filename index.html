@@ -32,9 +32,9 @@
     </div>
   </div>
   <div class="un-w-full un-min-h-screen un-grid un-grid-cols-1 xl:un-grid-cols-5 xl:un-h-screen">
-    <div class="un-py-8 un-place-self-center un-text-align-center xl:un-col-span-2 xl:un-px-16">
-      <div id="profile-wrapper" class="un-relative un-mt-8">
-        <img id="profile" class="un-block un-min-w-48 un-max-w-64" tabindex="0">
+    <div class="un-max-w-full un-py-8 un-place-self-center un-text-align-center xl:un-col-span-2 xl:un-ma xl:un-px-16">
+      <div id="profile-wrapper" class="un-inline-block un-relative un-mt-8">
+        <img id="profile" class="un-block un-w-full un-min-w-48 un-max-w-64" tabindex="0">
         <div id="profile-img-counter" class="un-absolute un-end-0 un-bottom-0 un-px-1 un-bg-bg-prim un-text-txt-scnd un-rounded-tl-md un-pointer-events-none" style="display:none;"></div>
       </div>
       <h1 id="name" class="un-text-prim"></h1>
@@ -46,15 +46,15 @@
       <div id="rendered-content" class="xl:un-ms-8 xl:un-me-32"></div>
     </div>
   </div>
-  <div id="utils" class="un-absolute un-end-0 un-top-0 un-bg-bg-scnd un-px-4 un-py-2 un-rounded-es-md">
-    <label for="select-color-scheme" class="un-me-2"></label>
-    <select id="select-color-scheme" class="un-sc-select-plain un-me-2" name="color-scheme">
+  <div id="utils" class="un-absolute un-end-0 un-top-0 un-bg-bg-scnd un-px-4 un-pt-2 un-rounded-es-md">
+    <label for="select-color-scheme" class="un-inline-block un-me-2 un-mb-2"></label>
+    <select id="select-color-scheme" class="un-sc-select-plain un-me-2 un-mb-2" name="color-scheme">
       <option value="system"></option>
       <option value="light"></option>
       <option value="dark"></option>
     </select>
-    <label for="select-lang" class="un-me-2"></label>
-    <select id="select-lang" class="un-sc-select-plain" name="lang"></select>
+    <label for="select-lang" class="un-inline-block un-me-2 un-mb-2"></label>
+    <select id="select-lang" class="un-sc-select-plain un-mb-2" name="lang"></select>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.6/lib/marked.umd.min.js" integrity="sha512-rh4p4HToku9wx3xLU9ImyBLgRx6ulFCoxvXmTzMSktlSkMdrWRtaytKfFS8RYhSfldst0uccA6Bgt/mXJjKsFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./res/content.js"></script>
