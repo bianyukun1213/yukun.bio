@@ -56,7 +56,7 @@ const content = {
             `
 ## 你好！
 
-我的名字是边宇琨。在某些地方我还使用 Hollis 这个名字。我在 2000 年出生于黑龙江省哈尔滨市，目前也居住在哈尔滨市。
+我的名字是边宇琨。在某些地方我还使用 Hollis 这个名字。我在 2000 年出生于黑龙江省哈尔滨市，目前在北京出差。
 
 我在一家小型游戏工作室工作，做一些不定内容的编程工作，这些工作并不总是和游戏相关。本科毕业于黑龙江科技大学环境工程专业，因为爱好和一些人际关系加入了这个小型游戏工作室，所以我不是一名专业的程序员。
 
@@ -166,7 +166,7 @@ const content = {
         markdown:
             `## Hello!
 
-My name is Bian Yukun (边宇琨), or in some places, Hollis. I was born in 2000 in China, Heilongjiang, Harbin. I’m still living in Harbin.
+My name is Bian Yukun (边宇琨), or in some places, Hollis. I was born in Harbin, Heilongjiang Province in 2000 and am currently on a business trip in Beijing.
 
 I work as a programmer in a small game studio, doing some random jobs which are not necessarily concerned to video games. I was graduated from Heilongjiang University of Science and Technology with a bachelor’s degree in environmental engineering. I joined this small game studio because of hobby and personal connections. So, I am not a professional programmer.
 
@@ -279,7 +279,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
 
 ## Привет!
 
-Меня зовут Биан Юкун (边宇琨, Bian Yukun), или в некоторых местах Холлис (Hollis). Я родился в 2000 году в Китае, Хэйлунцзян, Харбин. Я все еще живу в Харбине.
+Меня зовут Биан Юкун (边宇琨, Bian Yukun), или в некоторых местах Холлис (Hollis). Я родился в Харбине, провинция Хэйлунцзян, в 2000 году и в настоящее время нахожусь в командировке в Пекине.
 
 Я работаю программистом в небольшой игровой студии, выполняя случайные задания, которые не обязательно связаны с видеоиграми. Я окончил Хэйлунцзянский университет науки и технологий со степенью бакалавра в области инженерии окружающей среды. Я присоединился к этой небольшой игровой студии из-за хобби и личных связей. Так что я не профессиональный программист.
 
