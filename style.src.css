@@ -121,7 +121,7 @@ summary:focus {
     /* 升级到支持 Tailwind 4 的 UnoCSS 后，对于颜色的处理发生变化，变为使用 color-mix，
        然而在 cssvar-property 缺失 @property --un-outline-color-opacity 导致混合无效，
        因此在这里直接设定颜色。
-       color-mix 还会有偏色的问题，暂时不知道如何解决。
+       color-mix in oklch 还会有偏色的问题，暂时不知道如何解决。
     */
     outline-color: var(--tide-color-focused-outline);
 }
@@ -204,7 +204,7 @@ blockquote {
     @apply un-py-2 un-px-4;
     @apply un-my-4 un-mx-0;
     @apply un-italic;
-    background: var(--tide-color-background-secondary);
+    @apply un-bg-scnd;
     @apply un-border-s-(4 prim solid);
 }
 
@@ -235,12 +235,12 @@ th:first-child {
 }
 
 th {
-    background: var(--tide-color-table-background-head);
+    @apply un-bg-tb-bg-hd;
     @apply un-border-b-(1 tb-bd solid);
 }
 
 tr:nth-child(2n) {
-    background: var(--tide-color-table-background-even);
+    @apply un-bg-tb-bg-evn;
 }
 
 .table-wrapper {
