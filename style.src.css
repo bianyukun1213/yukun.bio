@@ -207,7 +207,7 @@ blockquote {
     @apply un-py-2 un-px-4;
     @apply un-my-4 un-mx-0;
     @apply un-italic;
-    @apply un-bg-scnd;
+    @apply un-bg-bg-scnd;
     @apply un-border-s-(4 prim solid);
 }
 
