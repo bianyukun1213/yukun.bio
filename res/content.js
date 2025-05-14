@@ -51,6 +51,7 @@ const content = {
             }
         ],
         name: '边宇琨',
+        aka: '',
         desc: '2000 年 12 月 13 日，程序员',
         markdown:
             `
@@ -162,6 +163,7 @@ const content = {
             }
         ],
         name: 'Bian Yukun',
+        aka: '',
         desc: 'December 13, 2000, programmer',
         markdown:
             `## Hello!
@@ -273,7 +275,8 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
             }
         ],
         name: 'Биан Юкун',
-        desc: 'также известен как Юра Биан, 13 декабря 2000 г., программист',
+        aka: 'он же Юра Биан',
+        desc: '13 декабря 2000 г., программист',
         markdown:
             `> Я только начал изучать русский язык и в настоящее время не могу писать предложения. Эта страница переведена с английского с помощью Google Translate. Я извиняюсь, если есть какие-либо ошибки или заблуждения, вызванные переводом.
 

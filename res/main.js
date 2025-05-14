@@ -50,6 +50,14 @@ function updateInterface(langKey) {
     document.documentElement.setAttribute('lang', langKey);
     document.documentElement.setAttribute('dir', langContent.dir);
     document.getElementById('name').textContent = document.title = langContent.name;
+    const akaElement = document.getElementById('aka');
+    if (langContent.aka) {
+        akaElement.textContent = langContent.aka;
+        akaElement.style.display = 'block';
+    } else {
+        akaElement.textContent = langContent.aka;
+        akaElement.style.display = 'none';
+    }
     document.getElementById('desc').textContent = langContent.desc;
     const links = document.getElementById('links');
     links.innerHTML = '';

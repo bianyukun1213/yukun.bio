@@ -136,7 +136,8 @@ h1 {
     /* @apply un-text-prim; */
 }
 
-#name {
+#name,
+#akaa {
     font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif CJK SC', Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
 }
 
