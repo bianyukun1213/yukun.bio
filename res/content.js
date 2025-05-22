@@ -61,11 +61,11 @@ const content = {
 
 我在一家小型游戏工作室工作，做一些不定内容的编程工作，这些工作并不总是和游戏相关。本科毕业于黑龙江科技大学环境工程专业，因为爱好和一些人际关系加入了这个小型游戏工作室，所以我不是一名专业的程序员。
 
-我也不太清楚我制作这个网页是出于何种原因。也许是想认识更多朋友，世界各地的朋友。🤔 不过老实说我并不擅长和别人打交道。上学的时候我的英语成绩较身边人来讲还不错，不过我仍然无法熟练用英语表达。<a href="https://garden.yinhe.dev/" target="_blank">最近我开始学习俄语</a>，不知道能坚持多久，不过我想将来每年都能去俄罗斯旅游，至少远东地区离我并不是很远，花销适中。海参崴给我留下了很好的印象，我想我在那儿还交上了朋友。
+我也不太清楚我制作这个网页是出于何种原因。也许是想认识更多朋友，世界各地的朋友。🤔 不过老实说我并不擅长和别人打交道。上学的时候我的英语成绩较身边人来讲还不错，不过我仍然无法熟练用英语表达。<a href="https://garden.yinhe.dev/" target="_blank">最近我开始学习俄语</a>，不知道能坚持多久，不过我想将来每年都能去俄罗斯旅游，至少远东地区离我并不是很远，花销适中。目前我去过<a href="https://his2nd.life/zh-CN/posts/a14d0940.html" target="_blank">符拉迪沃斯托克（海参崴）</a>和<a href="https://his2nd.life/zh-CN/posts/a14d0940.html" target="_blank">哈巴罗夫斯克（伯力）</a>。在这两次旅途中，俄罗斯的人们对我非常友好，而且我还交到了朋友，我想我以后也会去这两个城市更多次。如果有机会的话，今年 10 月我想去布拉戈维申斯克（海兰泡）。
 
 <p>
-<img tabindex="0" src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF0981.JPG" alt="一片蓝色的海洋，波浪拍打着岩石，溅起白色的水花。天空晴朗，有几朵白云。" data-width="1919" data-height="1080">
-<img tabindex="0" src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF1020.JPG" alt="一张海边的照片，前景有一个红色的标志牌，中景是平静的海面，背景是一座被夕阳照亮的悬崖。" data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket.hollisdevhub.com/blog/posts/6fca3b45/imgs/0507/DSCF0279.webp" alt="一座白色的教堂，顶部有五个金色的圆顶和十字架。教堂左侧有茂密的松树，背景是蓝天白云。教堂前方有围栏和车辆。" data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket.hollisdevhub.com/blog/posts/6fca3b45/imgs/0511/DSCF0743.webp" alt="夜晚的城市桥梁灯火辉煌，桥上有车辆行驶留下的光轨。桥梁结构为斜拉索设计，塔柱高耸。远处可见城市的灯光和山脉轮廓。" data-width="1919" data-height="1080">
 </p>
 
 ## 教育经历与职业
@@ -172,11 +172,11 @@ My name is Bian Yukun (边宇琨), or in some places, Hollis. I was born in Harb
 
 I work as a programmer in a small game studio, doing some random jobs which are not necessarily concerned to video games. I was graduated from Heilongjiang University of Science and Technology with a bachelor’s degree in environmental engineering. I joined this small game studio because of hobby and personal connections. So, I am not a professional programmer.
 
-Actually I don’t know out of what I made this web page. Maybe because I want to make more friends, friends from all over the world. 🤔 But honestly I’m not good at dealing with others. Back in the school my English grade was better compared with grades of people around me. But still I find myself not able to express in English fluently. <a href="https://garden.yinhe.dev/" target="_blank">Recently I started to learn Russian</a> and I have no idea how long I’m gonna persevere. However, I wish I have opportunities to travel to Russia once or more per year in the upcoming years. At least, the Far East region is not far from me and the travel cost will be moderate. Vladivostok had left me a good impression. I think I even made some friends there.
+Actually I don’t know out of what I made this web page. Maybe because I want to make more friends, friends from all over the world. 🤔 But honestly I’m not good at dealing with others. Back in the school my English grade was better compared with grades of people around me. But still I find myself not able to express in English fluently. <a href="https://garden.yinhe.dev/" target="_blank">Recently I started to learn Russian</a> and I have no idea how long I’m gonna persevere. However, I wish I have opportunities to travel to Russia once or more per year in the upcoming years. At least, the Far East region is not far from me and the travel cost will be moderate. I have been to <a href="https://his2nd.life/en/posts/a14d0940.html" target="_blank">Vladivostok</a> and <a href="https://his2nd.life/zh-CN/posts/a14d0940.html" target="_blank">Khabarovsk</a>. During the two trips Russian people treated me well. Some of them even made friends with me, so I think I will visit the two cities several times in the future. If there is an opportunity, I want to travel to Blagoveshchensk this October.
 
 <p>
-<img tabindex="0" src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF0981.JPG" alt="A blue ocean with waves hitting the rocks and splashing white water. The sky is clear with a few white clouds." data-width="1919" data-height="1080">
-<img tabindex="0" src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF1020.JPG" alt="A photo of a seaside with a red sign in the foreground, a calm sea in the middle ground, and a cliff illuminated by the setting sun in the background." data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket.hollisdevhub.com/blog/posts/6fca3b45/imgs/0507/DSCF0279.webp" alt="A white church with five golden domes and a cross on top. There are dense pine trees on the left side of the church, and the background is blue sky and white clouds. There are fences and vehicles in front of the church." data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket.hollisdevhub.com/blog/posts/6fca3b45/imgs/0511/DSCF0743.webp" alt="The city bridge is brightly lit at night, and there are light tracks left by vehicles on the bridge. The bridge structure is a cable-stayed design with tall towers. The city lights and mountain outlines can be seen in the distance." data-width="1919" data-height="1080">
 </p>
 
 ## Education and occupation
@@ -286,11 +286,11 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
 
 Я работаю программистом в небольшой игровой студии, выполняя случайные задания, которые не обязательно связаны с видеоиграми. Я окончил Хэйлунцзянский университет науки и технологий со степенью бакалавра в области инженерии окружающей среды. Я присоединился к этой небольшой игровой студии из-за хобби и личных связей. Так что я не профессиональный программист.
 
-На самом деле я не знаю, из чего я сделал эту веб-страницу. Может быть, потому что я хочу завести больше друзей, друзей со всего мира. 🤔 Но, честно говоря, я не очень хорошо общаюсь с другими. В школе мои оценки по английскому были лучше, чем оценки людей вокруг меня. Но я все еще не могу свободно изъясняться на английском. <a href="https://garden.yinhe.dev/" target="_blank">Недавно я начал изучать русский язык</a> и понятия не имею, как долго я буду упорствовать. Однако я хотел бы иметь возможность ездить в Россию один или несколько раз в год в ближайшие годы. По крайней мере, Дальний Восток находится недалеко от меня, и стоимость поездки будет умеренной. Владивосток оставил у меня хорошее впечатление. Я думаю, что я даже завел там несколько друзей.
+На самом деле я не знаю, из чего я сделал эту веб-страницу. Может быть, потому что я хочу завести больше друзей, друзей со всего мира. 🤔 Но, честно говоря, я не очень хорошо общаюсь с другими. В школе мои оценки по английскому были лучше, чем у людей вокруг меня. Но я все еще не могу свободно изъясняться на английском. <a href="https://garden.yinhe.dev/" target="_blank">Недавно я начал изучать русский язык</a> и понятия не имею, как долго я буду упорствовать. Однако я хотел бы иметь возможность ездить в Россию один или несколько раз в год в ближайшие годы. По крайней мере, Дальний Восток находится недалеко от меня, и стоимость поездки будет умеренной. Я был во <a href="https://his2nd.life/en/posts/a14d0940.html" target="_blank">Владивостоке</a> и <a href="https://his2nd.life/zh-CN/posts/a14d0940.html" target="_blank">Хабаровске</a>. Во время обеих поездок русские люди относились ко мне хорошо. Некоторые из них даже подружились со мной, так что я думаю, что я посещу эти два города несколько раз в будущем. Если будет возможность, я хочу поехать в Благовещенск в октябре этого года.
 
 <p>
-<img tabindex="0" src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF0981.JPG" alt="Голубой океан с волнами, разбивающимися о скалы, и плещущейся белой водой. Небо ясное, с несколькими белыми облаками." data-width="1919" data-height="1080">
-<img tabindex="0" src="https://bucket.hollisdevhub.com/yukun.bio/content/DSCF1020.JPG" alt="Фотография побережья с красным знаком на переднем плане, спокойным морем на среднем плане и скалой, освещенной заходящим солнцем, на заднем плане." data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket.hollisdevhub.com/blog/posts/6fca3b45/imgs/0507/DSCF0279.webp" alt="Белая церковь с пятью золотыми куполами и крестом наверху. С левой стороны церкви растут густые сосны, а фоном служит голубое небо и белые облака. Перед церковью стоят заборы и машины." data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket.hollisdevhub.com/blog/posts/6fca3b45/imgs/0511/DSCF0743.webp" alt="Городской мост ярко освещен ночью, и на мосту видны световые следы от транспортных средств. Конструкция моста представляет собой вантовую конструкцию с высокими башнями. Вдалеке видны огни города и очертания гор." data-width="1919" data-height="1080">
 </p>
 
 ## Образование и профессия
