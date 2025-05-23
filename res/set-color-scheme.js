@@ -4,17 +4,17 @@ if (currentColorScheme !== 'system' && currentColorScheme !== 'light' && current
 const setColorScheme = function (scheme) {
     switch (scheme) {
         case 'system':
-            document.documentElement.removeAttribute('data-tide-color-scheme');
+            delete document.documentElement.dataset.colorScheme;
             currentColorScheme = 'system';
             localStorage.setItem('colorScheme', 'system');
             break;
         case 'light':
-            document.documentElement.setAttribute('data-tide-color-scheme', 'light');
+            document.documentElement.dataset.colorScheme =  'light';
             currentColorScheme = 'light';
             localStorage.setItem('colorScheme', 'light');
             break;
         case 'dark':
-            document.documentElement.setAttribute('data-tide-color-scheme', 'dark');
+            document.documentElement.dataset.colorScheme =  'dark';
             currentColorScheme = 'dark';
             localStorage.setItem('colorScheme', 'dark');
             break;
