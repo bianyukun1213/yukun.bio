@@ -120,10 +120,10 @@ body {
 
 [tabindex]:not([tabindex="-1"]):focus,
 a:focus,
-.icon-wrapper:has(a:focus),
 button:focus,
 input:focus,
-select:focus:focus,
+select:focus,
+pre:focus,
 textarea:focus,
 summary:focus {
     @apply un-outline-2 un-outline-offset-2 un-outline-fcs-ol! un-outline-solid;

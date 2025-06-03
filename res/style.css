@@ -205,10 +205,10 @@ body {
 
 [tabindex]:not([tabindex="-1"]):focus,
 a:focus,
-.icon-wrapper:has(a:focus),
 button:focus,
 input:focus,
-select:focus:focus,
+select:focus,
+pre:focus,
 textarea:focus,
 summary:focus {syntax:"<percentage>";inherits:false;initial-value:100%;outline-style:var(--un-outline-style);outline-width:2px;outline-color:color-mix(in oklab, var(--colors-fcs-ol) var(--un-outline-color-opacity), transparent) !important;outline-offset:2px;--un-outline-style:solid;outline-style:solid;
 }
