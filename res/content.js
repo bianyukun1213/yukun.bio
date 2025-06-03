@@ -40,7 +40,7 @@ const content = {
                 href: 'https://www.instagram.com/yukun_again/',
             },
             {
-                title: 'VKontakte',
+                title: 'VK',
                 icon: 'simple-icons:vk',
                 href: 'https://vk.com/heyhollis'
             },
@@ -152,7 +152,7 @@ const content = {
                 href: 'https://www.instagram.com/yukun_again/',
             },
             {
-                title: 'VKontakte',
+                title: 'VK',
                 icon: 'simple-icons:vk',
                 href: 'https://vk.com/heyhollis'
             },
@@ -264,7 +264,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
                 href: 'https://www.instagram.com/yukun_again/',
             },
             {
-                title: 'ВКонтакте',
+                title: 'VK',
                 icon: 'simple-icons:vk',
                 href: 'https://vk.com/heyhollis'
             },
