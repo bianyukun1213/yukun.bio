@@ -108,7 +108,7 @@ function updateInterface(langKey) {
     }
     initPswp = function (e) {
         if (e.target.className.includes('img-error')) return;
-        if (e.type === 'click' || e.type === 'keydown' && e.key === 'Enter') {
+        if (e.type === 'click' || e.type === 'keydown' && (e.code === 'Enter' || e.code === 'Space')) {
             e.preventDefault();
             const psOptions = {
                 dataSource: langContent.profiles
@@ -133,7 +133,7 @@ function updateInterface(langKey) {
             img.style.aspectRatio = img.getAttribute('data-width') / img.getAttribute('data-height');
             const initPswpRendered = function (e) {
                 if (e.target.className.includes('img-error')) return;
-                if (e.type === 'click' || e.type === 'keydown' && e.key === 'Enter') {
+                if (e.type === 'click' || e.type === 'keydown' && (e.code === 'Enter' || e.code === 'Space')) {
                     e.preventDefault();
                     const imgIndex = renderedImgs.indexOf(e.target);
                     if (imgIndex !== -1) {
