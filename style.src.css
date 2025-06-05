@@ -133,8 +133,7 @@ h1 {
     /* @apply un-text-prim; */
 }
 
-#name,
-#akaa {
+#name {
     font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif CJK SC', Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
 }
 
@@ -279,7 +278,8 @@ summary {
 .collapse-ctrl:not(a),
 .tag-common.tabs ul.nav-tabs li.tab,
 .tabs-comment ul.nav-tabs li.tab {
-    font-family: var(--tide-font-global);
+    /* font-family: var(--tide-font-global); */
+    @apply un-font-sans!;
 }
 
 /* 参考：https://github.com/YunYouJun/hexo-tag-common/blob/main/css/index.css */
