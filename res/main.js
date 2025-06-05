@@ -29,7 +29,58 @@ function setGetMoreContact(langKey) {
     }
 }
 
-function variousFix() {
+// 参考 https://github.com/YunYouJun/hexo-tag-common/blob/main/js/index.js
+// 额外添加 tabindex、role 与按键监听。
+function registerTabsTag() {
+    // Binding `nav-tabs` & `tab-content` by real time permalink changing.
+    document.querySelectorAll('.tabs ul.nav-tabs .tab').forEach((element) => {
+        const tabClick = (event) => {
+            // Prevent selected tab to select again.
+            if (element.classList.contains('active')) return;
+            event.preventDefault();
+            // Add & Remove active class on `nav-tabs` & `tab-content`.
+            [...element.parentNode.children].forEach((target) => {
+                target.classList.toggle('active', target === element);
+                if (target.classList.contains('active'))
+                    target.removeAttribute('tabindex');
+                else
+                    target.setAttribute('tabindex', '0');
+            });
+            // https://stackoverflow.com/questions/20306204/using-queryselector-with-ids-that-are-numbers
+            const tActive = document.getElementById(
+                element.querySelector('a').dataset.target
+            );
+            [...tActive.parentNode.children].forEach((target) => {
+                target.classList.toggle('active', target === tActive);
+                if (target.classList.contains('active'))
+                    target.removeAttribute('tabindex');
+                else
+                    target.setAttribute('tabindex', '0');
+            });
+            // Trigger event
+            tActive.dispatchEvent(
+                new Event('tabs:click', {
+                    bubbles: true,
+                })
+            );
+        };
+        element.role = 'button';
+        if (element.classList.contains('active'))
+            element.removeAttribute('tabindex');
+        else
+            element.setAttribute('tabindex', '0');
+        element.addEventListener('click', (e) => {
+            tabClick(e);
+        });
+        element.addEventListener('keydown', (e) => {
+            if (e.code === 'Enter' || e.code === 'Space')
+                tabClick(e);
+        });
+    });
+    window.dispatchEvent(new Event('tabs:register'));
+}
+
+function fixNetEaseMusic() {
     // 修复移动端网易云音乐外链。
     if (!!navigator.userAgent.match(
         /(phone|pad|pod|Mobile|iPhone|iPad|iPod|ios|Android|Windows Phone|Symbian|BlackBerry|WebOS|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG)/i
@@ -154,7 +205,8 @@ function updateInterface(langKey) {
         });
     }
     setGetMoreContact(langKey);
-    variousFix();
+    registerTabsTag();
+    fixNetEaseMusic();
 }
 
 let source;
