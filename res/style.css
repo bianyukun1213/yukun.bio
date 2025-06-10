@@ -277,6 +277,9 @@ td,
 th {padding-block:calc(var(--spacing) * 2);padding-inline:calc(var(--spacing) * 4);syntax:"<percentage>";inherits:false;initial-value:100%;border-inline-start-width:1px;--un-border-inline-start-opacity:var(--un-border-opacity);border-inline-start-color:color-mix(in oklab, var(--colors-tb-bd) var(--un-border-inline-start-opacity), transparent);--un-border-style:solid;border-inline-start-style:solid;
 }
 
+th {--un-font-weight:var(--fontWeight-bold);font-weight:var(--fontWeight-bold);
+}
+
 td:first-child,
 th:first-child {--un-border-style:none;border-inline-start-style:none;
 }
@@ -330,6 +333,7 @@ summary {cursor:pointer;
 .tag-common.tabs ul.nav-tabs li.tab,
 .tabs-comment ul.nav-tabs li.tab {
     background-color: var(--tide-color-table-background-head);
+    color: var(--tide-color-text-primary);
     border: 1px var(--tide-color-table-border) solid;
     border-bottom: none;
     border-top-left-radius: 4px;
@@ -342,7 +346,8 @@ summary {cursor:pointer;
 .tag-common.tabs ul.nav-tabs li.tab a,
 .tabs-comment ul.nav-tabs li.tab a {
     display: block;
-    color: var(--tide-color-text-secondary);
+    /* color: var(--tide-color-text-secondary); */
+    color: var(--tide-color-text-primary);
     padding: 0.5em 1em;
     text-align: center;
     text-decoration: none;
