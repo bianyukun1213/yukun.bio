@@ -200,7 +200,6 @@ p img {
 }
 
 blockquote {
-    /* 切换至 tailwind 4 后，可能需要同步为 spacing 值 */
     @apply un-py-2 un-px-4;
     @apply un-my-4 un-mx-0;
     @apply un-italic;
