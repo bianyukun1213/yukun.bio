@@ -18,8 +18,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@iconify-json/fa6-brands": "^1.2.5",
-    "@iconify-json/simple-icons": "^1.2.42",
+    "@iconify-json/fa6-brands": "^1.2.6",
+    "@iconify-json/simple-icons": "^1.2.44",
     "@iconify-json/uil": "^1.2.3",
     "@unocss/preset-icons": "^66.3.3",
     "postcss": "^8.5.6",
