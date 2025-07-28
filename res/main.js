@@ -251,12 +251,12 @@ function domContentLoadedHandler(eDomContentLoaded) {
     document.getElementById('select-color-scheme').addEventListener('change', function (e) {
         setColorScheme(e.target.value);
     });
-    document.getElementById('content').remove('aria-hidden');
-    document.getElementById('utils').remove('aria-hidden');
+    document.getElementById('content').removeAttribute('aria-hidden');
+    document.getElementById('utils').removeAttribute('aria-hidden');
     document.getElementById('loading').style.display = 'none';
 }
 
-document.getElementById('loading').remove('aria-hidden');
+document.getElementById('loading').removeAttribute('aria-hidden');
 
 if (document.readyState !== 'loading')
     domContentLoadedHandler();
