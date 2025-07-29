@@ -184,14 +184,14 @@ hr {
 p:has(img) {
     @apply un-flex;
     @apply un-flex-wrap;
-    @apply un-justify-around;
+    @apply un-justify-evenly;
     @apply un-gap-4;
 }
 
 p img {
     @apply un-block;
-    @apply un-min-w-48;
-    @apply un-max-w-9/20;
+    @apply un-min-w-64;
+    @apply un-max-w-2/5;
 }
 
 #profile,

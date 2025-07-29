@@ -52,7 +52,7 @@
 .un-grid{display:grid;}
 .un-grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr));}
 .un-size-full{width:100%;height:100%;}
-.un-max-w-64{max-width:calc(var(--spacing) * 64);}
+.un-max-w-72{max-width:calc(var(--spacing) * 72);}
 .un-max-w-full{max-width:100%;}
 .un-min-h-screen{min-height:100vh;}
 .un-min-w-48{min-width:calc(var(--spacing) * 48);}
@@ -275,10 +275,10 @@ hr {margin-block:calc(var(--spacing) * 4);syntax:"<percentage>";inherits:false;i
 
 @supports (color: color-mix(in lab, red, red)){hr{border-color:color-mix(in oklab, var(--colors-txt-dmsh) var(--un-border-opacity), transparent);}}
 
-p:has(img) {display:flex;flex-wrap:wrap;justify-content:space-around;gap:calc(var(--spacing) * 4);
+p:has(img) {display:flex;flex-wrap:wrap;justify-content:space-evenly;gap:calc(var(--spacing) * 4);
 }
 
-p img {display:block;min-width:calc(var(--spacing) * 48);max-width:45%;
+p img {display:block;min-width:calc(var(--spacing) * 64);max-width:40%;
 }
 
 #profile,
