@@ -190,8 +190,7 @@ p:has(img) {
 
 p img {
     @apply un-block;
-    @apply un-min-w-64;
-    @apply un-max-w-2/5;
+    @apply un-w-4/5 xl:un-w-2/5;
 }
 
 #profile,
