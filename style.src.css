@@ -190,7 +190,7 @@ p:has(img) {
 
 p img {
     @apply un-block;
-    @apply un-w-4/5 xl:un-w-2/5;
+    @apply un-w-4/5 md:un-w-2/5 xl:un-w-2/5;
 }
 
 #profile,

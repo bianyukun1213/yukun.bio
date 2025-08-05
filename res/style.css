@@ -82,6 +82,9 @@
 .un-bg-bg-prim{background-color:color-mix(in oklab, var(--colors-bg-prim) var(--un-bg-opacity), transparent);}
 .un-bg-bg-scnd{background-color:color-mix(in oklab, var(--colors-bg-scnd) var(--un-bg-opacity), transparent);}
 }
+@media (min-width: 48rem){
+.md\:un-max-w-2\/5{max-width:40%;}
+}
 @media (min-width: 80rem){
 .xl\:un-ma{margin:auto;}
 .xl\:un-me-32{margin-inline-end:calc(var(--spacing) * 32);}
@@ -281,6 +284,8 @@ p:has(img) {display:flex;flex-wrap:wrap;justify-content:space-evenly;gap:calc(va
 
 p img {display:block;width:80%;
 }
+
+@media (min-width: 48rem){p img{width:40%;}}
 
 @media (min-width: 80rem){p img{width:40%;}}
 
