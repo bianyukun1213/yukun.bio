@@ -198,6 +198,10 @@ p img {
     @apply un-cursor-zoom-in;
 }
 
+.giscus, .giscus-frame {
+    min-height: 120px !important;
+}
+
 blockquote {
     @apply un-py-2 un-px-4;
     @apply un-my-4 un-mx-0;
