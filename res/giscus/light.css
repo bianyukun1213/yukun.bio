@@ -98,6 +98,6 @@ main .gsc-loading-image {
   background-image: url("https://github.githubassets.com/images/mona-loading-default.gif");
 }
 
-gsc-comments {
+.gsc-comments {
     display: none;
 }
