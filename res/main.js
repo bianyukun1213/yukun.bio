@@ -92,9 +92,46 @@ function fixNetEaseMusic() {
     }
 }
 
+function getCurrentLang() {
+    let currentLang;
+    const url = new URL(window.location.href);
+    const langs = [url.searchParams.get('lang'), localStorage.getItem('lang'), ...navigator.languages];
+    source = url.searchParams.get('s') ?? '';
+    for (const lang of langs) {
+        if (!lang) continue;
+        if (lang in content) {
+            currentLang = lang;
+            break;
+        } else if (lang.startsWith('zh')) {
+            currentLang = 'zh-CN';
+            break;
+        }
+    }
+    if (!currentLang)
+        currentLang = 'en';
+    let newUrl = url.origin + url.pathname;
+    url.searchParams.delete('lang');
+    let qs = url.searchParams.toString();
+    if (qs) newUrl += '?' + qs;
+    window.history.replaceState(null, null, newUrl);
+    return currentLang;
+}
+
 let hideImgLoading;
 let showImgError;
 let initPswp;
+
+function setGiscusLang(lang) {
+    const iframe = document.querySelector('iframe.giscus-frame');
+    if (!iframe) return;
+    iframe.contentWindow.postMessage({
+        giscus: {
+            setConfig: {
+                lang: lang
+            }
+        }
+    }, 'https://giscus.app');
+}
 
 function updateInterface(langKey) {
     const langContent = content[langKey];
@@ -124,6 +161,7 @@ function updateInterface(langKey) {
         iconWrapper.append(newLink);
         links.append(iconWrapper);
     }
+    setGiscusLang(langKey);
     document.querySelector('label[for="select-color-scheme"]').textContent = langContent.colorScheme.label;
     document.querySelectorAll('#select-color-scheme option').forEach(el => {
         el.textContent = langContent.colorScheme[el.value];
@@ -212,27 +250,7 @@ function updateInterface(langKey) {
 let source;
 
 function domContentLoadedHandler(eDomContentLoaded) {
-    let currentLang;
-    const url = new URL(window.location.href);
-    const langs = [url.searchParams.get('lang'), localStorage.getItem('lang'), ...navigator.languages];
-    source = url.searchParams.get('s') ?? '';
-    for (const lang of langs) {
-        if (!lang) continue;
-        if (lang in content) {
-            currentLang = lang;
-            break;
-        } else if (lang.startsWith('zh')) {
-            currentLang = 'zh-CN';
-            break;
-        }
-    }
-    if (!currentLang)
-        currentLang = 'en';
-    let newUrl = url.origin + url.pathname;
-    url.searchParams.delete('lang');
-    let qs = url.searchParams.toString();
-    if (qs) newUrl += '?' + qs;
-    window.history.replaceState(null, null, newUrl);
+    const currentLang = getCurrentLang();
     const langSelect = document.getElementById('select-lang');
     for (const key of Object.keys(content)) {
         let option = document.createElement('option');
@@ -262,3 +280,11 @@ if (document.readyState !== 'loading')
     domContentLoadedHandler();
 else
     document.addEventListener('DOMContentLoaded', domContentLoadedHandler);
+
+setInterval(() => {
+    const current = document.activeElement;
+    if (current.classList.contains('giscus-frame'))
+        current.classList.add('giscus-frame-focus');
+    else
+        document.getElementsByClassName('giscus-frame')[0]?.classList.remove('giscus-frame-focus');
+}, 200);
