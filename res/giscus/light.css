@@ -95,7 +95,8 @@ main .pagination-loader-container {
 }
 
 main .gsc-loading-image {
-  background-image: url("https://github.githubassets.com/images/mona-loading-default.gif");
+  /* background-image: url("https://github.githubassets.com/images/mona-loading-default.gif"); */
+  display: none;
 }
 
 .gsc-comments {

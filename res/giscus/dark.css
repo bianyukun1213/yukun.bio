@@ -95,9 +95,10 @@ main .pagination-loader-container {
 }
 
 main .gsc-loading-image {
-  background-image: url("https://github.githubassets.com/images/mona-loading-dark.gif");
+  /* background-image: url("https://github.githubassets.com/images/mona-loading-dark.gif"); */
+  display: none;
 }
 
 .gsc-comments {
-    display: none;
+  display: none;
 }
