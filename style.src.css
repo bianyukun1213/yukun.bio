@@ -276,7 +276,13 @@ summary {
 
 @media (forced-colors: active) {
     #links .icon {
-        color: CanvasText;
+        background-color: CanvasText;
+    }
+
+    .tag-common.tabs ul.nav-tabs li.tab.active,
+    .tabs-comment ul.nav-tabs li.tab.active {
+        outline: var(--tide-focus-outline);
+        outline-offset: var(--tide-focus-outline-offset);
     }
 }
 
