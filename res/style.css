@@ -358,6 +358,11 @@ summary {cursor:pointer;
 #turnstile-container {margin-top:calc(var(--spacing) * 4);
 }
 
+@media (forced-colors: active) {
+    #links .icon {syntax:"<percentage>";inherits:false;initial-value:100%;color:color-mix(in oklab, CanvasText var(--un-text-opacity), transparent);
+    }
+}
+
 /* 以下为插件修复。 */
 
 .alertbox,

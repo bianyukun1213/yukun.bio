@@ -274,6 +274,12 @@ summary {
     @apply un-mt-4;
 }
 
+@media (forced-colors: active) {
+    #links .icon {
+        @apply un-text-[CanvasText];
+    }
+}
+
 /* 以下为插件修复。 */
 
 .alertbox,
