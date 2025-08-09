@@ -204,6 +204,7 @@ blockquote {
     @apply un-italic;
     @apply un-bg-bg-scnd;
     @apply un-border-s-(4 prim solid);
+    @apply un-outline-1 un-outline-transparent un-outline-solid;
 }
 
 blockquote p {
