@@ -102,3 +102,7 @@ main .gsc-loading-image {
 .gsc-reactions-count, .gsc-comments {
     display: none;
 }
+
+div:has(.gsc-reactions-menu) {
+  margin-top: 0;
+}

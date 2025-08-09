@@ -103,6 +103,10 @@ main .gsc-loading-image {
     display: none;
 }
 
+div:has(.gsc-reactions-menu) {
+  margin-top: 0;
+}
+
 /*! Dark mode */
 @media (prefers-color-scheme: dark) {
   /*! MIT License
@@ -208,5 +212,9 @@ main .gsc-loading-image {
 
   .gsc-reactions-count, .gsc-comments {
     display: none;
+  }
+
+  div:has(.gsc-reactions-menu) {
+    margin-top: 0;
   }
 }
