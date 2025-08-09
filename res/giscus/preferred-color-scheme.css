@@ -104,7 +104,7 @@ main .gsc-loading-image {
 }
 
 div:has(.gsc-reactions-menu) {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 
 /*! Dark mode */
@@ -215,6 +215,6 @@ div:has(.gsc-reactions-menu) {
   }
 
   div:has(.gsc-reactions-menu) {
-    margin-top: 0;
+    margin-top: 0 !important;
   }
 }
