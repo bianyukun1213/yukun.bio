@@ -360,7 +360,13 @@ summary {cursor:pointer;
 
 @media (forced-colors: active) {
     #links .icon {
-        color: CanvasText;
+        background-color: CanvasText;
+    }
+
+    .tag-common.tabs ul.nav-tabs li.tab.active,
+    .tabs-comment ul.nav-tabs li.tab.active {
+        outline: var(--tide-focus-outline);
+        outline-offset: var(--tide-focus-outline-offset);
     }
 }
 
@@ -470,5 +476,6 @@ summary {cursor:pointer;
 .giscus-frame-focus {
     min-height: 12rem;
     outline: var(--tide-focus-outline);
+    outline-color: CanvasText;
     outline-offset: var(--tide-focus-outline-offset);
 }

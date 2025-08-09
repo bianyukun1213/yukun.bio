@@ -393,5 +393,6 @@ summary {
 .giscus-frame-focus {
     min-height: 12rem;
     outline: var(--tide-focus-outline);
+    outline-color: CanvasText;
     outline-offset: var(--tide-focus-outline-offset);
 }
