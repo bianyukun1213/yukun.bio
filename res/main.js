@@ -302,10 +302,13 @@ window.addEventListener('message', handleGiscusMessage);
 
 setInterval(() => {
     const current = document.activeElement;
-    if (current.classList.contains('giscus-frame'))
-        current.classList.add('giscus-frame-focus');
-    else
-        document.getElementsByClassName('giscus-frame')[0]?.classList.remove('giscus-frame-focus');
+    if (current.classList.contains('giscus-frame')) {
+        if (!current.classList.contains('giscus-frame-focus'))
+            current.classList.add('giscus-frame-focus');
+    }
+    else {
+        document.querySelector('.giscus-frame.giscus-frame-focus')?.classList.remove('giscus-frame-focus');
+    }
 }, 200);
 
 document.getElementById('loading').removeAttribute('aria-hidden');
