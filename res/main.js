@@ -303,6 +303,7 @@ window.addEventListener('message', handleGiscusMessage);
 document.documentElement.addEventListener('forcedcolorschange', function (e) {
     // 强制颜色（高对比度）下取消手动设置的颜色方案。
     if (e.detail.active) {
+        document.getElementById('select-color-scheme').value = 'system';
         setColorScheme('system');
     }
 });
