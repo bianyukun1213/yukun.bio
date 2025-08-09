@@ -359,7 +359,8 @@ summary {cursor:pointer;
 }
 
 @media (forced-colors: active) {
-    #links .icon {syntax:"<percentage>";inherits:false;initial-value:100%;color:color-mix(in oklab, CanvasText var(--un-text-opacity), transparent);
+    #links .icon {
+        color: CanvasText;
     }
 }
 

@@ -276,7 +276,7 @@ summary {
 
 @media (forced-colors: active) {
     #links .icon {
-        @apply un-text-[CanvasText];
+        color: CanvasText;
     }
 }
 
