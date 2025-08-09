@@ -99,6 +99,6 @@ main .gsc-loading-image {
   display: none;
 }
 
-.gsc-comments {
+.gsc-reactions-count, .gsc-comments {
   display: none;
 }

@@ -1,3 +1,13 @@
+let source;
+const url = new URL(window.location.href);
+const spLang = url.searchParams.get('lang');
+source = url.searchParams.get('s') ?? '';
+let newUrl = url.origin + url.pathname;
+url.searchParams.delete('lang');
+let qs = url.searchParams.toString();
+if (qs) newUrl += '?' + qs;
+window.history.replaceState(null, null, newUrl);
+
 function setGetMoreContact(langKey) {
     const siteKey = '0x4AAAAAAA-idJ17jPKiR-lf';
     const getMoreContact = document.getElementById('get-more-contact');
@@ -94,9 +104,7 @@ function fixNetEaseMusic() {
 
 function getCurrentLang() {
     let currentLang;
-    const url = new URL(window.location.href);
-    const langs = [url.searchParams.get('lang'), localStorage.getItem('lang'), ...navigator.languages];
-    source = url.searchParams.get('s') ?? '';
+    const langs = [spLang, localStorage.getItem('lang'), ...navigator.languages];
     for (const lang of langs) {
         if (!lang) continue;
         if (lang in content) {
@@ -109,11 +117,6 @@ function getCurrentLang() {
     }
     if (!currentLang)
         currentLang = 'en';
-    let newUrl = url.origin + url.pathname;
-    url.searchParams.delete('lang');
-    let qs = url.searchParams.toString();
-    if (qs) newUrl += '?' + qs;
-    window.history.replaceState(null, null, newUrl);
     return currentLang;
 }
 
@@ -247,8 +250,6 @@ function updateInterface(langKey) {
     fixNetEaseMusic();
 }
 
-let source;
-
 function domContentLoadedHandler(eDomContentLoaded) {
     const currentLang = getCurrentLang();
     const langSelect = document.getElementById('select-lang');
@@ -274,12 +275,30 @@ function domContentLoadedHandler(eDomContentLoaded) {
     document.getElementById('loading').style.display = 'none';
 }
 
-document.getElementById('loading').removeAttribute('aria-hidden');
+let giscusInited = false;
 
-if (document.readyState !== 'loading')
-    domContentLoadedHandler();
-else
-    document.addEventListener('DOMContentLoaded', domContentLoadedHandler);
+function handleGiscusMessage(event) {
+    if (event.origin !== 'https://giscus.app') return;
+    if (!(typeof event.data === 'object' && event.data.giscus)) return;
+    const giscusData = event.data.giscus;
+    // 首次 resize 认为是加载完成。
+    if (giscusData.resizeHeight && !giscusInited) {
+        document.getElementsByClassName('giscus-frame')[0].removeAttribute('scrolling');
+        let currentLang = 'en';
+        if (typeof getCurrentLang === 'function')
+            currentLang = getCurrentLang();
+        if (typeof setGiscusLang === 'function')
+            setGiscusLang(currentLang);
+        const currentColorScheme = document.documentElement.dataset.colorScheme;
+        if (currentColorScheme)
+            setGiscusColorScheme(currentColorScheme);
+        else
+            setGiscusColorScheme('preferred_color_scheme');
+        giscusInited = true;
+    }
+}
+
+window.addEventListener('message', handleGiscusMessage);
 
 setInterval(() => {
     const current = document.activeElement;
@@ -288,3 +307,10 @@ setInterval(() => {
     else
         document.getElementsByClassName('giscus-frame')[0]?.classList.remove('giscus-frame-focus');
 }, 200);
+
+document.getElementById('loading').removeAttribute('aria-hidden');
+
+if (document.readyState !== 'loading')
+    domContentLoadedHandler();
+else
+    document.addEventListener('DOMContentLoaded', domContentLoadedHandler);
