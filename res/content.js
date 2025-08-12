@@ -80,19 +80,29 @@ const content = {
 
 ## 兴趣爱好
 
-这段时间我不好说我有什么爱好了，有时觉得干什么都没劲。今年年初，我集中精力把<a href="https://his2nd.life/" target="_blank">我的博客</a>翻新了，专门编写了新的主题（网页模板），然后制作了这个网页。我不擅长和别人打交道，但有时候会自己写写博客：有时候是想记下来一些美好经历——因为我记性并不好，就像上学时候学的东西我已经忘光了；有时候只是单纯地写些废话整理一下情绪。所以我想，我可以说编程和写博客是我兴趣爱好的一部分。有时我憧憬互联网时代以前人们交流的方式——那时候距离和技术可能是个问题，人们交流更加认真，不像现在这样随意，还会满怀期待地等待对方的消息。出于这种憧憬，<a href="https://www.postcrossing.com/user/HeyHollis" target="_blank" rel="noopener">我注册了 Postcrossing</a>，有时会给陌生人发明信片，不过距离上次发送已经挺长时间了。我每天都听音乐，其实只是打发无聊，而且几乎只是在我喜欢的播放列表里随机播放。2024 年我听得最多的是 Pink Floyd 的几首歌，尤其喜欢 *The Division Bell* 专辑里的几首歌曲。最近我也听一些维克多·崔的歌，还有 DDT 的，有些是我的俄罗斯朋友推荐给我的。
+这段时间我不好说我有什么爱好了，有时觉得干什么都没劲。今年年初，我集中精力把<a href="https://his2nd.life/" target="_blank">我的博客</a>翻新了，专门编写了新的主题（网页模板），然后制作了这个网页。我不擅长和别人打交道，但有时候会自己写写博客：有时候是想记下来一些美好经历——因为我记性并不好，就像上学时候学的东西我已经忘光了；有时候只是单纯地写些废话整理一下情绪。所以我想，我可以说编程和写博客是我兴趣爱好的一部分。有时我憧憬互联网时代以前人们交流的方式——那时候距离和技术可能是个问题，人们交流更加认真，不像现在这样随意，还会满怀期待地等待对方的消息。出于这种憧憬，<a href="https://www.postcrossing.com/user/HeyHollis" target="_blank" rel="noopener">我注册了 Postcrossing</a>，有时会给陌生人发明信片，不过距离上次发送已经挺长时间了。我每天都听音乐，其实只是打发无聊，而且几乎只是在我喜欢的播放列表里随机播放。2024 年我听得最多的是 Pink Floyd 的几首歌，尤其喜欢 *The Division Bell* 专辑里的几首歌曲。最近我也听一些维克多·崔的歌，还有 DDT 的，有些是我的俄罗斯朋友推荐给我的。当然，也听其他音乐。
 
 <div class="tag-common tabs" id="music-playlist">
     <ul class="nav-tabs">
         <li class="tab active" role="button" aria-controls="music-playlist-1"><a data-target="music-playlist-1">网易云音乐</a></li>
         <li class="tab" role="button" aria-controls="music-playlist-2" tabindex="0"><a data-target="music-playlist-2">YouTube Music</a></li>
+        <li class="tab" role="button" aria-controls="music-playlist-3" tabindex="0"><a data-target="music-playlist-3">VK</a></li>
     </ul>
     <div class="tab-content">
         <div class="tab-pane active" id="music-playlist-1" role="tabpanel">
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&amp;id=26789016&amp;auto=0&amp;height=66"></iframe>
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=14125076915&auto=0&height=430"></iframe>
         </div>
         <div class="tab-pane" id="music-playlist-2" role="tabpanel">
-            <p><a target="_blank" rel="noopener" href="https://music.youtube.com/watch?v=pyk8tj95620&feature=shared">在 YouTube Music 上聆听“Take It Back”</a></p>
+            <p><a target="_blank" rel="noopener" href="https://music.youtube.com/playlist?list=PL4b8BRd_yTniDzppty-L6IjVnwKNQncfs&feature=shared">在 YouTube Music 上聆听“Горько”</a></p>
+        </div>
+        <div class="tab-pane" id="music-playlist-3" role="tabpanel">
+            <div id="vk_playlist_948945911_3"></div>
+            <script type="text/javascript" src="https://vk.com/js/api/openapi.js?173"></script>
+            <script type="text/javascript">
+              (function() {
+                VK.Widgets.Playlist("vk_playlist_948945911_3", 948945911, 3,'40814c002d51dfcf5f');
+              }());
+            </script>
         </div>
     </div>
 </div>
@@ -205,19 +215,29 @@ Actually I don’t know out of what I made this web page. Maybe because I want t
 ## Hobbies
 
 
-These days it has become harder for me to list my hobbies because I sometimes find myself lack of energy to do anything. At the beginning of 2025, I did the refinement of <a href="https://his2nd.life/" target="_blank">my personal blog</a>. I made a new theme (page template) specifically for my blog. And by the way I also made this page. I’m not good at dealing with others, instead occasionally I just write posts for myself. Sometimes to keep a memory of good experience — my memory’s not good, I had forgotten nearly every bit of knowledge I learned in school. Sometimes just to write something useless to organize my emotions. So I guess I could say programming and writing blog posts are part of my hobbies. At times I admire the way people communicate with each other before the Internet. Back then, distance and tech issue could be huge problems, so people were more serious, waiting for news from others with great anticipation, not as casual as we are these days. Out of this kind of admiration <a href="https://www.postcrossing.com/user/HeyHollis" target="_blank" rel="noopener">I registered Postcrossing</a>, sending postcards to strangers from time to time. But it has been a long time since last time. I also listen to music everyday, shuffle play my favorite playlist, just to make some noise to make myself less bored. I listened to some of Pink Floyd’s songs most in the year of 2024, especially certain songs from album *The Division Bell*. Lately I’ve been listening to some Victor Choi and DDT, some of which were recommended to me by a Russian friend.
+These days it has become harder for me to list my hobbies because I sometimes find myself lack of energy to do anything. At the beginning of 2025, I did the refinement of <a href="https://his2nd.life/" target="_blank">my personal blog</a>. I made a new theme (page template) specifically for my blog. And by the way I also made this page. I’m not good at dealing with others, instead occasionally I just write posts for myself. Sometimes to keep a memory of good experience — my memory’s not good, I had forgotten nearly every bit of knowledge I learned in school. Sometimes just to write something useless to organize my emotions. So I guess I could say programming and writing blog posts are part of my hobbies. At times I admire the way people communicate with each other before the Internet. Back then, distance and tech issue could be huge problems, so people were more serious, waiting for news from others with great anticipation, not as casual as we are these days. Out of this kind of admiration <a href="https://www.postcrossing.com/user/HeyHollis" target="_blank" rel="noopener">I registered Postcrossing</a>, sending postcards to strangers from time to time. But it has been a long time since last time. I also listen to music everyday, shuffle play my favorite playlist, just to make some noise to make myself less bored. I listened to some of Pink Floyd’s songs most in the year of 2024, especially certain songs from album *The Division Bell*. Lately I’ve been listening to some Victor Choi and DDT, some of which were recommended to me by a Russian friend. Of course, I also listen to other songs.
 
 <div class="tag-common tabs" id="music-playlist">
     <ul class="nav-tabs">
         <li class="tab active" role="button" aria-controls="music-playlist-1"><a data-target="music-playlist-1">YouTube Music</a></li>
-        <li class="tab" role="button" aria-controls="music-playlist-2" tabindex="0"><a data-target="music-playlist-2">NetEase Music</a></li>
+        <li class="tab" role="button" aria-controls="music-playlist-2" tabindex="0"><a data-target="music-playlist-2">VK</a></li>
+        <li class="tab" role="button" aria-controls="music-playlist-3" tabindex="0"><a data-target="music-playlist-3">NetEase Music</a></li>
     </ul>
     <div class="tab-content">
         <div class="tab-pane active" id="music-playlist-1" role="tabpanel">
-            <p><a target="_blank" rel="noopener" href="https://music.youtube.com/watch?v=pyk8tj95620&feature=shared">Listen to “Take It Back” on YouTube Music</a></p>
+            <p><a target="_blank" rel="noopener" href="https://music.youtube.com/playlist?list=PL4b8BRd_yTniDzppty-L6IjVnwKNQncfs&feature=shared">Listen to “Горько” on YouTube Music</a></p>
         </div>
         <div class="tab-pane" id="music-playlist-2" role="tabpanel">
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&amp;id=26789016&amp;auto=0&amp;height=66"></iframe>
+            <div id="vk_playlist_948945911_3"></div>
+            <script type="text/javascript" src="https://vk.com/js/api/openapi.js?173"></script>
+            <script type="text/javascript">
+              (function() {
+                VK.Widgets.Playlist("vk_playlist_948945911_3", 948945911, 3,'40814c002d51dfcf5f');
+              }());
+            </script>
+        </div>
+        <div class="tab-pane" id="music-playlist-3" role="tabpanel">
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=14125076915&auto=0&height=430"></iframe>
         </div>
     </div>
 </div>
@@ -331,19 +351,29 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
 
 ## Увлечения
 
-В последнее время мне стало сложнее перечислять свои увлечения, потому что иногда у меня нет ни на что сил. В начале 2025 года я доработал свой <a href="https://his2nd.life/" target="_blank">личный блог</a>. Специально для него я создал новую тему (шаблон страницы). Кстати, я также создал эту страницу. Я не очень хорошо общаюсь с другими, поэтому иногда пишу посты для себя. Иногда, чтобы сохранить воспоминания о хорошем опыте — память у меня плохая, я забыл почти всё, чему учился в школе. Иногда просто чтобы написать что-то бесполезное, чтобы упорядочить свои эмоции. Так что, пожалуй, программирование и написание постов для блога — часть моих увлечений. Иногда я восхищаюсь тем, как люди общаются друг с другом до появления интернета. Тогда расстояния и технические проблемы могли быть серьёзными проблемами, поэтому люди были серьёзнее, с большим нетерпением ждали новостей от других, а не так легкомысленно, как мы сейчас. Именно из-за такого восхищения <a href="https://www.postcrossing.com/user/HeyHollis" target="_blank" rel="noopener">я и зарегистрировался на Postcrossing</a>, чтобы время от времени отправлять открытки незнакомцам. Но с тех пор прошло много времени. Ещё я каждый день слушаю музыку, включаю любимый плейлист в случайном порядке, просто чтобы немного пошуметь и не скучать. В 2024 году я больше всего слушала некоторые песни Pink Floyd, особенно некоторые песни с альбома *The Division Bell*. В последнее время я слушаю Виктора Цоя и ДДТ, некоторые из которых мне порекомендовала русская подруга.
+В последнее время мне стало сложнее перечислять свои увлечения, потому что иногда у меня нет ни на что сил. В начале 2025 года я доработал свой <a href="https://his2nd.life/" target="_blank">личный блог</a>. Специально для него я создал новую тему (шаблон страницы). Кстати, я также создал эту страницу. Я не очень хорошо общаюсь с другими, поэтому иногда пишу посты для себя. Иногда, чтобы сохранить воспоминания о хорошем опыте — память у меня плохая, я забыл почти всё, чему учился в школе. Иногда просто чтобы написать что-то бесполезное, чтобы упорядочить свои эмоции. Так что, пожалуй, программирование и написание постов для блога — часть моих увлечений. Иногда я восхищаюсь тем, как люди общаются друг с другом до появления интернета. Тогда расстояния и технические проблемы могли быть серьёзными проблемами, поэтому люди были серьёзнее, с большим нетерпением ждали новостей от других, а не так легкомысленно, как мы сейчас. Именно из-за такого восхищения <a href="https://www.postcrossing.com/user/HeyHollis" target="_blank" rel="noopener">я и зарегистрировался на Postcrossing</a>, чтобы время от времени отправлять открытки незнакомцам. Но с тех пор прошло много времени. Ещё я каждый день слушаю музыку, включаю любимый плейлист в случайном порядке, просто чтобы немного пошуметь и не скучать. В 2024 году я больше всего слушала некоторые песни Pink Floyd, особенно некоторые песни с альбома *The Division Bell*. В последнее время я слушаю Виктора Цоя и ДДТ, некоторые из которых мне порекомендовала русская подруга. Конечно, я слушаю и другие песни.
 
 <div class="tag-common tabs" id="music-playlist">
     <ul class="nav-tabs">
-        <li class="tab active" role="button" aria-controls="music-playlist-1"><a data-target="music-playlist-1">YouTube Music</a></li>
-        <li class="tab" role="button" aria-controls="music-playlist-2" tabindex="0"><a data-target="music-playlist-2">NetEase Music</a></li>
+        <li class="tab active" role="button" aria-controls="music-playlist-1"><a data-target="music-playlist-1">VK</a></li>
+        <li class="tab" role="button" aria-controls="music-playlist-2" tabindex="0"><a data-target="music-playlist-2">YouTube Music</a></li>
+        <li class="tab" role="button" aria-controls="music-playlist-3" tabindex="0"><a data-target="music-playlist-3">NetEase Music</a></li>
     </ul>
     <div class="tab-content">
         <div class="tab-pane active" id="music-playlist-1" role="tabpanel">
-            <p><a target="_blank" rel="noopener" href="https://music.youtube.com/watch?v=pyk8tj95620&feature=shared">Слушайте «Take It Back» на YouTube Music</a></p>
+            <div id="vk_playlist_948945911_3"></div>
+            <script type="text/javascript" src="https://vk.com/js/api/openapi.js?173"></script>
+            <script type="text/javascript">
+              (function() {
+                VK.Widgets.Playlist("vk_playlist_948945911_3", 948945911, 3,'40814c002d51dfcf5f');
+              }());
+            </script>
         </div>
         <div class="tab-pane" id="music-playlist-2" role="tabpanel">
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&amp;id=26789016&amp;auto=0&amp;height=66"></iframe>
+            <p><a target="_blank" rel="noopener" href="https://music.youtube.com/playlist?list=PL4b8BRd_yTniDzppty-L6IjVnwKNQncfs&feature=shared">Слушайте «Горько» на YouTube Music</a></p>
+        </div>
+        <div class="tab-pane" id="music-playlist-3" role="tabpanel">
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=14125076915&auto=0&height=430"></iframe>
         </div>
     </div>
 </div>
