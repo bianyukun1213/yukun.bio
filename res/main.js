@@ -40,7 +40,7 @@ function setGetMoreContact(langKey) {
 }
 
 // 参考 https://github.com/YunYouJun/hexo-tag-common/blob/main/js/index.js
-// 额外添加 tabindex、role 与按键监听。
+// 额外添加 tabindex 与按键监听。
 function registerTabsTag() {
     // Binding `nav-tabs` & `tab-content` by real time permalink changing.
     document.querySelectorAll('.tabs ul.nav-tabs .tab').forEach((element) => {
@@ -74,7 +74,9 @@ function registerTabsTag() {
                 })
             );
         };
-        element.role = 'button';
+        const tabTargetId = element.querySelector('a').dataset.target;
+        // element.role = 'tab';
+        element.setAttribute('aria-controls', tabTargetId);
         if (element.classList.contains('active'))
             element.removeAttribute('tabindex');
         else
@@ -87,6 +89,10 @@ function registerTabsTag() {
                 tabClick(e);
         });
     });
+    // https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/tab_role#example
+    // 结构不兼容。
+    // [...document.getElementsByClassName('tabs')].forEach(e => e.role = 'tablist');
+    // [...document.getElementsByClassName('tab-pane')].forEach(e => e.role = 'tabpanel');
     window.dispatchEvent(new Event('tabs:register'));
 }
 
@@ -100,6 +106,28 @@ function fixNetEaseMusic() {
                 element.src = element.src.replace('music.163.com/', 'music.163.com/m/');
         });
     }
+}
+
+function fixVkMusic() {
+    document.querySelectorAll('[id^=vk_playlist_]').forEach((el) => {
+        const parent = el.parentElement;
+        let srcScript = el.nextElementSibling;
+        let loaderScript = srcScript.nextElementSibling;
+        const newLoaderScript = document.createElement('script');
+        newLoaderScript.type = loaderScript.type;
+        newLoaderScript.innerHTML = loaderScript.innerHTML;
+        const newSrcScript = document.createElement('script');
+        newSrcScript.type = srcScript.type;
+        newSrcScript.src = srcScript.src;
+        window['script_load_' + el.id] = () => {
+            parent.appendChild(newLoaderScript);
+        };
+        newSrcScript.setAttribute('onload', 'script_load_' + el.id + '()');
+        parent.removeChild(srcScript);
+        parent.removeChild(loaderScript);
+        srcScript = loaderScript = null;
+        parent.appendChild(newSrcScript);
+    });
 }
 
 function getCurrentLang() {
@@ -248,6 +276,7 @@ function updateInterface(langKey) {
     setGetMoreContact(langKey);
     registerTabsTag();
     fixNetEaseMusic();
+    fixVkMusic();
 }
 
 function domContentLoadedHandler(eDomContentLoaded) {
