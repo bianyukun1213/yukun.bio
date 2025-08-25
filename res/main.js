@@ -15,12 +15,12 @@ function setGetMoreContact(langKey) {
     const moreContactContainer = document.getElementById('more-contact-container');
     const fetchMoreContact = function (token) {
         fetch('https://service.yukun.bio/get-more-contact', { method: 'POST', body: JSON.stringify({ turnstileToken: token, source }) }).then(async function (response) {
-            if (!response.ok) {
-                console.error(`Unable to get more contact: Server returned status ${response.status} with data ${JSON.stringify(response.json())}.`);
+            const res = await response.json();
+            if (!response.ok && !res) {
+                console.error(`Unable to get more contact: Server returned status ${response.status}.`);
                 moreContactContainer.innerHTML = `<p>${content[langKey].moreContactLoadingFailed}</p><p>${response.status}</p>`;
                 return;
             }
-            const res = await response.json();
             if (res.code !== 0) {
                 console.error(`Unable to get more contact: Server returned data ${JSON.stringify(res)}.`);
                 moreContactContainer.innerHTML = `<p>${content[langKey].moreContactLoadingFailed}</p><p>${res.msg}</p>`;
