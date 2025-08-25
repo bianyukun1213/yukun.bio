@@ -21,7 +21,7 @@
     const bucketMirrorHost = 'bucket-eo.hollisdevhub.com';
     const isMirror = window.location.host === mirrorHost ? true : false;
     const computedHost = isMirror ? mirrorHost : sourceHost;
-    const computedBucketHost = isMirror ? bucketHost : bucketMirrorHost;
+    const computedBucketHost = isMirror ? bucketMirrorHost : bucketHost;
     let currentColorScheme = localStorage.getItem('colorScheme');
     if (currentColorScheme !== 'system' && currentColorScheme !== 'light' && currentColorScheme !== 'dark')
       currentColorScheme = 'system';
