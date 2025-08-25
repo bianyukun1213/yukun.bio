@@ -108,7 +108,7 @@ const content = {
     </div>
 </div>
 
-我还是一名游戏玩家。Remedy Entertainment 的游戏总是带给我独特的体验。我还期待 Valve 的“半条命”系列推出新的续作。我对科幻作品也有兴趣。我想，我最喜欢的科幻电影要么是《星际穿越》，要么是《银翼杀手》系列了。我上一个读的长篇科幻小说是《海伯利安》四部曲。最近读了《路边野餐》，正在读《索拉里斯星》。
+我还是一名游戏玩家。Remedy Entertainment 的游戏总是带给我独特的体验。我还期待 Valve 的“半条命”系列推出新的续作。我对科幻作品也有兴趣。我想，我最喜欢的科幻电影要么是《星际穿越》，要么是《银翼杀手》系列了。我上一个读的长篇科幻小说是《海伯利安》四部曲。最近读了《路边野餐》和《索拉里斯星》。
 
 ## 联系方式
 
@@ -246,7 +246,7 @@ These days it has become harder for me to list my hobbies because I sometimes fi
     </div>
 </div>
 
-Also, I’m a gamer. Games from Remedy Entertainment always bring me special experience. As well, I’m looking forward to a new sequel to Valve’s *Half-Life* franchise. I’m interested in science fiction. I think my favorite science fiction movie would be either *Interstellar* or *Blade Runner* (and *Blade Runner 2049*). And the last science fiction tetralogy I finished reading was the *Hyperion* tetralogy. I recently read *Roadside Picnic* and am currently reading *Solaris*.
+Also, I’m a gamer. Games from Remedy Entertainment always bring me special experience. As well, I’m looking forward to a new sequel to Valve’s *Half-Life* franchise. I’m interested in science fiction. I think my favorite science fiction movie would be either *Interstellar* or *Blade Runner* (and *Blade Runner 2049*). And the last science fiction tetralogy I finished reading was the *Hyperion* tetralogy. I recently read *Roadside Picnic* and *Solaris*.
 
 ## Contact
 
@@ -385,7 +385,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
     </div>
 </div>
 
-К тому же, я геймер. Игры от Remedy Entertainment всегда дарят мне особенный опыт. Кроме того, я с нетерпением жду нового сиквела франшизы *Half-Life* от Valve. Мне интересна научная фантастика. Пожалуй, мой любимый научно-фантастический фильм — это *Интерстеллар* или *Бегущий по лезвию* (и *Бегущий по лезвию 2049*). А последняя научно-фантастическая тетралогия, которую я дочитал, — это *Гиперион*. Недавно я прочитал *Пикник на обочине*, а сейчас читаю *Солярис*.
+К тому же, я геймер. Игры от Remedy Entertainment всегда дарят мне особенный опыт. Кроме того, я с нетерпением жду нового сиквела франшизы *Half-Life* от Valve. Мне интересна научная фантастика. Пожалуй, мой любимый научно-фантастический фильм — это *Интерстеллар* или *Бегущий по лезвию* (и *Бегущий по лезвию 2049*). А последняя научно-фантастическая тетралогия, которую я дочитал, — это *Гиперион*. Недавно я прочитал *Пикник на обочине* и *Солярис*.
 
 ## Контакт
 
