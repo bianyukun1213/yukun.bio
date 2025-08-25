@@ -252,7 +252,7 @@ p {margin-block:calc(var(--spacing) * 4);
     font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif CJK SC', Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
 }
 
-:root[lang="zh-CN"] #rendered-content p {text-indent:2em;
+:root[lang="zh-CN"] #rendered-content :not(blockquote) p {text-indent:2em;
 }
 
 a:not(.icon) {syntax:"<percentage>";inherits:false;initial-value:100%;color:color-mix(in srgb, var(--colors-lk) var(--un-text-opacity), transparent);text-decoration-line:underline;syntax:"<percentage>";inherits:false;initial-value:100%;syntax:"<percentage>";inherits:false;initial-value:100%;

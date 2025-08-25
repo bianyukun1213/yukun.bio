@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@iconify-json/fa6-brands": "^1.2.6",
-    "@iconify-json/simple-icons": "^1.2.47",
+    "@iconify-json/simple-icons": "^1.2.49",
     "@iconify-json/uil": "^1.2.3",
     "@unocss/preset-icons": "^66.4.2",
     "postcss": "^8.5.6",
