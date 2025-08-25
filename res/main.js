@@ -12,28 +12,46 @@ function setGetMoreContact(langKey) {
     const siteKey = '0x4AAAAAAA-idJ17jPKiR-lf';
     const getMoreContact = document.getElementById('get-more-contact');
     const turnstileContainer = document.getElementById('turnstile-container');
-    if (getMoreContact && turnstileContainer) {
+    const moreContactContainer = document.getElementById('more-contact-container');
+    const fetchMoreContact = function (token) {
+        fetch('https://service.yukun.bio/get-more-contact', { method: 'POST', body: JSON.stringify({ turnstileToken: token, source }) }).then(async function (response) {
+            if (!response.ok) {
+                console.error(`Unable to get more contact: Server returned status ${response.status} with data ${JSON.stringify(response.json())}.`);
+                moreContactContainer.innerHTML = content[langKey].moreContactLoadingFailed;
+                return;
+            }
+            const res = await response.json();
+            if (res.code !== 0) {
+                console.error(`Unable to get more contact: Server returned data ${JSON.stringify(response.json())}.`);
+                moreContactContainer.innerHTML = content[langKey].moreContactLoadingFailed;
+                return;
+            }
+            moreContactContainer.innerHTML = marked.parse(res.data[langKey]);
+        }).catch(function (error) {
+            throw console.error(`Unable to get more contact: Request failed with error ${error}.`);
+        });
+    };
+    if (getMoreContact && turnstileContainer && moreContactContainer) {
         let turnstileLoaded = false;
         getMoreContact.addEventListener('click', function () {
             if (turnstileLoaded) return;
-            turnstile.render(turnstileContainer, {
-                sitekey: siteKey,
-                language: langKey,
-                callback: function (token) {
-                    fetch('https://service.yukun.bio/get-more-contact', { method: 'POST', body: JSON.stringify({ turnstileToken: token, source }) }).then(async function (response) {
-                        if (!response.ok) console.error(`Unable to get more contact: Server returned status ${response.status} with data ${JSON.stringify(response.json())}.`);
-                        const moreContactContainer = document.getElementById('more-contact-container');
-                        if (!moreContactContainer) return;
-                        const res = await response.json();
-                        if (res.code !== 0) console.error(`Unable to get more contact: Server returned data ${JSON.stringify(response.json())}.`);
-                        moreContactContainer.innerHTML = marked.parse(res.data[langKey]);
+            if (isMirror) {
+                // turnstile.remove();
+                turnstileContainer.style.display = 'none';
+                moreContactContainer.innerHTML = content[langKey].moreContactLoading;
+                fetchMoreContact();
+            } else {
+                turnstile.render(turnstileContainer, {
+                    sitekey: siteKey,
+                    language: langKey,
+                    callback: function (token) {
                         turnstile.remove();
                         turnstileContainer.style.display = 'none';
-                    }).catch(function (error) {
-                        throw console.error(`Unable to get more contact: Request failed with error ${error}.`);
-                    });
-                }
-            });
+                        moreContactContainer.innerHTML = content[langKey].moreContactLoading;
+                        fetchMoreContact(token);
+                    }
+                });
+            }
             turnstileLoaded = true;
         });
     }
@@ -199,7 +217,8 @@ function updateInterface(langKey) {
     });
     document.querySelector('label[for="select-lang"]').textContent = langContent.langLabel;
     /** render markdown */
-    document.getElementById('rendered-content').innerHTML = marked.parse(langContent.markdown);
+    const markdownContent = isMirror ? langContent.mirrorNotice + langContent.markdown : langContent.markdown;
+    document.getElementById('rendered-content').innerHTML = marked.parse(markdownContent);
     const imgs = [...document.getElementsByTagName('img')];
     imgs.forEach(function (img) {
         img.className += ' img-loading';

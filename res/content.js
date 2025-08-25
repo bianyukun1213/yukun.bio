@@ -53,6 +53,7 @@ const content = {
         name: '边宇琨',
         aka: '',
         desc: '2000 年 12 月 13 日，程序员',
+        mirrorNotice: '> 您正在浏览该网站的镜像版本，部分功能可能无法正常工作。\n\n',
         markdown:
             `## 你好！
 
@@ -118,6 +119,8 @@ const content = {
 <div id="turnstile-container"></div>
 <div id="more-contact-container"></div>
 </details>`,
+        moreContactLoading: '加载中……',
+        moreContactLoadingFailed: '加载失败，请刷新重试。',
         photoSwipe: {
             closeTitle: '关闭',
             zoomTitle: '缩放',
@@ -187,6 +190,7 @@ const content = {
         name: 'Bian Yukun',
         aka: '',
         desc: 'December 13, 2000, programmer',
+        mirrorNotice: '> You are browsing a mirrored version of this website. Some features may not work properly.\n\n',
         markdown:
             `## Hello!
 
@@ -253,6 +257,8 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
 <div id="turnstile-container"></div>
 <div id="more-contact-container"></div>
 </details>`,
+        moreContactLoading: 'Loading…',
+        moreContactLoadingFailed: 'Loading failed, please refresh to retry.',
         photoSwipe: {
             closeTitle: 'Close',
             zoomTitle: 'Zoom',
@@ -322,6 +328,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
         name: 'Биан Юкун',
         aka: 'он же Юра Биан',
         desc: '13 декабря 2000 г., программист',
+        mirrorNotice: '> Вы просматриваете зеркальную версию этого сайта. Некоторые функции могут работать некорректно.\n\n',
         markdown:
             `> Я только начал изучать русский язык и в настоящее время не могу писать предложения. Эта страница переведена с английского с помощью Google Translate. Я извиняюсь, если есть какие-либо ошибки или заблуждения, вызванные переводом.
 
@@ -389,6 +396,8 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
 <div id="turnstile-container"></div>
 <div id="more-contact-container"></div>
 </details>`,
+        moreContactLoading: 'Загрузка…',
+        moreContactLoadingFailed: 'Загрузка не удалась, обновите страницу, чтобы повторить попытку.',
         photoSwipe: {
             closeTitle: 'Закрывать',
             zoomTitle: 'Увеличить',

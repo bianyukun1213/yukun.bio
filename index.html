@@ -14,7 +14,49 @@
   <link rel="stylesheet" href="./res/modern-normalize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.min.css" integrity="sha512-LFWtdAXHQuwUGH9cImO9blA3a3GfQNkpF2uRlhaOpSbDevNyK1rmAjs13mtpjvWyi+flP7zYWboqY+8Mkd42xA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="./res/style.css">
-  <script src="./res/set-color-scheme.js"></script>
+  <script>
+    const sourceHost = 'yukun.bio';
+    const mirrorHost = 'bio.hollisdevhub.com';
+    const isMirror = window.location.host === mirrorHost ? true : false;
+    const computedHost = isMirror ? mirrorHost : sourceHost;
+    let currentColorScheme = localStorage.getItem('colorScheme');
+    if (currentColorScheme !== 'system' && currentColorScheme !== 'light' && currentColorScheme !== 'dark')
+      currentColorScheme = 'system';
+    const setGiscusColorScheme = function(theme) {
+      const iframe = document.querySelector('iframe.giscus-frame');
+      if (!iframe) return;
+      iframe.contentWindow.postMessage({
+        giscus: {
+          setConfig: {
+            theme: `https://${computedHost}/res/giscus/${theme}.css`
+          }
+        }
+      }, 'https://giscus.app');
+    }
+    const setColorScheme = function(scheme) {
+      switch (scheme) {
+        case 'system':
+          delete document.documentElement.dataset.colorScheme;
+          currentColorScheme = 'system';
+          localStorage.setItem('colorScheme', 'system');
+          setGiscusColorScheme('preferred-color-scheme');
+          break;
+        case 'light':
+          document.documentElement.dataset.colorScheme = 'light';
+          currentColorScheme = 'light';
+          localStorage.setItem('colorScheme', 'light');
+          setGiscusColorScheme('light');
+          break;
+        case 'dark':
+          document.documentElement.dataset.colorScheme = 'dark';
+          currentColorScheme = 'dark';
+          localStorage.setItem('colorScheme', 'dark');
+          setGiscusColorScheme('dark');
+          break;
+      }
+    };
+    setColorScheme(currentColorScheme);
+  </script>
 </head>
 
 <body class="un-bg-bg-prim un-text-txt-prim un-text-base un-font-sans">
