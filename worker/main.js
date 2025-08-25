@@ -1,5 +1,14 @@
 export default {
   async fetch(request, env, ctx) {
+    if (request.method === "GET" && request.headers.get("cf-ipcountry") === "RU") {
+      const base = "https://bio.hollisdevhub.com";
+      const statusCode = 302;
+      const url = new URL(request.url);
+      const { pathname, search } = url;
+      const destinationURL = `${base}${pathname}${search}`;
+      return Response.redirect(destinationURL, statusCode);
+    }
+
     const origin = request.headers.get("Origin");
 
     // OPTIONS 预检
@@ -36,6 +45,7 @@ export default {
 function isAllowedOrigin(origin) {
   return [
     "https://yukun.bio",
+    "https://bio.hollisdevhub.com",
     "https://his2nd.life",
     "https://giscus.app"
   ].includes(origin);
