@@ -217,7 +217,7 @@ function updateInterface(langKey) {
     });
     document.querySelector('label[for="select-lang"]').textContent = langContent.langLabel;
     /** render markdown */
-    const markdownContent = isMirror ? langContent.mirrorNotice + langContent.markdown : langContent.markdown;
+    const markdownContent = isMirror ? langContent.mirrorNotice + langContent.markdown.replace(bucketHost, bucketMirrorHost) : langContent.markdown;
     document.getElementById('rendered-content').innerHTML = marked.parse(markdownContent);
     const imgs = [...document.getElementsByTagName('img')];
     imgs.forEach(function (img) {
@@ -269,7 +269,7 @@ function updateInterface(langKey) {
     const renderedImgs = [...document.querySelectorAll('#rendered-content img[data-width][data-height]')];
     if (renderedImgs.length > 0) {
         renderedImgs.forEach(function (img) {
-            img.src = img.src.replace(bucketHost, computedBucketHost);
+            // img.src = img.src.replace(bucketHost, computedBucketHost);
             img.style.aspectRatio = img.getAttribute('data-width') / img.getAttribute('data-height');
             const initPswpRendered = function (e) {
                 if (e.target.className.includes('img-error')) return;
