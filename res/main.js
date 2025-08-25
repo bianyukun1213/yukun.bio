@@ -239,7 +239,7 @@ function updateInterface(langKey) {
     profile.addEventListener('load', hideImgLoading);
     profile.addEventListener('error', showImgError);
     profile.style.aspectRatio = langContent.profiles[0].width / langContent.profiles[0].height;
-    profile.setAttribute('src', langContent.profiles[0].src);
+    profile.setAttribute('src', langContent.profiles[0].src.replace(bucketHost, computedBucketHost));
     profile.setAttribute('alt', langContent.profiles[0].alt);
     if (initPswp) {
         profile.removeEventListener('click', initPswp);
@@ -269,6 +269,7 @@ function updateInterface(langKey) {
     const renderedImgs = [...document.querySelectorAll('#rendered-content img[data-width][data-height]')];
     if (renderedImgs.length > 0) {
         renderedImgs.forEach(function (img) {
+            img.src = img.src.replace(bucketHost, computedBucketHost);
             img.style.aspectRatio = img.getAttribute('data-width') / img.getAttribute('data-height');
             const initPswpRendered = function (e) {
                 if (e.target.className.includes('img-error')) return;
