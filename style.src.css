@@ -112,6 +112,17 @@ body {
     font-family: 'Noto Sans', 'Noto Sans SC', 'Noto Sans CJK SC', 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei', system-ui, sans-serif;
 }
 
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Safari */
+input,
+select {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
 /* pre 和 .table-wrapper 具有滚动条，Chrome 会使这样的元素可获得焦点。 */
 [tabindex]:not([tabindex="-1"]):focus,
 a:focus,
