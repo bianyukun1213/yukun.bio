@@ -5,16 +5,16 @@ const content = {
         dir: 'ltr',
         profiles: [
             {
+                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_kamchatka.webp',
+                width: 1080,
+                height: 1440,
+                alt: '一位戴着皮帽，穿着带有民族特色图案的传统服饰的年轻男子，站在帐篷旁。'
+            },
+            {
                 src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_graduation.webp',
                 width: 1080,
                 height: 1441,
                 alt: '一位穿着黑色学士服和戴着学士帽的年轻人，站在户外的楼梯旁，背景是建筑物和绿色植物。'
-            },
-            {
-                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_selfie.webp',
-                width: 1080,
-                height: 1440,
-                alt: '一个穿着灰色睡衣、戴着眼镜的年轻男子，背景是浅色的墙壁。'
             }
         ],
         profileImgCounterTitle: '相片数',
@@ -61,7 +61,7 @@ const content = {
 
 我在一家小型游戏工作室工作，做一些不定内容的编程工作，这些工作并不总是和游戏相关。本科毕业于黑龙江科技大学环境工程专业，因为爱好和一些人际关系加入了这个小型游戏工作室，所以我不是一名专业的程序员。
 
-我也不太清楚我制作这个网页是出于何种原因。也许是想认识更多朋友，世界各地的朋友。🤔 不过老实说我并不擅长和别人打交道。上学的时候我的英语成绩较身边人来讲还不错，不过我仍然无法熟练用英语表达。<a href="https://garden.yinhe.dev/" target="_blank">最近我开始学习俄语</a>，不知道能坚持多久，不过我想将来每年都能去俄罗斯旅游，至少远东地区离我并不是很远，花销适中。目前我去过<a href="https://his2nd.life/zh-CN/posts/a14d0940.html" target="_blank">符拉迪沃斯托克（海参崴）</a>和<a href="https://his2nd.life/zh-CN/posts/6fca3b45.html" target="_blank">哈巴罗夫斯克（伯力）</a>。在这两次旅途中，俄罗斯的人们对我非常友好，而且我还交到了朋友，我想我以后也会去这两个城市更多次。我还将在 8 月去布拉戈维申斯克（海兰泡）。
+我也不太清楚我制作这个网页是出于何种原因。也许是想认识更多朋友，世界各地的朋友。🤔 不过老实说我并不擅长和别人打交道。上学的时候我的英语成绩较身边人来讲还不错，不过我仍然无法熟练用英语表达。<a href="https://garden.yinhe.dev/" target="_blank">最近我开始学习俄语</a>，不知道能坚持多久，不过我想将来每年都能去俄罗斯旅游，至少远东地区离我并不是很远，花销适中。目前我去过<a href="https://his2nd.life/zh-CN/posts/a14d0940.html" target="_blank">符拉迪沃斯托克（海参崴）</a>、<a href="https://his2nd.life/zh-CN/posts/6fca3b45.html" target="_blank">哈巴罗夫斯克（伯力）</a>以及<a href="#" target="_blank">布拉戈维申斯克（海兰泡）</a>。在这几次旅途中，俄罗斯的人们对我非常友好，而且我还交到了朋友，我想我以后也会去这几个城市更多次。
 
 <p>
 <img tabindex="0" src="https://bucket.hollisdevhub.com/blog/posts/6fca3b45/imgs/0507/DSCF0279.webp" alt="一座白色的教堂，顶部有五个金色的圆顶和十字架。教堂左侧有茂密的松树，背景是蓝天白云。教堂前方有围栏和车辆。" data-width="1919" data-height="1080">
@@ -142,16 +142,16 @@ const content = {
         dir: 'ltr',
         profiles: [
             {
+                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_kamchatka.webp',
+                width: 1080,
+                height: 1440,
+                alt: 'A young man wearing a fur hat and traditional clothing with ethnic patterns stands next to the tent.'
+            },
+            {
                 src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_graduation.webp',
                 width: 1080,
                 height: 1441,
                 alt: 'A young man in a black graduation gown and hat stands by the stairs outdoors, with buildings and green plants in the background.'
-            },
-            {
-                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_selfie.webp',
-                width: 1080,
-                height: 1440,
-                alt: 'A young man in grey pajamas and glasses, against a light-colored wall background.'
             }
         ],
         profileImgCounterTitle: 'Photo count',
@@ -198,7 +198,7 @@ My name is Bian Yukun (边宇琨), or in some places, Hollis. I was born in Harb
 
 I work as a programmer in a small game studio, doing some random jobs which are not necessarily concerned to video games. I was graduated from Heilongjiang University of Science and Technology with a bachelor’s degree in environmental engineering. I joined this small game studio because of hobby and personal connections. So, I am not a professional programmer.
 
-Actually I don’t know out of what I made this web page. Maybe because I want to make more friends, friends from all over the world. 🤔 But honestly I’m not good at dealing with others. Back in the school my English grade was better compared with grades of people around me. But still I find myself not able to express in English fluently. <a href="https://garden.yinhe.dev/" target="_blank">Recently I started to learn Russian</a> and I have no idea how long I’m gonna persevere. However, I wish I have opportunities to travel to Russia once or more per year in the upcoming years. At least, the Far East region is not far from me and the travel cost will be moderate. I have been to <a href="https://his2nd.life/en/posts/a14d0940.html" target="_blank">Vladivostok</a> and <a href="https://his2nd.life/en/posts/6fca3b45.html" target="_blank">Khabarovsk</a>. During the two trips Russian people treated me well. Some of them even made friends with me, so I think I will visit the two cities several times in the future. I will also travel to Blagoveshchensk in august.
+Actually I don’t know out of what I made this web page. Maybe because I want to make more friends, friends from all over the world. 🤔 But honestly I’m not good at dealing with others. Back in the school my English grade was better compared with grades of people around me. But still I find myself not able to express in English fluently. <a href="https://garden.yinhe.dev/" target="_blank">Recently I started to learn Russian</a> and I have no idea how long I’m gonna persevere. However, I wish I have opportunities to travel to Russia once or more per year in the upcoming years. At least, the Far East region is not far from me and the travel cost will be moderate. I have been to <a href="https://his2nd.life/en/posts/a14d0940.html" target="_blank">Vladivostok</a>, <a href="https://his2nd.life/en/posts/6fca3b45.html" target="_blank">Khabarovsk</a>, and <a href="#" target="_blank">Blagoveshchensk</a>. During the these trips Russian people treated me well. Some of them even made friends with me, so I think I will visit the these cities several times in the future.
 
 <p>
 <img tabindex="0" src="https://bucket.hollisdevhub.com/blog/posts/6fca3b45/imgs/0507/DSCF0279.webp" alt="A white church with five golden domes and a cross on top. There are dense pine trees on the left side of the church, and the background is blue sky and white clouds. There are fences and vehicles in front of the church." data-width="1919" data-height="1080">
@@ -280,16 +280,16 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
         dir: 'ltr',
         profiles: [
             {
+                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_kamchatka.webp',
+                width: 1080,
+                height: 1440,
+                alt: 'Рядом с палаткой стоит молодой человек в меховой шапке и традиционной одежде с этническими узорами.'
+            },
+            {
                 src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_graduation.webp',
                 width: 1080,
                 height: 1441,
                 alt: 'Молодой человек в черной мантии и шляпе бакалавра стоит рядом с наружной лестницей на фоне зданий и зелени.'
-            },
-            {
-                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_selfie.webp',
-                width: 1080,
-                height: 1440,
-                alt: 'Молодой человек в серой пижаме и очках на фоне светлой стены.'
             }
         ],
         profileImgCounterTitle: 'Количество фотографий',
@@ -338,7 +338,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
 
 Я работаю программистом в небольшой игровой студии, выполняя случайные задания, которые не обязательно связаны с видеоиграми. Я окончил Хэйлунцзянский университет науки и технологий со степенью бакалавра в области инженерии окружающей среды. Я присоединился к этой небольшой игровой студии из-за хобби и личных связей. Так что я не профессиональный программист.
 
-На самом деле я не знаю, из чего я сделал эту веб-страницу. Может быть, потому что я хочу завести больше друзей, друзей со всего мира. 🤔 Но, честно говоря, я не очень хорошо общаюсь с другими. В школе мои оценки по английскому были лучше, чем у людей вокруг меня. Но я все еще не могу свободно изъясняться на английском. <a href="https://garden.yinhe.dev/" target="_blank">Недавно я начал изучать русский язык</a> и понятия не имею, как долго я буду упорствовать. Однако я хотел бы иметь возможность ездить в Россию один или несколько раз в год в ближайшие годы. По крайней мере, Дальний Восток находится недалеко от меня, и стоимость поездки будет умеренной. Я был во <a href="https://his2nd.life/en/posts/a14d0940.html" target="_blank">Владивостоке</a> и <a href="https://his2nd.life/en/posts/6fca3b45.html" target="_blank">Хабаровске</a>. Во время обеих поездок русские люди относились ко мне хорошо. Некоторые из них даже подружились со мной, так что я думаю, что я посещу эти два города несколько раз в будущем. В августе я также поеду в Благовещенск.
+На самом деле я не знаю, из чего я сделал эту веб-страницу. Может быть, потому что я хочу завести больше друзей, друзей со всего мира. 🤔 Но, честно говоря, я не очень хорошо общаюсь с другими. В школе мои оценки по английскому были лучше, чем у людей вокруг меня. Но я все еще не могу свободно изъясняться на английском. <a href="https://garden.yinhe.dev/" target="_blank">Недавно я начал изучать русский язык</a> и понятия не имею, как долго я буду упорствовать. Однако я хотел бы иметь возможность ездить в Россию один или несколько раз в год в ближайшие годы. По крайней мере, Дальний Восток находится недалеко от меня, и стоимость поездки будет умеренной. Я побывал во <a href="https://his2nd.life/en/posts/a14d0940.html" target="_blank">Владивостоке</a>, <a href="https://his2nd.life/en/posts/6fca3b45.html" target="_blank">Хабаровске</a> и <a href="#" target="_blank">Благовещенске</a>. Во время этих поездок русские люди относились ко мне хорошо. Некоторые из них даже подружились со мной, так что я думаю, что ещё не раз побываю в этих городах.
 
 <p>
 <img tabindex="0" src="https://bucket.hollisdevhub.com/blog/posts/6fca3b45/imgs/0507/DSCF0279.webp" alt="Белая церковь с пятью золотыми куполами и крестом наверху. С левой стороны церкви растут густые сосны, а фоном служит голубое небо и белые облака. Перед церковью стоят заборы и машины." data-width="1919" data-height="1080">
