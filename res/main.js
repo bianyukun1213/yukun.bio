@@ -17,13 +17,13 @@ function setGetMoreContact(langKey) {
         fetch('https://service.yukun.bio/get-more-contact', { method: 'POST', body: JSON.stringify({ turnstileToken: token, source }) }).then(async function (response) {
             if (!response.ok) {
                 console.error(`Unable to get more contact: Server returned status ${response.status} with data ${JSON.stringify(response.json())}.`);
-                moreContactContainer.innerHTML = content[langKey].moreContactLoadingFailed;
+                moreContactContainer.innerHTML = `<p>${content[langKey].moreContactLoadingFailed}</p><p>${response.status}</p>`;
                 return;
             }
             const res = await response.json();
             if (res.code !== 0) {
-                console.error(`Unable to get more contact: Server returned data ${JSON.stringify(response.json())}.`);
-                moreContactContainer.innerHTML = content[langKey].moreContactLoadingFailed;
+                console.error(`Unable to get more contact: Server returned data ${JSON.stringify(res)}.`);
+                moreContactContainer.innerHTML = `<p>${content[langKey].moreContactLoadingFailed}</p><p>${res.msg}</p>`;
                 return;
             }
             moreContactContainer.innerHTML = marked.parse(res.data[langKey]);
@@ -38,7 +38,7 @@ function setGetMoreContact(langKey) {
             if (isMirror) {
                 // turnstile.remove();
                 turnstileContainer.style.display = 'none';
-                moreContactContainer.innerHTML = content[langKey].moreContactLoading;
+                moreContactContainer.innerHTML = `<p>${content[langKey].moreContactLoading}</p>`;
                 fetchMoreContact();
             } else {
                 turnstile.render(turnstileContainer, {
@@ -47,7 +47,7 @@ function setGetMoreContact(langKey) {
                     callback: function (token) {
                         turnstile.remove();
                         turnstileContainer.style.display = 'none';
-                        moreContactContainer.innerHTML = content[langKey].moreContactLoading;
+                        moreContactContainer.innerHTML = `<p>${content[langKey].moreContactLoading}</p>`;
                         fetchMoreContact(token);
                     }
                 });
