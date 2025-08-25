@@ -1,6 +1,6 @@
 export default {
   async fetch(request, env, ctx) {
-    if (request.method === "GET" && request.headers.get("cf-ipcountry") === "RU") {
+    if (request.method === "GET" && request.headers.get("CF-IPCountry") === "RU") {
       const base = "https://bio.hollisdevhub.com";
       const statusCode = 302;
       const url = new URL(request.url);
