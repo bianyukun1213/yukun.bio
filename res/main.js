@@ -211,6 +211,11 @@ function updateInterface(langKey) {
         links.append(iconWrapper);
     }
     setGiscusLang(langKey);
+    const currentColorScheme = document.documentElement.dataset.colorScheme;
+    if (currentColorScheme)
+        setGiscusColorScheme(currentColorScheme);
+    else
+        setGiscusColorScheme('preferred_color_scheme');
     document.querySelector('label[for="select-color-scheme"]').textContent = langContent.colorScheme.label;
     document.querySelectorAll('#select-color-scheme option').forEach(el => {
         el.textContent = langContent.colorScheme[el.value];
