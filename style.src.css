@@ -170,8 +170,12 @@ p {
     font-family: 'Noto Serif', 'Noto Serif SC', 'Noto Serif CJK SC', Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
 }
 
-:root[lang="zh-CN"] #rendered-content :not(blockquote) p {
+:root[lang="zh-CN"] #rendered-content p {
     @apply un-indent-[2em];
+}
+
+:root[lang="zh-CN"] #rendered-content blockquote p {
+    @apply un-indent-unset;
 }
 
 a:not(.icon) {
