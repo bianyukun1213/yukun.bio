@@ -336,7 +336,9 @@ function handleGiscusMessage(event) {
     const giscusData = event.data.giscus;
     // 首次 resize 认为是加载完成。
     if (giscusData.resizeHeight && !giscusInited) {
-        document.getElementsByClassName('giscus-frame')[0].removeAttribute('scrolling');
+        const giscusFrame = document.getElementsByClassName('giscus-frame')[0];
+        // giscusFrame.style.display = 'unset';
+        giscusFrame.removeAttribute('scrolling');
         setGiscusLang(getCurrentLang());
         const currentColorScheme = document.documentElement.dataset.colorScheme;
         if (currentColorScheme)
