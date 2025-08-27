@@ -243,6 +243,8 @@ function updateInterface(langKey) {
     if (showImgError) profile.removeEventListener('error', showImgError);
     profile.addEventListener('load', hideImgLoading);
     profile.addEventListener('error', showImgError);
+    // profile.width = langContent.profiles[0].width;
+    // profile.height = langContent.profiles[0].height;
     profile.style.aspectRatio = langContent.profiles[0].width / langContent.profiles[0].height;
     profile.setAttribute('src', langContent.profiles[0].src.replaceAll(bucketHost, computedBucketHost));
     profile.setAttribute('alt', langContent.profiles[0].alt);

@@ -52,10 +52,8 @@
 .un-grid{display:grid;}
 .un-grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr));}
 .un-size-full{width:100%;height:100%;}
-.un-max-w-4\/5{max-width:80%;}
-.un-max-w-full{max-width:100%;}
 .un-min-h-screen{min-height:100vh;}
-.un-min-w-2\/5{min-width:40%;}
+.un-w-4\/5{width:80%;}
 .un-w-full{width:100%;}
 .un-block{display:block;}
 .un-inline-block{display:inline-block;}
@@ -83,7 +81,7 @@
 .un-bg-bg-scnd{background-color:color-mix(in oklab, var(--colors-bg-scnd) var(--un-bg-opacity), transparent);}
 }
 @media (min-width: 48rem){
-.md\:un-max-w-2\/5{max-width:40%;}
+.md\:un-w-2\/5{width:40%;}
 }
 @media (min-width: 80rem){
 .xl\:un-ma{margin:auto;}
@@ -97,7 +95,7 @@
 .xl\:un-grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr));}
 .xl\:un-h-screen{height:100vh;}
 .xl\:un-max-h-full{max-height:100%;}
-.xl\:un-max-w-3\/5{max-width:60%;}
+.xl\:un-w-3\/5{width:60%;}
 .xl\:un-self-center{align-self:center;}
 .xl\:un-overflow-auto{overflow:auto;}
 }
