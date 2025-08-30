@@ -25,6 +25,11 @@ const content = {
                 href: 'https://his2nd.life/'
             },
             {
+                title: 'Telegram 频道',
+                icon: 'simple-icons:telegram',
+                href: 'https://t.me/his2ndlife'
+            },
+            {
                 title: 'GitHub',
                 icon: 'simple-icons:github',
                 href: 'https://github.com/bianyukun1213'
@@ -160,6 +165,11 @@ const content = {
                 title: 'Blog',
                 icon: 'uil:globe',
                 href: 'https://his2nd.life/'
+            },
+            {
+                title: 'Telegram channel',
+                icon: 'simple-icons:telegram',
+                href: 'https://t.me/his2ndlife'
             },
             {
                 title: 'GitHub',
@@ -298,6 +308,11 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
                 title: 'Блог',
                 icon: 'uil:globe',
                 href: 'https://his2nd.life/'
+            },
+            {
+                title: 'Телеграм-канал',
+                icon: 'simple-icons:telegram',
+                href: 'https://t.me/his2ndlife'
             },
             {
                 title: 'GitHub',

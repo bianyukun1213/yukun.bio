@@ -67,6 +67,7 @@ export default defineConfig({
         'un-i-uil:images',
         'un-me-1',
         'un-i-uil:globe',
+        'un-i-simple-icons:telegram',
         'un-i-simple-icons:github',
         'un-i-simple-icons:mastodon',
         'un-i-simple-icons:instagram',
