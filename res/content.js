@@ -341,7 +341,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
             }
         ],
         name: 'Биан Юкун',
-        aka: 'он же Юра Биан',
+        aka: 'он же Юрий Биан',
         desc: '13 декабря 2000 г., программист',
         mirrorNotice: '> Вы просматриваете зеркальную версию этого сайта. Некоторые функции могут работать некорректно.\n\n',
         markdown:
