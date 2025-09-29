@@ -1,6 +1,6 @@
 export default {
   async fetch(request, env, ctx) {
-    if (request.method === "GET" && request.headers.get("CF-IPCountry") === "RU") {
+    if (request.method === "GET" && (request.headers.get("CF-IPCountry") === "RU" || request.headers.get("CF-IPCountry") === "CN") && request.headers.get("x-proxy-via") !== "h2l-on-eo-pages") {
       const base = "https://bio.hollisdevhub.com";
       const statusCode = 302;
       const url = new URL(request.url);
