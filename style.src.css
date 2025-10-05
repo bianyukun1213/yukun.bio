@@ -1,5 +1,10 @@
 @unocss;
 
+:root,
+#sec-2 {
+    @apply un-scroll-smooth;
+}
+
 @media (prefers-color-scheme: no-preference) or (prefers-color-scheme: light) {
     :root {
         color-scheme: light;

@@ -101,6 +101,10 @@
 .xl\:un-overflow-auto{overflow:auto;}
 }
 
+:root,
+#sec-2 {scroll-behavior:smooth;
+}
+
 @media (prefers-color-scheme: no-preference) or (prefers-color-scheme: light) {
     :root {
         color-scheme: light;
