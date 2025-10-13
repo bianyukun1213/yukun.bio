@@ -1,7 +1,7 @@
 {
     "name": "yukun-bio",
     "main": "./worker/main.js",
-    "compatibility_date": "2025-08-08",
+    "compatibility_date": "2025-10-13",
     "assets": {
         "directory": "./",
         "binding": "ASSETS",
