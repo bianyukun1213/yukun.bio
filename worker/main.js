@@ -1,4 +1,8 @@
-export default {
+// https://developers.cloudflare.com/workers/static-assets/routing/worker-script/
+
+import { WorkerEntrypoint } from "cloudflare:workers";
+
+export default class extends WorkerEntrypoint {
   async fetch(request, env, ctx) {
     if (request.method === "GET" && (request.headers.get("CF-IPCountry") === "RU" || request.headers.get("CF-IPCountry") === "CN") && request.headers.get("x-proxy-via") !== "h2l-on-eo-pages") {
       const base = "https://bio.hollisdevhub.com";
