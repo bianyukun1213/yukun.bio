@@ -19,11 +19,11 @@
   },
   "devDependencies": {
     "@iconify-json/fa6-brands": "^1.2.6",
-    "@iconify-json/simple-icons": "^1.2.57",
+    "@iconify-json/simple-icons": "^1.2.60",
     "@iconify-json/uil": "^1.2.3",
-    "@unocss/preset-icons": "^66.5.4",
+    "@unocss/preset-icons": "^66.5.9",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
-    "unocss": "^66.5.4"
+    "unocss": "^66.5.9"
   }
 }
