@@ -207,7 +207,7 @@ function generateJsonLd(langKey, langContent) {
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebPage",
+        "@type": "ProfilePage",
         "@language": "${langKey}",
         "name": "${langContent.name}",
         "description": "${langContent.desc}",
