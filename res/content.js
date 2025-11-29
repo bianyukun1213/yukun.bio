@@ -58,6 +58,7 @@ const content = {
         name: '边宇琨',
         aka: '',
         desc: '2000 年 12 月 13 日，程序员',
+        keywords: '边宇琨,Bian Yukun,Биан Юкун',
         mirrorNotice: '> 您正在浏览该网站的镜像版本，部分功能可能无法正常工作。\n\n',
         markdown:
             `## 你好！
@@ -200,6 +201,7 @@ const content = {
         name: 'Bian Yukun',
         aka: '',
         desc: 'December 13, 2000, programmer',
+        keywords: '边宇琨,Bian Yukun,Биан Юкун',
         mirrorNotice: '> You are browsing a mirrored version of this website. Some features may not work properly.\n\n',
         markdown:
             `## Hello!
@@ -343,6 +345,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
         name: 'Биан Юкун',
         aka: 'также известен как Юра или Семён',
         desc: '13 декабря 2000 г., программист',
+        keywords: '边宇琨,Bian Yukun,Биан Юкун',
         mirrorNotice: '> Вы просматриваете зеркальную версию этого сайта. Некоторые функции могут работать некорректно.\n\n',
         markdown:
             `> Я только начал изучать русский язык и в настоящее время не могу писать предложения. Эта страница переведена с английского с помощью Google Translate. Я извиняюсь, если есть какие-либо ошибки или заблуждения, вызванные переводом.

@@ -182,11 +182,59 @@ function setGiscusLang(lang) {
     }, 'https://giscus.app');
 }
 
+function generateOpenGraph(langKey, langContent) {
+    let tagTemplate = '';
+    const keywordsArray = langContent.keywords.split(',');
+    for (const keyword of keywordsArray)
+        tagTemplate += `<meta property="article:tag" content="${keyword}">\n`;
+    let ogTemplate = `
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="${langContent.name}">
+    <meta property="og:url" content="https://${computedHost}/">
+    <meta property="og:site_name" content="${langContent.name}">
+    <meta property="og:description" content="${langContent.desc}">
+    <meta property="og:locale" content="${langKey}">
+    <meta property="article:author" content="${langContent.name}">
+    ${tagTemplate}
+    <meta name="twitter:card" content="summary">`;
+    return ogTemplate;
+}
+
+function generateJsonLd(langKey, langContent) {
+    const linksArrayString = JSON.stringify(langContent.links.map(l => l.href));
+    let jsonLdTemplate = `
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@language": "${langKey}",
+        "name": "${langContent.name}",
+        "description": "${langContent.desc}",
+        "keywords": "${langContent.keywords}",
+        "url": "https://${computedHost}/",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "${langContent.name}",
+          "description": "${langContent.desc}",
+          "image": "${langContent.profiles[0].src.replaceAll(bucketHost, computedBucketHost)}",
+          "url": "https://${computedHost}/",
+          "sameAs": ${linksArrayString}
+        }
+      }
+    </script>`;
+    return jsonLdTemplate;
+}
+
 function updateInterface(langKey) {
     const langContent = content[langKey];
     document.documentElement.setAttribute('lang', langKey);
     document.documentElement.setAttribute('dir', langContent.dir);
     document.getElementById('name').textContent = document.title = langContent.name;
+    document.querySelector('meta[name="description"]').setAttribute('content', langContent.desc);
+    const keywordsEle = document.querySelector('meta[name="keywords"]');
+    keywordsEle.setAttribute('content', langContent.keywords);
+    document.querySelectorAll('meta[property^="og"],meta[property^="article"],meta[name^="twitter"],script[type="application/ld+json"]').forEach(e => e.remove());
+    keywordsEle.insertAdjacentHTML('afterend', generateOpenGraph(langKey, langContent) + generateJsonLd(langKey, langContent));
     const akaElement = document.getElementById('aka');
     if (langContent.aka) {
         akaElement.textContent = langContent.aka;
