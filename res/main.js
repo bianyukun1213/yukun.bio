@@ -196,7 +196,8 @@ function generateOpenGraph(langKey, langContent) {
     <meta property="og:locale" content="${langKey}">
     <meta property="article:author" content="${langContent.name}">
     ${tagTemplate}
-    <meta name="twitter:card" content="summary">`;
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="${langContent.profiles[0].src.replaceAll(bucketHost, computedBucketHost)}">`;
     return ogTemplate;
 }
 
