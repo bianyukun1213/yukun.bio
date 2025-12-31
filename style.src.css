@@ -1,7 +1,6 @@
 @unocss;
 
-:root,
-#sec-2 {
+:root {
     @apply un-scroll-smooth;
 }
 
@@ -355,7 +354,7 @@ summary {
 .tag-common.tabs ul.nav-tabs li.tab,
 .tabs-comment ul.nav-tabs li.tab {
     /* font-family: var(--tide-font-global); */
-    @apply un-font-sans !;
+    @apply un-font-sans!;
 }
 
 /* 参考：https://github.com/YunYouJun/hexo-tag-common/blob/main/css/index.css */
@@ -455,13 +454,26 @@ summary {
 }
 
 .giscus-frame-focus {
-    min-height: 12rem;
+    min-height: 10rem;
     outline: var(--tide-focus-outline);
     outline-offset: var(--tide-focus-outline-offset);
 }
 
 @media print {
-    #sec-2 {
-        overflow: unset !important;
+
+    #profile-links,
+    #details {
+        @apply un-mx-auto;
+        @apply un-my-8;
+        @apply un-p-0;
+    }
+
+    #profile-links {
+        position: unset;
+        @apply max-w-[80ch];
+    }
+
+    #utils {
+        @apply un-hidden;
     }
 }

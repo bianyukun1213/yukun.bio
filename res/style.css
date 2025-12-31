@@ -32,12 +32,11 @@
 .un-mb-2{margin-bottom:calc(var(--spacing) * 2);}
 .un-me-1{margin-inline-end:calc(var(--spacing) * 1);}
 .un-me-2{margin-inline-end:calc(var(--spacing) * 2);}
-.un-mt-8{margin-top:calc(var(--spacing) * 8);}
 .un-px-1{padding-inline:calc(var(--spacing) * 1);}
 .un-px-4{padding-inline:calc(var(--spacing) * 4);}
-.un-py-8{padding-block:calc(var(--spacing) * 8);}
 .un-pb-8{padding-bottom:calc(var(--spacing) * 8);}
 .un-pt-0{padding-top:calc(var(--spacing) * 0);}
+.un-pt-16{padding-top:calc(var(--spacing) * 16);}
 .un-pt-2{padding-top:calc(var(--spacing) * 2);}
 .un-text-align-center{text-align:center;}
 .un-rounded-es-md{border-end-start-radius:var(--radius-md);}
@@ -45,13 +44,12 @@
 .un-bg-bg-prim{background-color:color-mix(in srgb, var(--tide-color-background-primary) var(--un-bg-opacity), transparent);}
 .un-bg-bg-scnd{background-color:color-mix(in srgb, var(--tide-color-background-secondary) var(--un-bg-opacity), transparent);}
 .un-flex{display:flex;}
+.un-flex-col{flex-direction:column;}
 .un-gap-4{gap:calc(var(--spacing) * 4);}
-.un-grid{display:grid;}
-.un-grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr));}
 .un-size-full{width:100%;height:100%;}
 .un-max-w-\[80ch\]{max-width:80ch;}
 .un-min-h-screen{min-height:100vh;}
-.un-w-4\/5{width:80%;}
+.un-w-3\/5{width:60%;}
 .un-w-full{width:100%;}
 .un-block{display:block;}
 .un-inline-block{display:inline-block;}
@@ -59,38 +57,38 @@
 .-un-translate-y-1\/2{--un-translate-y:-50%;translate:var(--un-translate-x) var(--un-translate-y);}
 [dir="ltr"] .ltr\:-un-translate-x-1\/2{--un-translate-x:-50%;translate:var(--un-translate-x) var(--un-translate-y);}
 [dir="rtl"] .rtl\:un-translate-x-1\/2{--un-translate-x:50%;translate:var(--un-translate-x) var(--un-translate-y);}
-.un-self-start{align-self:flex-start;}
+.un-items-center{align-items:center;}
 .un-end-0{inset-inline-end:calc(var(--spacing) * 0);}
 .un-start-1\/2{inset-inline-start:50%;}
 .un-bottom-0{bottom:calc(var(--spacing) * 0);}
 .un-top-0{top:calc(var(--spacing) * 0);}
 .un-top-1\/2{top:50%;}
 .un-justify-center{justify-content:center;}
-.un-place-self-center{place-self:center;}
 .un-absolute{position:absolute;}
+.un-fixed{position:fixed;}
 .un-relative{position:relative;}
 .un-z-100{z-index:100;}
 .un-z-200{z-index:200;}
+.un-overflow-auto{overflow:auto;}
+.un-overflow-x-hidden{overflow-x:hidden;}
 @media (min-width: 48rem){
 .md\:un-w-2\/5{width:40%;}
 }
 @media (min-width: 80rem){
-.xl\:un-ma{margin:auto;}
+.xl\:un-ms-2\/5{margin-inline-start:40%;}
 .xl\:un-px-0{padding-inline:calc(var(--spacing) * 0);}
-.xl\:un-px-16{padding-inline:calc(var(--spacing) * 16);}
+.xl\:un-py-8{padding-block:calc(var(--spacing) * 8);}
 .xl\:un-pt-8{padding-top:calc(var(--spacing) * 8);}
-.xl\:un-col-span-2{grid-column:span 2/span 2;}
-.xl\:un-col-span-3{grid-column:span 3/span 3;}
-.xl\:un-grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr));}
-.xl\:un-h-screen{height:100vh;}
-.xl\:un-max-h-full{max-height:100%;}
+.xl\:un-h-full{height:100%;}
+.xl\:un-w-1\/2{width:50%;}
+.xl\:un-w-2\/5{width:40%;}
 .xl\:un-w-3\/5{width:60%;}
-.xl\:un-self-center{align-self:center;}
-.xl\:un-overflow-auto{overflow:auto;}
+.xl\:un-start-0{inset-inline-start:calc(var(--spacing) * 0);}
+.xl\:un-top-0{top:calc(var(--spacing) * 0);}
+.xl\:un-fixed{position:fixed;}
 }
 
-:root,
-#sec-2 {scroll-behavior:smooth;
+:root {scroll-behavior:smooth;
 }
 
 @media (prefers-color-scheme: no-preference) or (prefers-color-scheme: light) {
@@ -393,7 +391,7 @@ summary {cursor:pointer;
 .collapse-ctrl:not(a),
 .tag-common.tabs ul.nav-tabs li.tab,
 .tabs-comment ul.nav-tabs li.tab {
-    /* font-family: var(--tide-font-global); */font-family:var(--font-sans);
+    /* font-family: var(--tide-font-global); */font-family:var(--font-sans) !important;
 }
 
 /* 参考：https://github.com/YunYouJun/hexo-tag-common/blob/main/css/index.css */
@@ -493,13 +491,22 @@ summary {cursor:pointer;
 }
 
 .giscus-frame-focus {
-    min-height: 12rem;
+    min-height: 10rem;
     outline: var(--tide-focus-outline);
     outline-offset: var(--tide-focus-outline-offset);
 }
 
 @media print {
-    #sec-2 {
-        overflow: unset !important;
+
+    #profile-links,
+    #details {margin-inline:auto;margin-block:calc(var(--spacing) * 8);padding:calc(var(--spacing) * 0);
+    }
+
+    #profile-links {
+        position: unset;
+        @apply max-w-[80ch];
+    }
+
+    #utils {display:none;
     }
 }

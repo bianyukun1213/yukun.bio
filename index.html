@@ -110,23 +110,25 @@
       <p lang="ru">Загрузка, пожалуйста, подождите…</p>
     </div>
   </div>
-  <div id="content" class="un-w-full un-min-h-screen un-grid un-grid-cols-1 xl:un-grid-cols-5 xl:un-h-screen" aria-hidden="true">
-    <div id="sec-1" class="un-w-full un-px-4 un-py-8 un-place-self-center un-text-align-center xl:un-col-span-2 xl:un-ma xl:un-px-16">
-      <div id="profile-wrapper" class="un-inline-block un-relative un-w-4/5 un-mt-8 md:un-w-2/5 xl:un-w-3/5">
-        <img id="profile" class="un-block un-w-full" tabindex="0">
-        <div id="profile-img-counter" class="un-absolute un-end-0 un-bottom-0 un-px-1 un-bg-bg-prim un-text-txt-scnd un-rounded-ss-md un-pointer-events-none" style="display:none;"></div>
+  <div id="content" class="un-w-full un-min-h-screen" aria-hidden="true">
+    <div id="profile-links" class="un-w-full un-px-4 un-pt-16 un-flex un-flex-col un-justify-center un-items-center xl:un-fixed xl:un-top-0 xl:un-start-0 xl:un-w-2/5 xl:un-h-full xl:un-px-0 xl:un-py-8">
+      <div id="profile-links-content" class="un-w-full un-text-align-center un-overflow-auto un-overflow-x-hidden">
+        <div id="profile-wrapper" class="un-inline-block un-relative un-w-3/5 md:un-w-2/5 xl:un-w-1/2">
+          <img id="profile" class="un-block un-w-full" tabindex="0">
+          <div id="profile-img-counter" class="un-absolute un-end-0 un-bottom-0 un-px-1 un-bg-bg-prim un-text-txt-scnd un-rounded-ss-md un-pointer-events-none" style="display:none;"></div>
+        </div>
+        <h1 id="name" class="un-text-prim"></h1>
+        <p id="aka" class="un-my-4 -un-mt-4 un-text-txt-scnd" style="display:none;"></p>
+        <p id="desc" class="un-my-4 un-text-txt-scnd"></p>
+        <div id="links" class="un-flex un-justify-center un-gap-4"></div>
+        <script src="https://giscus.app/client.js" data-repo="bianyukun1213/yukun.bio" data-repo-id="R_kgDONlNnvA" data-category="Announcements" data-category-id="DIC_kwDONlNnvM4Ct8Lb" data-mapping="number" data-term="3" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" defer></script>
       </div>
-      <h1 id="name" class="un-text-prim"></h1>
-      <p id="aka" class="un-my-4 -un-mt-4 un-text-txt-scnd" style="display:none;"></p>
-      <p id="desc" class="un-my-4 un-text-txt-scnd"></p>
-      <div id="links" class="un-flex un-justify-center un-gap-4"></div>
-      <script src="https://giscus.app/client.js" data-repo="bianyukun1213/yukun.bio" data-repo-id="R_kgDONlNnvA" data-category="Announcements" data-category-id="DIC_kwDONlNnvM4Ct8Lb" data-mapping="number" data-term="3" data-strict="1" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" defer></script>
     </div>
-    <div id="sec-2" class="un-px-4 un-pt-0 un-pb-8 un-self-start xl:un-col-span-3 xl:un-max-h-full xl:un-overflow-auto xl:un-px-0 xl:un-pt-8 xl:un-self-center">
+    <div id="details" class="un-w-full un-px-4 un-pt-0 un-pb-8 xl:un-w-3/5 xl:un-ms-2/5 xl:un-px-0 xl:un-pt-8">
       <div id="rendered-content" class="un-max-w-[80ch] un-mx-auto"></div>
     </div>
   </div>
-  <div id="utils" class="un-absolute un-end-0 un-top-0 un-bg-bg-scnd un-px-4 un-pt-2 un-rounded-es-md" aria-hidden="true">
+  <div id="utils" class="un-fixed un-end-0 un-top-0 un-bg-bg-scnd un-px-4 un-pt-2 un-rounded-es-md" aria-hidden="true">
     <label for="select-color-scheme" class="un-inline-block un-me-2 un-mb-2"></label>
     <select id="select-color-scheme" class="un-sc-select-plain un-me-2 un-mb-2" name="color-scheme">
       <option value="system"></option>
