@@ -9,12 +9,15 @@ if (qs) newUrl += '?' + qs;
 window.history.replaceState(null, null, newUrl);
 
 function setGetMoreContact(langKey) {
-    const siteKey = '0x4AAAAAAA-idJ17jPKiR-lf';
+    const siteKey = 'fefa711e-7296-4e5a-b988-d6766f087b8a';
     const getMoreContact = document.getElementById('get-more-contact');
-    const turnstileContainer = document.getElementById('turnstile-container');
+    const captchaContainer = document.getElementById('hcaptcha-container');
     const moreContactContainer = document.getElementById('more-contact-container');
     const fetchMoreContact = function (token) {
-        fetch('https://service.yukun.bio/get-more-contact', { method: 'POST', body: JSON.stringify({ turnstileToken: token, source }) }).then(async function (response) {
+        fetch('https://service.yukun.bio/get-more-contact', {
+            method: 'POST',
+            body: JSON.stringify({ hCaptchaToken: token, source: typeof source !== 'undefined' ? source : undefined })
+        }).then(async function (response) {
             const res = await response.json();
             if (!response.ok && !res) {
                 console.error(`Unable to get more contact: Server returned status ${response.status}.`);
@@ -31,28 +34,31 @@ function setGetMoreContact(langKey) {
             throw console.error(`Unable to get more contact: Request failed with error ${error}.`);
         });
     };
-    if (getMoreContact && turnstileContainer && moreContactContainer) {
-        let turnstileLoaded = false;
+    if (getMoreContact && captchaContainer && moreContactContainer) {
+        let captchaLoaded = false;
         getMoreContact.addEventListener('click', function () {
-            if (turnstileLoaded) return;
-            if (isMirror) {
-                // turnstile.remove();
-                turnstileContainer.style.display = 'none';
+            if (captchaLoaded) return;
+            if (typeof isMirror !== 'undefined' && isMirror) {
+                captchaContainer.style.display = 'none';
                 moreContactContainer.innerHTML = `<p>${content[langKey].moreContactLoading}</p>`;
                 fetchMoreContact();
             } else {
-                turnstile.render(turnstileContainer, {
-                    sitekey: siteKey,
-                    language: langKey,
-                    callback: function (token) {
-                        turnstile.remove();
-                        turnstileContainer.style.display = 'none';
-                        moreContactContainer.innerHTML = `<p>${content[langKey].moreContactLoading}</p>`;
-                        fetchMoreContact(token);
-                    }
-                });
+                try {
+                    const widgetId = hcaptcha.render(captchaContainer, {
+                        sitekey: siteKey,
+                        hl: langKey,
+                        callback: function (token) {
+                            hcaptcha.remove(widgetId);
+                            captchaContainer.style.display = 'none';
+                            moreContactContainer.innerHTML = `<p>${content[langKey].moreContactLoading}</p>`;
+                            fetchMoreContact(token);
+                        }
+                    });
+                } catch (e) {
+                    console.error('hCaptcha render failed:', e);
+                }
             }
-            turnstileLoaded = true;
+            captchaLoaded = true;
         });
     }
 }
