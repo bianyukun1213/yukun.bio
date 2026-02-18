@@ -197,7 +197,7 @@ function generateOpenGraph(langKey, langContent) {
     <meta property="article:author" content="${langContent.name}">
     ${tagTemplate}
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="${langContent.profiles[0].src.replaceAll(bucketHost, computedBucketHost)}">`;
+    <meta name="twitter:image" content="${langContent.profiles[0].src}">`;
     return ogTemplate;
 }
 
@@ -217,7 +217,7 @@ function generateJsonLd(langKey, langContent) {
           "@type": "Person",
           "name": "${langContent.name}",
           "description": "${langContent.desc}",
-          "image": "${langContent.profiles[0].src.replaceAll(bucketHost, computedBucketHost)}",
+          "image": "${langContent.profiles[0].src}",
           "url": "https://yukun.bio/",
           "sameAs": ${linksArrayString}
         }
