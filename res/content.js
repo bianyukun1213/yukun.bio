@@ -122,7 +122,7 @@ const content = {
 
 <details>
 <summary id="get-more-contact">完成验证，获取更多</summary>
-<div id="hcaptcha-container"></div>
+<div id="captcha-container"></div>
 <div id="more-contact-container"></div>
 </details>`,
         moreContactLoading: '加载中……',
@@ -266,7 +266,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
 
 <details>
 <summary id="get-more-contact">Complete the verification and get more</summary>
-<div id="hcaptcha-container"></div>
+<div id="captcha-container"></div>
 <div id="more-contact-container"></div>
 </details>`,
         moreContactLoading: 'Loading…',
@@ -411,7 +411,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
 
 <details>
 <summary id="get-more-contact">Пройдите проверку и получите больше</summary>
-<div id="hcaptcha-container"></div>
+<div id="captcha-container"></div>
 <div id="more-contact-container"></div>
 </details>`,
         moreContactLoading: 'Загрузка…',

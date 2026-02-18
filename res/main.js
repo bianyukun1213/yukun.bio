@@ -11,7 +11,7 @@ window.history.replaceState(null, null, newUrl);
 function setGetMoreContact(langKey) {
     const sitekey = 'fefa711e-7296-4e5a-b988-d6766f087b8a';
     const getMoreContact = document.getElementById('get-more-contact');
-    const captchaContainer = document.getElementById('hcaptcha-container');
+    const captchaContainer = document.getElementById('captcha-container');
     const moreContactContainer = document.getElementById('more-contact-container');
     const fetchMoreContact = function (token) {
         fetch('https://service.yukun.bio/get-more-contact', {
