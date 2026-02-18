@@ -9,7 +9,7 @@ if (qs) newUrl += '?' + qs;
 window.history.replaceState(null, null, newUrl);
 
 function setGetMoreContact(langKey) {
-    const siteKey = 'fefa711e-7296-4e5a-b988-d6766f087b8a';
+    const sitekey = 'fefa711e-7296-4e5a-b988-d6766f087b8a';
     const getMoreContact = document.getElementById('get-more-contact');
     const captchaContainer = document.getElementById('hcaptcha-container');
     const moreContactContainer = document.getElementById('more-contact-container');
@@ -38,25 +38,19 @@ function setGetMoreContact(langKey) {
         let captchaLoaded = false;
         getMoreContact.addEventListener('click', function () {
             if (captchaLoaded) return;
-            if (typeof isMirror !== 'undefined' && isMirror) {
-                captchaContainer.style.display = 'none';
-                moreContactContainer.innerHTML = `<p>${content[langKey].moreContactLoading}</p>`;
-                fetchMoreContact();
-            } else {
-                try {
-                    const widgetId = hcaptcha.render(captchaContainer, {
-                        sitekey: siteKey,
-                        hl: langKey,
-                        callback: function (token) {
-                            hcaptcha.remove(widgetId);
-                            captchaContainer.style.display = 'none';
-                            moreContactContainer.innerHTML = `<p>${content[langKey].moreContactLoading}</p>`;
-                            fetchMoreContact(token);
-                        }
-                    });
-                } catch (e) {
-                    console.error('hCaptcha render failed:', e);
-                }
+            try {
+                const widgetId = hcaptcha.render(captchaContainer, {
+                    sitekey,
+                    hl: langKey,
+                    callback: function (token) {
+                        hcaptcha.remove(widgetId);
+                        captchaContainer.style.display = 'none';
+                        moreContactContainer.innerHTML = `<p>${content[langKey].moreContactLoading}</p>`;
+                        fetchMoreContact(token);
+                    }
+                });
+            } catch (e) {
+                console.error('hCaptcha render failed:', e);
             }
             captchaLoaded = true;
         });
@@ -196,7 +190,7 @@ function generateOpenGraph(langKey, langContent) {
     let ogTemplate = `
     <meta property="og:type" content="website">
     <meta property="og:title" content="${langContent.name}">
-    <meta property="og:url" content="https://${computedHost}/">
+    <meta property="og:url" content="https://yukun.bio/">
     <meta property="og:site_name" content="${langContent.name}">
     <meta property="og:description" content="${langContent.desc}">
     <meta property="og:locale" content="${langKey}">
@@ -218,13 +212,13 @@ function generateJsonLd(langKey, langContent) {
         "name": "${langContent.name}",
         "description": "${langContent.desc}",
         "keywords": "${langContent.keywords}",
-        "url": "https://${computedHost}/",
+        "url": "https://yukun.bio/",
         "mainEntity": {
           "@type": "Person",
           "name": "${langContent.name}",
           "description": "${langContent.desc}",
           "image": "${langContent.profiles[0].src.replaceAll(bucketHost, computedBucketHost)}",
-          "url": "https://${computedHost}/",
+          "url": "https://yukun.bio/",
           "sameAs": ${linksArrayString}
         }
       }
@@ -277,7 +271,7 @@ function updateInterface(langKey) {
     });
     document.querySelector('label[for="select-lang"]').textContent = langContent.langLabel;
     /** render markdown */
-    const markdownContent = isMirror ? langContent.mirrorNotice + langContent.markdown.replace(bucketHost, bucketMirrorHost) : langContent.markdown;
+    const markdownContent = langContent.markdown;
     document.getElementById('rendered-content').innerHTML = marked.parse(markdownContent);
     const imgs = [...document.getElementsByTagName('img')];
     imgs.forEach(function (img) {
@@ -301,7 +295,7 @@ function updateInterface(langKey) {
     // profile.width = langContent.profiles[0].width;
     // profile.height = langContent.profiles[0].height;
     profile.style.aspectRatio = langContent.profiles[0].width / langContent.profiles[0].height;
-    profile.setAttribute('src', langContent.profiles[0].src.replaceAll(bucketHost, computedBucketHost));
+    profile.setAttribute('src', langContent.profiles[0].src);
     profile.setAttribute('alt', langContent.profiles[0].alt);
     if (initPswp) {
         profile.removeEventListener('click', initPswp);

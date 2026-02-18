@@ -19,7 +19,7 @@
   <meta property="article:tag" content="Bian Yukun">
   <meta property="article:tag" content="Биан Юкун">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:image" content="https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_kamchatka.webp">
+  <meta name="twitter:image" content="https://bucket-eo.hollisdevhub.com/yukun.bio/profiles/profile_kamchatka.webp">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -33,7 +33,7 @@
         "@type": "Person",
         "name": "Bian Yukun",
         "description": "December 13, 2000, programmer",
-        "image": "https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_kamchatka.webp",
+        "image": "https://bucket-eo.hollisdevhub.com/yukun.bio/profiles/profile_kamchatka.webp",
         "url": "https://yukun.bio/",
         "sameAs": ["https://his2nd.life/", "https://t.me/his2ndlife", "https://github.com/bianyukun1213", "https://m.cmx.im/deck/@Hollis", "https://www.instagram.com/yukun_again/", "https://vk.com/heyhollis", "https://steamcommunity.com/id/heyhollis/"]
       }
@@ -48,13 +48,6 @@
   <link rel="stylesheet" href="./res/third-party/photoswipe.min.css">
   <link rel="stylesheet" href="./res/style.css">
   <script>
-    const sourceHost = 'yukun.bio';
-    const mirrorHost = 'bio.hollisdevhub.com';
-    const bucketHost = 'bucket.hollisdevhub.com';
-    const bucketMirrorHost = 'bucket-eo.hollisdevhub.com';
-    const isMirror = window.location.host === mirrorHost ? true : false;
-    const computedHost = isMirror ? mirrorHost : sourceHost;
-    const computedBucketHost = isMirror ? bucketMirrorHost : bucketHost;
     let currentColorScheme = localStorage.getItem('colorScheme');
     if (currentColorScheme !== 'system' && currentColorScheme !== 'light' && currentColorScheme !== 'dark')
       currentColorScheme = 'system';
@@ -64,7 +57,7 @@
       iframe.contentWindow.postMessage({
         giscus: {
           setConfig: {
-            theme: `https://${computedHost}/res/giscus/${theme}.css`
+            theme: `https://yukun.bio/res/giscus/${theme}.css`
           }
         }
       }, 'https://giscus.app');
