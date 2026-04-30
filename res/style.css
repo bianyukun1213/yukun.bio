@@ -368,7 +368,7 @@ details {display:inline-block;
 summary {cursor:pointer;
 }
 
-#turnstile-container {margin-top:calc(var(--spacing) * 4);
+#captcha-container {margin-top:calc(var(--spacing) * 4);
 }
 
 @media (forced-colors: active) {

@@ -5,13 +5,13 @@ const content = {
         dir: 'ltr',
         profiles: [
             {
-                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_kamchatka.webp',
+                src: 'https://bucket-eo.hollisdevhub.com/yukun.bio/profiles/profile_kamchatka.webp',
                 width: 1080,
                 height: 1440,
                 alt: '一位戴着皮帽，穿着带有民族特色图案的传统服饰的年轻男子，站在帐篷旁。'
             },
             {
-                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_graduation.webp',
+                src: 'https://bucket-eo.hollisdevhub.com/yukun.bio/profiles/profile_graduation.webp',
                 width: 1080,
                 height: 1441,
                 alt: '一位穿着黑色学士服和戴着学士帽的年轻人，站在户外的楼梯旁，背景是建筑物和绿色植物。'
@@ -70,8 +70,8 @@ const content = {
 我也不太清楚我制作这个网页是出于何种原因。也许是想认识更多朋友，世界各地的朋友。🤔 不过老实说我并不擅长和别人打交道。上学的时候我的英语成绩较身边人来讲还不错，不过我仍然无法熟练用英语表达。<a href="https://notes.yinhe.dev/%E4%BF%84%E8%AF%AD/" target="_blank">后来我开始学习俄语</a>，不知道能坚持多久，不过我想将来每年都能去俄罗斯旅游，至少远东地区离我并不是很远，花销适中。目前我去过<a href="https://his2nd.life/zh-CN/posts/a14d0940.html" target="_blank">符拉迪沃斯托克（海参崴）</a>、<a href="https://his2nd.life/zh-CN/posts/6fca3b45.html" target="_blank">哈巴罗夫斯克（伯力）</a>、<a href="https://his2nd.life/zh-CN/posts/826a3f1c.html" target="_blank">布拉戈维申斯克（海兰泡）</a>以及莫斯科、圣彼得堡和维堡。在这几次旅途中，俄罗斯的人们对我非常友好，而且我还交到了朋友，我想我以后也会去这几个城市更多次。
 
 <p>
-<img tabindex="0" src="https://bucket.hollisdevhub.com/blog/posts/6fca3b45/imgs/0507/DSCF0279.webp" alt="一座白色的教堂，顶部有五个金色的圆顶和十字架。教堂左侧有茂密的松树，背景是蓝天白云。教堂前方有围栏和车辆。" data-width="1919" data-height="1080">
-<img tabindex="0" src="https://bucket.hollisdevhub.com/blog/posts/6fca3b45/imgs/0511/DSCF0743.webp" alt="夜晚的城市桥梁灯火辉煌，桥上有车辆行驶留下的光轨。桥梁结构为斜拉索设计，塔柱高耸。远处可见城市的灯光和山脉轮廓。" data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket-eo.hollisdevhub.com/blog/posts/6fca3b45/imgs/0507/DSCF0279.webp" alt="一座白色的教堂，顶部有五个金色的圆顶和十字架。教堂左侧有茂密的松树，背景是蓝天白云。教堂前方有围栏和车辆。" data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket-eo.hollisdevhub.com/blog/posts/6fca3b45/imgs/0511/DSCF0743.webp" alt="夜晚的城市桥梁灯火辉煌，桥上有车辆行驶留下的光轨。桥梁结构为斜拉索设计，塔柱高耸。远处可见城市的灯光和山脉轮廓。" data-width="1919" data-height="1080">
 </p>
 
 ## 教育经历与职业
@@ -122,7 +122,7 @@ const content = {
 
 <details>
 <summary id="get-more-contact">完成验证，获取更多</summary>
-<div id="turnstile-container"></div>
+<div id="captcha-container"></div>
 <div id="more-contact-container"></div>
 </details>`,
         moreContactLoading: '加载中……',
@@ -148,13 +148,13 @@ const content = {
         dir: 'ltr',
         profiles: [
             {
-                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_kamchatka.webp',
+                src: 'https://bucket-eo.hollisdevhub.com/yukun.bio/profiles/profile_kamchatka.webp',
                 width: 1080,
                 height: 1440,
                 alt: 'A young man wearing a fur hat and traditional clothing with ethnic patterns stands next to the tent.'
             },
             {
-                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_graduation.webp',
+                src: 'https://bucket-eo.hollisdevhub.com/yukun.bio/profiles/profile_graduation.webp',
                 width: 1080,
                 height: 1441,
                 alt: 'A young man in a black graduation gown and hat stands by the stairs outdoors, with buildings and green plants in the background.'
@@ -213,8 +213,8 @@ I work as a programmer in a small game studio, doing some random jobs which are 
 Actually I don’t know out of what I made this web page. Maybe because I want to make more friends, friends from all over the world. 🤔 But honestly I’m not good at dealing with others. Back in the school my English grade was better compared with grades of people around me. But still I find myself not able to express in English fluently. <a href="https://notes.yinhe.dev/%E4%BF%84%E8%AF%AD/" target="_blank">I decided to learn Russian</a> and I have no idea how long I’m gonna persevere. However, I hope I will have opportunities to travel to Russia once or more per year in the upcoming years. At least, the Far East region is not far from me and the travel cost will be moderate. I have been to <a href="https://his2nd.life/en/posts/a14d0940.html" target="_blank">Vladivostok</a>, <a href="https://his2nd.life/en/posts/6fca3b45.html" target="_blank">Khabarovsk</a>, <a href="https://his2nd.life/zh-CN/posts/826a3f1c.html" target="_blank">Blagoveshchensk</a>, Moscow, Saint Petersburg, and Vyborg. During the these trips Russian people treated me well. Some of them even made friends with me, so I think I will visit the these cities several times in the future.
 
 <p>
-<img tabindex="0" src="https://bucket.hollisdevhub.com/blog/posts/6fca3b45/imgs/0507/DSCF0279.webp" alt="A white church with five golden domes and a cross on top. There are dense pine trees on the left side of the church, and the background is blue sky and white clouds. There are fences and vehicles in front of the church." data-width="1919" data-height="1080">
-<img tabindex="0" src="https://bucket.hollisdevhub.com/blog/posts/6fca3b45/imgs/0511/DSCF0743.webp" alt="The city bridge is brightly lit at night, and there are light tracks left by vehicles on the bridge. The bridge structure is a cable-stayed design with tall towers. The city lights and mountain outlines can be seen in the distance." data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket-eo.hollisdevhub.com/blog/posts/6fca3b45/imgs/0507/DSCF0279.webp" alt="A white church with five golden domes and a cross on top. There are dense pine trees on the left side of the church, and the background is blue sky and white clouds. There are fences and vehicles in front of the church." data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket-eo.hollisdevhub.com/blog/posts/6fca3b45/imgs/0511/DSCF0743.webp" alt="The city bridge is brightly lit at night, and there are light tracks left by vehicles on the bridge. The bridge structure is a cable-stayed design with tall towers. The city lights and mountain outlines can be seen in the distance." data-width="1919" data-height="1080">
 </p>
 
 ## Education and occupation
@@ -265,7 +265,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
 
 <details>
 <summary id="get-more-contact">Complete the verification and get more</summary>
-<div id="turnstile-container"></div>
+<div id="captcha-container"></div>
 <div id="more-contact-container"></div>
 </details>`,
         moreContactLoading: 'Loading…',
@@ -291,13 +291,13 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
         dir: 'ltr',
         profiles: [
             {
-                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_kamchatka.webp',
+                src: 'https://bucket-eo.hollisdevhub.com/yukun.bio/profiles/profile_kamchatka.webp',
                 width: 1080,
                 height: 1440,
                 alt: 'Рядом с палаткой стоит молодой человек в меховой шапке и традиционной одежде с этническими узорами.'
             },
             {
-                src: 'https://bucket.hollisdevhub.com/yukun.bio/profiles/profile_graduation.webp',
+                src: 'https://bucket-eo.hollisdevhub.com/yukun.bio/profiles/profile_graduation.webp',
                 width: 1080,
                 height: 1441,
                 alt: 'Молодой человек в черной мантии и шляпе бакалавра стоит рядом с наружной лестницей на фоне зданий и зелени.'
@@ -308,7 +308,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
             {
                 title: 'Блог',
                 icon: 'uil:globe',
-                href: 'https://his2nd.life/'
+                href: 'https://blog.hollisdevhub.com/'
             },
             {
                 title: 'Телеграм-канал',
@@ -358,8 +358,8 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
 На самом деле, я не знаю, зачем создал эту веб-страницу. Возможно, потому что хочу завести больше друзей, друзей со всего мира. 🤔 Но честно говоря, я не очень хорошо умею общаться с другими. В школе мои оценки по английскому были выше, чем у окружающих меня людей. Но всё равно я не могу свободно выражать свои мысли на английском. <a href="https://notes.yinhe.dev/%E4%BF%84%E8%AF%AD/" target="_blank">Я решил выучить русский язык</a>, и понятия не имею, как долго мне удастся продолжать. Однако я надеюсь, что в ближайшие годы у меня будет возможность хотя бы раз в год ездить в Россию. По крайней мере, Дальний Восток находится недалеко от меня, и стоимость поездки будет умеренной. Я побывал во <a href="https://his2nd.life/en/posts/a14d0940.html" target="_blank">Владивостоке</a>, <a href="https://his2nd.life/en/posts/6fca3b45.html" target="_blank">Хабаровске</a>, <a href="https://his2nd.life/zh-CN/posts/826a3f1c.html" target="_blank">Благовещенске</a>, Москве, Санкт-Петербурге и Выборге. Во время этих поездок русские люди хорошо ко мне относились. Некоторые из них даже подружились со мной, поэтому я думаю, что посещу эти города еще несколько раз в будущем.
 
 <p>
-<img tabindex="0" src="https://bucket.hollisdevhub.com/blog/posts/6fca3b45/imgs/0507/DSCF0279.webp" alt="Белая церковь с пятью золотыми куполами и крестом наверху. С левой стороны церкви растут густые сосны, а фоном служит голубое небо и белые облака. Перед церковью стоят заборы и машины." data-width="1919" data-height="1080">
-<img tabindex="0" src="https://bucket.hollisdevhub.com/blog/posts/6fca3b45/imgs/0511/DSCF0743.webp" alt="Городской мост ярко освещен ночью, и на мосту видны световые следы от транспортных средств. Конструкция моста представляет собой вантовую конструкцию с высокими башнями. Вдалеке видны огни города и очертания гор." data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket-eo.hollisdevhub.com/blog/posts/6fca3b45/imgs/0507/DSCF0279.webp" alt="Белая церковь с пятью золотыми куполами и крестом наверху. С левой стороны церкви растут густые сосны, а фоном служит голубое небо и белые облака. Перед церковью стоят заборы и машины." data-width="1919" data-height="1080">
+<img tabindex="0" src="https://bucket-eo.hollisdevhub.com/blog/posts/6fca3b45/imgs/0511/DSCF0743.webp" alt="Городской мост ярко освещен ночью, и на мосту видны световые следы от транспортных средств. Конструкция моста представляет собой вантовую конструкцию с высокими башнями. Вдалеке видны огни города и очертания гор." data-width="1919" data-height="1080">
 </p>
 
 ## Образование и профессия
@@ -410,7 +410,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
 
 <details>
 <summary id="get-more-contact">Пройдите проверку и получите больше</summary>
-<div id="turnstile-container"></div>
+<div id="captcha-container"></div>
 <div id="more-contact-container"></div>
 </details>`,
         moreContactLoading: 'Загрузка…',

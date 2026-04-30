@@ -330,7 +330,7 @@ summary {
     @apply un-cursor-pointer;
 }
 
-#turnstile-container {
+#captcha-container {
     @apply un-mt-4;
 }
 

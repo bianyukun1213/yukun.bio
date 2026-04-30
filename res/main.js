@@ -9,12 +9,15 @@ if (qs) newUrl += '?' + qs;
 window.history.replaceState(null, null, newUrl);
 
 function setGetMoreContact(langKey) {
-    const siteKey = '0x4AAAAAAA-idJ17jPKiR-lf';
+    const sitekey = 'fefa711e-7296-4e5a-b988-d6766f087b8a';
     const getMoreContact = document.getElementById('get-more-contact');
-    const turnstileContainer = document.getElementById('turnstile-container');
+    const captchaContainer = document.getElementById('captcha-container');
     const moreContactContainer = document.getElementById('more-contact-container');
     const fetchMoreContact = function (token) {
-        fetch('https://service.yukun.bio/get-more-contact', { method: 'POST', body: JSON.stringify({ turnstileToken: token, source }) }).then(async function (response) {
+        fetch('https://service.yukun.bio/get-more-contact', {
+            method: 'POST',
+            body: JSON.stringify({ hCaptchaToken: token, source: typeof source !== 'undefined' ? source : undefined })
+        }).then(async function (response) {
             const res = await response.json();
             if (!response.ok && !res) {
                 console.error(`Unable to get more contact: Server returned status ${response.status}.`);
@@ -31,28 +34,25 @@ function setGetMoreContact(langKey) {
             throw console.error(`Unable to get more contact: Request failed with error ${error}.`);
         });
     };
-    if (getMoreContact && turnstileContainer && moreContactContainer) {
-        let turnstileLoaded = false;
+    if (getMoreContact && captchaContainer && moreContactContainer) {
+        let captchaLoaded = false;
         getMoreContact.addEventListener('click', function () {
-            if (turnstileLoaded) return;
-            if (isMirror) {
-                // turnstile.remove();
-                turnstileContainer.style.display = 'none';
-                moreContactContainer.innerHTML = `<p>${content[langKey].moreContactLoading}</p>`;
-                fetchMoreContact();
-            } else {
-                turnstile.render(turnstileContainer, {
-                    sitekey: siteKey,
-                    language: langKey,
+            if (captchaLoaded) return;
+            try {
+                const widgetId = hcaptcha.render(captchaContainer, {
+                    sitekey,
+                    hl: langKey,
                     callback: function (token) {
-                        turnstile.remove();
-                        turnstileContainer.style.display = 'none';
+                        hcaptcha.remove(widgetId);
+                        captchaContainer.style.display = 'none';
                         moreContactContainer.innerHTML = `<p>${content[langKey].moreContactLoading}</p>`;
                         fetchMoreContact(token);
                     }
                 });
+            } catch (e) {
+                console.error('hCaptcha render failed:', e);
             }
-            turnstileLoaded = true;
+            captchaLoaded = true;
         });
     }
 }
@@ -190,14 +190,14 @@ function generateOpenGraph(langKey, langContent) {
     let ogTemplate = `
     <meta property="og:type" content="website">
     <meta property="og:title" content="${langContent.name}">
-    <meta property="og:url" content="https://${computedHost}/">
+    <meta property="og:url" content="https://yukun.bio/">
     <meta property="og:site_name" content="${langContent.name}">
     <meta property="og:description" content="${langContent.desc}">
     <meta property="og:locale" content="${langKey}">
     <meta property="article:author" content="${langContent.name}">
     ${tagTemplate}
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="${langContent.profiles[0].src.replaceAll(bucketHost, computedBucketHost)}">`;
+    <meta name="twitter:image" content="${langContent.profiles[0].src}">`;
     return ogTemplate;
 }
 
@@ -212,13 +212,13 @@ function generateJsonLd(langKey, langContent) {
         "name": "${langContent.name}",
         "description": "${langContent.desc}",
         "keywords": "${langContent.keywords}",
-        "url": "https://${computedHost}/",
+        "url": "https://yukun.bio/",
         "mainEntity": {
           "@type": "Person",
           "name": "${langContent.name}",
           "description": "${langContent.desc}",
-          "image": "${langContent.profiles[0].src.replaceAll(bucketHost, computedBucketHost)}",
-          "url": "https://${computedHost}/",
+          "image": "${langContent.profiles[0].src}",
+          "url": "https://yukun.bio/",
           "sameAs": ${linksArrayString}
         }
       }
@@ -271,7 +271,7 @@ function updateInterface(langKey) {
     });
     document.querySelector('label[for="select-lang"]').textContent = langContent.langLabel;
     /** render markdown */
-    const markdownContent = isMirror ? langContent.mirrorNotice + langContent.markdown.replace(bucketHost, bucketMirrorHost) : langContent.markdown;
+    const markdownContent = langContent.markdown;
     document.getElementById('rendered-content').innerHTML = marked.parse(markdownContent);
     const imgs = [...document.getElementsByTagName('img')];
     imgs.forEach(function (img) {
@@ -295,7 +295,7 @@ function updateInterface(langKey) {
     // profile.width = langContent.profiles[0].width;
     // profile.height = langContent.profiles[0].height;
     profile.style.aspectRatio = langContent.profiles[0].width / langContent.profiles[0].height;
-    profile.setAttribute('src', langContent.profiles[0].src.replaceAll(bucketHost, computedBucketHost));
+    profile.setAttribute('src', langContent.profiles[0].src);
     profile.setAttribute('alt', langContent.profiles[0].alt);
     if (initPswp) {
         profile.removeEventListener('click', initPswp);
