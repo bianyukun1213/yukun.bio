@@ -182,6 +182,12 @@ function getCurrentLang() {
         } else if (lang.startsWith('zh')) {
             currentLang = 'zh-CN';
             break;
+        } else if (lang.startsWith('en')) {
+            currentLang = 'en-US';
+            break;
+        } else if (lang.startsWith('ru')) {
+            currentLang = 'ru-RU';
+            break;
         }
     }
     if (!currentLang)
