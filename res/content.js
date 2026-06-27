@@ -20,7 +20,7 @@ const content = {
         profileImgCounterTitle: '相片数',
         links: [
             {
-                title: '博客',
+                title: '他的第二人生',
                 icon: 'uil:globe',
                 href: 'https://his2nd.life/'
             },
@@ -86,7 +86,6 @@ const content = {
 </div>
 
 ## 兴趣爱好
-
 这段时间我不好说我有什么爱好了，有时觉得干什么都没劲。2025 年初，我集中精力把<a href="https://his2nd.life/" target="_blank">我的博客</a>翻新了，专门编写了新的主题（网页模板），然后制作了这个网页。目前我正在进行第二次翻新。我不擅长和别人打交道，但有时候会自己写写博客：有时候是想记下来一些美好经历——因为我记性并不好，就像上学时候学的东西我已经忘光了；有时候只是单纯地写些废话整理一下情绪。所以我想，我可以说编程和写博客是我兴趣爱好的一部分。有时我憧憬互联网时代以前人们交流的方式——那时候距离和技术可能是个问题，人们交流更加认真，不像现在这样随意，还会满怀期待地等待对方的消息。出于这种憧憬，<a href="https://www.postcrossing.com/user/HeyHollis" target="_blank" rel="noopener">我注册了 Postcrossing</a>，有时会给陌生人发明信片，不过距离上次发送已经挺长时间了。我每天都听音乐，其实只是打发无聊，而且几乎只是在我喜欢的播放列表里随机播放。2024 年我听得最多的是 Pink Floyd 的几首歌，尤其喜欢 *The Division Bell* 专辑里的几首歌曲。最近我经常听一些维克多·崔的歌，还有 DDT 的，有些是我的俄罗斯朋友推荐给我的。当然，也听其他音乐。
 
 <div class="tag-common tabs" id="music-playlist">
@@ -165,7 +164,7 @@ const content = {
         profileImgCounterTitle: 'Photo count',
         links: [
             {
-                title: 'Blog',
+                title: 'His 2nd Life',
                 icon: 'uil:globe',
                 href: 'https://his2nd.life/'
             },
@@ -310,7 +309,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
         profileImgCounterTitle: 'Количество фотографий',
         links: [
             {
-                title: 'Блог',
+                title: 'Его 2-я Жизнь',
                 icon: 'uil:globe',
                 href: 'https://his2nd.life/'
             },
