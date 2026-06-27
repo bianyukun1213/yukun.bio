@@ -12,6 +12,7 @@ function setGetMoreContact(langKey) {
     const sitekey = 'fefa711e-7296-4e5a-b988-d6766f087b8a';
     const getMoreContact = document.getElementById('get-more-contact');
     const captchaContainer = document.getElementById('captcha-container');
+    const captchaStatus = document.getElementById('captcha-status');
     const moreContactContainer = document.getElementById('more-contact-container');
     const fetchMoreContact = function (token) {
         fetch('https://service.yukun.bio/get-more-contact', {
@@ -39,9 +40,12 @@ function setGetMoreContact(langKey) {
         getMoreContact.addEventListener('click', function () {
             if (captchaLoaded) return;
             try {
+                captchaStatus.textContent = content[langKey].captchaLoading;
+                captchaStatus.removeAttribute('style');
                 const widgetId = hcaptcha.render(captchaContainer, {
                     sitekey,
                     hl: langKey,
+                    theme: document.documentElement.dataset.colorScheme,
                     callback: function (token) {
                         hcaptcha.remove(widgetId);
                         captchaContainer.style.display = 'none';
@@ -49,8 +53,22 @@ function setGetMoreContact(langKey) {
                         fetchMoreContact(token);
                     }
                 });
+                let captchaOnLoadBound = false;
+                const checkCaptchaLoaded = setInterval(() => {
+                    const captchaIframe = captchaContainer.querySelector('iframe');
+                    if (captchaIframe && !captchaOnLoadBound) {
+                        captchaIframe.onload = function () {
+                            captchaStatus.textContent = '';
+                            captchaStatus.style.display = 'none';
+                            clearInterval(checkCaptchaLoaded);
+                        }
+                        captchaOnLoadBound = true;
+                    }
+                }, 100);
             } catch (e) {
                 console.error('hCaptcha render failed:', e);
+                captchaStatus.textContent = content[langKey].captchaLoadingFailed;
+                captchaStatus.removeAttribute('style');
             }
             captchaLoaded = true;
         });
@@ -173,10 +191,22 @@ let initPswp;
 function setGiscusLang(lang) {
     const iframe = document.querySelector('iframe.giscus-frame');
     if (!iframe) return;
+    let giscusLang = lang;
+    switch (lang) {
+        case 'zh-CN':
+            giscusLang = 'zh-CN';
+            break;
+        case 'en-US':
+            giscusLang = 'en';
+            break;
+        case 'ru-RU':
+            giscusLang = 'ru';
+            break;
+    }
     iframe.contentWindow.postMessage({
         giscus: {
             setConfig: {
-                lang: lang
+                lang: giscusLang
             }
         }
     }, 'https://giscus.app');

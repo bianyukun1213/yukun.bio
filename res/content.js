@@ -65,7 +65,7 @@ const content = {
 
 我的名字是边宇琨。在某些地方我还使用 Hollis 这个名字。我在 2000 年出生于黑龙江省哈尔滨市。
 
-我在一家小型游戏工作室工作，做一些不定内容的编程工作，这些工作并不总是和游戏相关。本科毕业于黑龙江科技大学环境工程专业，因为爱好和一些人际关系加入了这个小型游戏工作室，所以我不是一名专业的程序员。
+我以前在一家小型游戏工作室工作，做一些不定内容的编程工作，这些工作并不总是和游戏相关。本科毕业于黑龙江科技大学环境工程专业，因为爱好和一些人际关系加入了这个小型游戏工作室，所以我不是一名专业的程序员。部分因为如此，现在我辞掉了程序员的工作，还不知道将来会做什么。
 
 我也不太清楚我制作这个网页是出于何种原因。也许是想认识更多朋友，世界各地的朋友。🤔 不过老实说我并不擅长和别人打交道。上学的时候我的英语成绩较身边人来讲还不错，不过我仍然无法熟练用英语表达。<a href="https://notes.yinhe.dev/%E4%BF%84%E8%AF%AD/" target="_blank">后来我开始学习俄语</a>，不知道能坚持多久，不过我想将来每年都能去俄罗斯旅游，至少远东地区离我并不是很远，花销适中。目前我去过<a href="https://his2nd.life/zh-CN/posts/a14d0940.html" target="_blank">符拉迪沃斯托克（海参崴）</a>、<a href="https://his2nd.life/zh-CN/posts/6fca3b45.html" target="_blank">哈巴罗夫斯克（伯力）</a>、<a href="https://his2nd.life/zh-CN/posts/826a3f1c.html" target="_blank">布拉戈维申斯克（海兰泡）</a>以及莫斯科、圣彼得堡和维堡。在这几次旅途中，俄罗斯的人们对我非常友好，而且我还交到了朋友，我想我以后也会去这几个城市更多次。
 
@@ -81,7 +81,7 @@ const content = {
 | 时间 | 地点 | 角色 |
 |:---:|:---:|:---:|
 | 2020 年 10 月至 2024 年 6 月 | 黑龙江科技大学 | 环境工程专业本科生 |
-| 2024 年 7 月至今 | 黑龙江省无畏征途科技有限公司 | 初级程序员 |
+| 2024 年 7 月至 2026 年 6 月 | 黑龙江省无畏征途科技有限公司 | 程序员 |
 
 </div>
 
@@ -121,10 +121,12 @@ const content = {
 你可以给我发邮件。我的邮箱是 [bianyukun1213@outlook.com](mailto:bianyukun1213@outlook.com)。
 
 <details>
-<summary id="get-more-contact">完成验证，获取更多</summary>
-<div id="captcha-container"></div>
+<summary id="get-more-contact">完成验证，获取更多联系方式</summary>
+<div id="captcha-container"><p id="captcha-status"></p></div>
 <div id="more-contact-container"></div>
 </details>`,
+        captchaLoading: '加载中……',
+        captchaLoadingFailed: '加载失败，请刷新重试。',
         moreContactLoading: '加载中……',
         moreContactLoadingFailed: '加载失败，请刷新重试。',
         photoSwipe: {
@@ -142,7 +144,7 @@ const content = {
             system: '系统'
         }
     },
-    en: {
+    'en-US': {
         langName: 'Eng',
         langLabel: 'Lang',
         dir: 'ltr',
@@ -208,7 +210,7 @@ const content = {
 
 My name is Bian Yukun (边宇琨), or in some places, Hollis. I was born in Harbin, Heilongjiang Province in 2000.
 
-I work as a programmer in a small game studio, doing some random jobs which are not necessarily concerned to video games. I was graduated from Heilongjiang University of Science and Technology with a bachelor’s degree in environmental engineering. I joined this small game studio because of hobby and personal connections. So, I am not a professional programmer.
+I used to work as a programmer in a small game studio, doing some random jobs which are not necessarily concerned to video games. I was graduated from Heilongjiang University of Science and Technology with a bachelor’s degree in environmental engineering. I joined this small game studio because of hobby and personal connections. So, I am not a professional programmer. Partially because of this, I have resigned from the programmer job, and currently I have no idea what I will do in the future.
 
 Actually I don’t know out of what I made this web page. Maybe because I want to make more friends, friends from all over the world. 🤔 But honestly I’m not good at dealing with others. Back in the school my English grade was better compared with grades of people around me. But still I find myself not able to express in English fluently. <a href="https://notes.yinhe.dev/%E4%BF%84%E8%AF%AD/" target="_blank">I decided to learn Russian</a> and I have no idea how long I’m gonna persevere. However, I hope I will have opportunities to travel to Russia once or more per year in the upcoming years. At least, the Far East region is not far from me and the travel cost will be moderate. I have been to <a href="https://his2nd.life/en/posts/a14d0940.html" target="_blank">Vladivostok</a>, <a href="https://his2nd.life/en/posts/6fca3b45.html" target="_blank">Khabarovsk</a>, <a href="https://his2nd.life/zh-CN/posts/826a3f1c.html" target="_blank">Blagoveshchensk</a>, Moscow, Saint Petersburg, and Vyborg. During the these trips Russian people treated me well. Some of them even made friends with me, so I think I will visit the these cities several times in the future.
 
@@ -224,7 +226,7 @@ Actually I don’t know out of what I made this web page. Maybe because I want t
 | Period | Location | Role |
 |:---:|:---:|:---:|
 | October 2020<br>to June 2024 | Heilongjiang University<br>of Science and Technology | Environmental engineering<br>undergrad |
-| Since July 2024 | Heilongjiang<br>Wuweizhengtu Technology Co., Ltd. | Junior programmer |
+| July 2024<br>to June 2026 | Heilongjiang<br>Wuweizhengtu Technology Co., Ltd. | Programmer |
 
 </div>
 
@@ -264,10 +266,12 @@ Also, I’m a gamer. Games from Remedy Entertainment always bring me special exp
 You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyukun1213@outlook.com).
 
 <details>
-<summary id="get-more-contact">Complete the verification and get more</summary>
-<div id="captcha-container"></div>
+<summary id="get-more-contact">Complete verification to obtain more contact information</summary>
+<div id="captcha-container"><p id="captcha-status"></p></div>
 <div id="more-contact-container"></div>
 </details>`,
+        captchaLoading: 'Loading…',
+        captchaLoadingFailed: 'Loading failed, please refresh to retry.',
         moreContactLoading: 'Loading…',
         moreContactLoadingFailed: 'Loading failed, please refresh to retry.',
         photoSwipe: {
@@ -285,7 +289,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
             system: 'System'
         }
     },
-    ru: {
+    'ru-RU': {
         langName: 'Рус.',
         langLabel: 'Язык',
         dir: 'ltr',
@@ -308,7 +312,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
             {
                 title: 'Блог',
                 icon: 'uil:globe',
-                href: 'https://blog.hollisdevhub.com/'
+                href: 'https://his2nd.life/'
             },
             {
                 title: 'Телеграм-канал',
@@ -353,7 +357,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
 
 Меня зовут Бянь Юйкунь (边宇琨), или, как говорят в некоторых местах, Hollis. Я родился в Харбине, провинция Хэйлунцзян, в 2000 году.
 
-Я работаю программистом в небольшой игровой студии, выполняя случайные задания, не обязательно связанные с видеоиграми. Я окончил Хэйлунцзянский университет науки и технологий со степенью бакалавра в области экологической инженерии. Я устроился в эту небольшую игровую студию из-за хобби и личных связей. Поэтому я не профессиональный программист.
+Раньше я работал программистом в небольшой игровой студии, выполняя случайные задания, не обязательно связанные с видеоиграми. Я окончил Хэйлунцзянский университет науки и технологий со степенью бакалавра в области экологической инженерии. Я устроился в эту небольшую игровую студию из-за хобби и личных связей. Поэтому я не профессиональный программист. Отчасти из-за этого я уволился с работы программиста и сейчас понятия не имею, чем буду заниматься в будущем.
 
 На самом деле, я не знаю, зачем создал эту веб-страницу. Возможно, потому что хочу завести больше друзей, друзей со всего мира. 🤔 Но честно говоря, я не очень хорошо умею общаться с другими. В школе мои оценки по английскому были выше, чем у окружающих меня людей. Но всё равно я не могу свободно выражать свои мысли на английском. <a href="https://notes.yinhe.dev/%E4%BF%84%E8%AF%AD/" target="_blank">Я решил выучить русский язык</a>, и понятия не имею, как долго мне удастся продолжать. Однако я надеюсь, что в ближайшие годы у меня будет возможность хотя бы раз в год ездить в Россию. По крайней мере, Дальний Восток находится недалеко от меня, и стоимость поездки будет умеренной. Я побывал во <a href="https://his2nd.life/en/posts/a14d0940.html" target="_blank">Владивостоке</a>, <a href="https://his2nd.life/en/posts/6fca3b45.html" target="_blank">Хабаровске</a>, <a href="https://his2nd.life/zh-CN/posts/826a3f1c.html" target="_blank">Благовещенске</a>, Москве, Санкт-Петербурге и Выборге. Во время этих поездок русские люди хорошо ко мне относились. Некоторые из них даже подружились со мной, поэтому я думаю, что посещу эти города еще несколько раз в будущем.
 
@@ -369,7 +373,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
 | Период | Расположение | Роль |
 |:---:|:---:|:---:|
 | Октябрь 2020 г.<br>— июнь 2024 г. | Хэйлунцзянский университет<br>науки и технологий | Бакалавриат по специальности<br>«Экологическая инженерия» |
-| С июля 2024 г. | Хэйлунцзянская компания<br>Wuweizhengtu Technology Co., Ltd. | Младший программист |
+| Июль 2024 г.<br>— июнь 2026 г. | Хэйлунцзянская компания<br>Wuweizhengtu Technology Co., Ltd. | Программист |
 
 </div>
 
@@ -409,10 +413,12 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
 Вы можете написать мне письмо на электронную почту. Мой адрес электронной почты [bianyukun1213@outlook.com](mailto:bianyukun1213@outlook.com).
 
 <details>
-<summary id="get-more-contact">Пройдите проверку и получите больше</summary>
-<div id="captcha-container"></div>
+<summary id="get-more-contact">Пройдите верификацию, чтобы получить дополнительную контактную информацию</summary>
+<div id="captcha-container"><p id="captcha-status"></p></div>
 <div id="more-contact-container"></div>
 </details>`,
+        captchaLoading: 'Загрузка…',
+        captchaLoadingFailed: 'Загрузка не удалась, обновите страницу, чтобы повторить попытку.',
         moreContactLoading: 'Загрузка…',
         moreContactLoadingFailed: 'Загрузка не удалась, обновите страницу, чтобы повторить попытку.',
         photoSwipe: {
