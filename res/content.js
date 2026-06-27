@@ -57,8 +57,8 @@ const content = {
         ],
         name: '边宇琨',
         aka: '',
-        desc: '2000 年 12 月 13 日，程序员',
-        keywords: '边宇琨,Bian Yukun,Бянь Юйкунь',
+        desc: '生于 2000 年 12 月 13 日，平凡而迷惘的青年。',
+        keywords: '边宇琨, Bian Yukun, Бянь Юйкунь',
         mirrorNotice: '> 您正在浏览该网站的镜像版本，部分功能可能无法正常工作。\n\n',
         markdown:
             `## 你好！
@@ -202,8 +202,8 @@ const content = {
         ],
         name: 'Bian Yukun',
         aka: '',
-        desc: 'December 13, 2000, programmer',
-        keywords: '边宇琨,Bian Yukun,Бянь Юйкунь',
+        desc: 'Born on December 13, 2000, an ordinary and confused young man.',
+        keywords: '边宇琨, Bian Yukun, Бянь Юйкунь',
         mirrorNotice: '> You are browsing a mirrored version of this website. Some features may not work properly.\n\n',
         markdown:
             `## Hello!
@@ -347,8 +347,8 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
         ],
         name: 'Бянь Юйкунь',
         aka: 'также известен как Юра или Семён',
-        desc: '13 декабря 2000 г., программист',
-        keywords: '边宇琨,Bian Yukun,Бянь Юйкунь',
+        desc: 'Родился 13 декабря 2000 года, обычный и растерянный молодой человек.',
+        keywords: '边宇琨, Bian Yukun, Бянь Юйкунь',
         mirrorNotice: '> Вы просматриваете зеркальную версию этого сайта. Некоторые функции могут работать некорректно.\n\n',
         markdown:
             `> Я только начал изучать русский язык и в настоящее время не могу писать предложения. Эта страница переведена с английского с помощью Google Translate. Я извиняюсь, если есть какие-либо ошибки или заблуждения, вызванные переводом.

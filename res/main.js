@@ -36,10 +36,12 @@ function setGetMoreContact(langKey) {
         });
     };
     if (getMoreContact && captchaContainer && moreContactContainer) {
+        let captchaLoading = false;
         let captchaLoaded = false;
         getMoreContact.addEventListener('click', function () {
-            if (captchaLoaded) return;
+            if (captchaLoading || captchaLoaded) return;
             try {
+                captchaLoading = true;
                 captchaStatus.textContent = content[langKey].captchaLoading;
                 captchaStatus.removeAttribute('style');
                 const widgetId = hcaptcha.render(captchaContainer, {
@@ -60,6 +62,8 @@ function setGetMoreContact(langKey) {
                         captchaIframe.onload = function () {
                             captchaStatus.textContent = '';
                             captchaStatus.style.display = 'none';
+                            captchaLoading = false;
+                            captchaLoaded = true;
                             clearInterval(checkCaptchaLoaded);
                         }
                         captchaOnLoadBound = true;
@@ -69,8 +73,9 @@ function setGetMoreContact(langKey) {
                 console.error('hCaptcha render failed:', e);
                 captchaStatus.textContent = content[langKey].captchaLoadingFailed;
                 captchaStatus.removeAttribute('style');
+                captchaLoading = false;
+                captchaLoaded = false;
             }
-            captchaLoaded = true;
         });
     }
 }
