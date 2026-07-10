@@ -137,7 +137,7 @@ const content = {
             indexIndicatorSep: ' / ',
         },
         colorScheme: {
-            label: '颜色',
+            label: '主题',
             light: '亮',
             dark: '暗',
             system: '系统'
@@ -145,7 +145,7 @@ const content = {
     },
     'en-US': {
         langName: 'Eng',
-        langLabel: 'Lang',
+        langLabel: 'Language',
         dir: 'ltr',
         profiles: [
             {
@@ -282,7 +282,7 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
             indexIndicatorSep: ' / ',
         },
         colorScheme: {
-            label: 'Color',
+            label: 'Theme',
             light: 'Light',
             dark: 'Dark',
             system: 'System'
@@ -429,10 +429,10 @@ You can write me emails. My email is [bianyukun1213@outlook.com](mailto:bianyuku
             indexIndicatorSep: ' / ',
         },
         colorScheme: {
-            label: 'Цвет',
-            light: 'Яркий',
-            dark: 'Темный',
-            system: 'Системный'
+            label: 'Тема',
+            light: 'Светлая',
+            dark: 'Тёмная',
+            system: 'Системная'
         }
     }
 };
