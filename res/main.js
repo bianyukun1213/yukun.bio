@@ -31,8 +31,9 @@ function setGetMoreContact(langKey) {
                 return;
             }
             moreContactContainer.innerHTML = marked.parse(res.data[langKey]);
-        }).catch(function (error) {
-            throw console.error(`Unable to get more contact: Request failed with error ${error}.`);
+        }).catch(function (e) {
+            console.error('Unable to get more contact:', e);
+            moreContactContainer.innerHTML = `<p>${content[langKey].moreContactLoadingFailed}</p><p>${e}</p>`;
         });
     };
     if (getMoreContact && captchaContainer && moreContactContainer) {

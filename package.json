@@ -19,12 +19,12 @@
   },
   "devDependencies": {
     "@iconify-json/fa6-brands": "^1.2.6",
-    "@iconify-json/simple-icons": "^1.2.87",
+    "@iconify-json/simple-icons": "^1.2.89",
     "@iconify-json/uil": "^1.2.3",
-    "@unocss/postcss": "^66.7.3",
-    "@unocss/preset-icons": "^66.7.3",
-    "postcss": "^8.5.15",
+    "@unocss/postcss": "^66.7.5",
+    "@unocss/preset-icons": "^66.7.5",
+    "postcss": "^8.5.16",
     "postcss-cli": "^11.0.1",
-    "unocss": "^66.7.3"
+    "unocss": "^66.7.5"
   }
 }
